@@ -53,12 +53,14 @@
 #include "xparameters.h"
 #include "sleep.h"
 #include "xtime_l.h"
+#include <arm_neon.h>
+
 #define REGISTER_NUMBER 4
 #define BYTES_TO_BE_ENCRYPTED 16
 
 Xuint32 *plain_text_base_addr = (Xuint32 *) 0x43C00000;
-Xuint32 *key_base_addr = 0x43C00010;
-Xuint32 *cypher_text_base_addr = 0x43C00020;
+Xuint32 *key_base_addr = (Xuint32 *)0x43C00010;
+Xuint32 *cypher_text_base_addr = (Xuint32 *)0x43C00020;
 
 uint8x16_t cypher,plain;
 
@@ -73,49 +75,8 @@ void Encrypt_AES(char* plain_text, char* key, char* cypher_text){
 	for(int i=0;i<REGISTER_NUMBER;i++){
 		*((Xuint32*)(cypher_text)+i)=*(cypher_text_base_addr+i);
 	}
-	cypher= vld1q_u8(cypher_text_base_addr);
-	plain=vld1q_u8(plain_text_base_addr);
-	cypher=veorq_u8(cypher,plain);
-	vst1q_u8(cypher_text,cypher);
-
-	//memcpy((uint8_t*)plain_text_base_addr, plain_text, 16);
-
-//	for(int i = 0; i < 16; i++){
-//		*(plain_text_base_addr + i) = plain_text[i];
-//		*(key_base_addr + i) = key[i];
-//	}
-//
-//	for(int i = 0; i < 16; i++){
-//		*(cypher_text + i) = cypher_text_base_addr[i];
-//	}
 
 
-
-//	for(int i = 0; i < 4; i++)
-//	{
-//		uint8_t temp[4];
-//		for(int k = 0; k < 4; k++)
-//			temp[k] = plain_text[i*4 + k];
-//
-//		*(plain_text_base_addr+i) = *(Xuint32*)temp;
-//
-////		*(plain_text_base_addr+i)=*((Xuint32*)(plain_text)+i);
-//		//*(plain_text_base_addr+i) = plain_text[i];
-//		*(key_base_addr+i) = *((Xuint32*)(key)+i);
-//		*((Xuint32*)(cypher_text)+i) = *(cypher_text_base_addr+i);
-//	}
-
-//	for (int i = 0; i < 4 * sizeof(plain_text); i++)
-//		xil_printf("%d ", *(char*)(key_base_addr+i));
-//	xil_printf("\n\r");
-
-//	for (int i = 0; i < 4 * sizeof(plain_text); i++)
-//			xil_printf("%d ", cypher_text_base_addr[i]);
-//		xil_printf("\n\r");
-
-
-	//memcpy(key_base_addr, key, 16);
-	//memcpy(cypher_text, cypher_text_base_addr, 16);
 }
 
 void print_results(char plain_text[], char key_string[], char cypher_text[]){
@@ -148,22 +109,24 @@ int main()
 	Encrypt_AES(plain_text, key_string, cypher_text);
 	xil_printf("Printing arrays\n\r");
 	print_results(plain_text, key_string, cypher_text);
-	xil_printf("printing registers\n\r");
-	for(int i=0;i<16;i++){
-		xil_printf("%x ",*((char *)plain_text_base_addr+i));
-	}
-	xil_printf("\n\r");
-	for(int i=0;i<16;i++){
-		xil_printf("%x ",*((char *)key_base_addr+i));
-	}
-	xil_printf("\n\r");
-	for(int i=0;i<16;i++){
-		xil_printf("%x ",*((char *)cypher_text_base_addr+i));
-	}
-	xil_printf("\n\r");
 
-	//Encrypt_AES(cypher_text, key_string, plain_text);
-	//print_results(cypher_text, key_string, plain_text);
+//Printing registers
+//	xil_printf("printing registers\n\r");
+//	for(int i=0;i<16;i++){
+//		xil_printf("%x ",*((char *)plain_text_base_addr+i));
+//	}
+//	xil_printf("\n\r");
+//	for(int i=0;i<16;i++){
+//		xil_printf("%x ",*((char *)key_base_addr+i));
+//	}
+//	xil_printf("\n\r");
+//	for(int i=0;i<16;i++){
+//		xil_printf("%x ",*((char *)cypher_text_base_addr+i));
+//	}
+//	xil_printf("\n\r");
+
+	Encrypt_AES(cypher_text, key_string, plain_text);
+	print_results(cypher_text, key_string, plain_text);
 
     cleanup_platform();
     return 0;
