@@ -1,0 +1,1389 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Oct  9 11:05:03 2024
+# Process ID: 6592
+# Current directory: H:/project/SoC_project/SoC_project.runs/design_aes_AES_IP_0_0_synth_1
+# Command line: vivado.exe -log design_aes_AES_IP_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_aes_AES_IP_0_0.tcl
+# Log file: H:/project/SoC_project/SoC_project.runs/design_aes_AES_IP_0_0_synth_1/design_aes_AES_IP_0_0.vds
+# Journal file: H:/project/SoC_project/SoC_project.runs/design_aes_AES_IP_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_aes_AES_IP_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/project/ip_repo/AES_IP_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'h:/project/ip_repo/AES_IP_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/project/ip_repo/AES_IP_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'h:/project/ip_repo/AES_IP_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/project/ip_repo/AES_IP_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top design_aes_AES_IP_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7224 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1010.906 ; gain = 234.316
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_aes_AES_IP_0_0' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ip/design_aes_AES_IP_0_0/synth/design_aes_AES_IP_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AES_IP_v1_0' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AES_IP_v1_0_S00_AXI' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:260]
+INFO: [Synth 8-226] default block is never used [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:497]
+INFO: [Synth 8-6157] synthesizing module 'aes_128' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/aes_128.v:17]
+INFO: [Synth 8-6157] synthesizing module 'expand_key_128' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/aes_128.v:59]
+INFO: [Synth 8-6157] synthesizing module 'S4' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:32]
+INFO: [Synth 8-6157] synthesizing module 'S' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'S' (1#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'S4' (2#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'expand_key_128' (3#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/aes_128.v:59]
+INFO: [Synth 8-6157] synthesizing module 'one_round' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/round.v:18]
+INFO: [Synth 8-6157] synthesizing module 'table_lookup' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:17]
+INFO: [Synth 8-6157] synthesizing module 'T' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:45]
+INFO: [Synth 8-6157] synthesizing module 'xS' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'xS' (4#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'T' (5#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'table_lookup' (6#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/table.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'one_round' (7#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/round.v:18]
+INFO: [Synth 8-6157] synthesizing module 'final_round' [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/round.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'final_round' (8#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/round.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'aes_128' (9#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/opencore/ip-cores-crypto_core_aes/rtl/aes_128.v:17]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:248]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:249]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:250]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:251]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:544]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:545]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:546]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:547]
+INFO: [Synth 8-6155] done synthesizing module 'AES_IP_v1_0_S00_AXI' (10#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AES_IP_v1_0' (11#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ipshared/0268/hdl/AES_IP_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_aes_AES_IP_0_0' (12#1) [h:/project/SoC_project/SoC_project.srcs/sources_1/bd/design_aes/ip/design_aes_AES_IP_0_0/synth/design_aes_AES_IP_0_0.v:56]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1087.070 ; gain = 310.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.070 ; gain = 310.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.070 ; gain = 310.480
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1087.070 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1208.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1211.270 ; gain = 3.254
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1211.270 ; gain = 434.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1211.270 ; gain = 434.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1211.270 ; gain = 434.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 1211.270 ; gain = 434.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      8 Bit         XORs := 154   
++---Registers : 
+	              128 Bit    Registers := 22    
+	               32 Bit    Registers := 53    
+	                8 Bit    Registers := 344   
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 344   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module S 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module expand_key_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+Module xS 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module one_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module final_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module aes_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+Module AES_IP_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/AES_IP_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AES_IP_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/AES_IP_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AES_IP_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:43 . Memory (MB): peak = 1211.270 ; gain = 434.680
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 344, Available = 120. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_3/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_2/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_1/out     | 256x8         | LUT            | 
+|expand_key_128 | S4_0/S_0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t3/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t0/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t1/t3/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t0/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t1/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t2/s0/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s4/out     | 256x8         | LUT            | 
+|one_round      | t2/t3/s0/out     | 256x8         | LUT            | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:24 . Memory (MB): peak = 1284.918 ; gain = 508.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:25 . Memory (MB): peak = 1306.207 ; gain = 529.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s0/out_reg[4]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s4/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s0/out_reg[1]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s4/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s0/out_reg[4]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s4/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s0/out_reg[1]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s4/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s0/out_reg[4]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s4/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s0/out_reg[1]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s4/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s0/out_reg[4]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s4/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s0/out_reg[1]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s4/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t0/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t1/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t2/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t3/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t1/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t3/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t2/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t0/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t3/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t1/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t0/t0/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s4/out_reg[7]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t2/t2/s0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t2/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t3/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t3/t0/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s0/out_reg[6]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r1/t1/t1/s4/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t0/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t1/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t1/t2/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t3/t3/s0/out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s0/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s4/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s4/out_reg[5]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s0/out_reg[4]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s4/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s4/out_reg[2]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s0/out_reg[1]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t2/t1/s4/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s4/out_reg[0]' (FD) to 'inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r2/t0/t3/s0/out_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r6/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r7/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r8/t3/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t0/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t1/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t2/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t2/t2/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t3/t0/s0/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_IP_v1_0_S00_AXI_inst/nolabel_line540/r9/t3/t0/s4/out_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7053' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:29 . Memory (MB): peak = 1324.172 ; gain = 547.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 1330.039 ; gain = 553.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 1330.039 ; gain = 553.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:32 . Memory (MB): peak = 1330.039 ; gain = 553.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:32 . Memory (MB): peak = 1330.039 ; gain = 553.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:32 . Memory (MB): peak = 1333.020 ; gain = 556.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:32 . Memory (MB): peak = 1333.020 ; gain = 556.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT1       |    17|
+|2     |LUT2       |  1601|
+|3     |LUT3       |   449|
+|4     |LUT4       |   324|
+|5     |LUT6       |  6658|
+|6     |MUXF7      |  2728|
+|7     |MUXF8      |  1364|
+|8     |RAMB18E1   |    34|
+|9     |RAMB18E1_1 |    26|
+|10    |FDRE       |  5729|
+|11    |FDSE       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    | 18931|
+|2     |  inst                       |AES_IP_v1_0         | 18931|
+|3     |    AES_IP_v1_0_S00_AXI_inst |AES_IP_v1_0_S00_AXI | 18927|
+|4     |      nolabel_line540        |aes_128             | 18220|
+|5     |        a1                   |expand_key_128      |   962|
+|6     |          S4_0               |S4_459              |   512|
+|7     |            S_0              |S_460               |   128|
+|8     |            S_1              |S_461               |   128|
+|9     |            S_2              |S_462               |   128|
+|10    |            S_3              |S_463               |   128|
+|11    |        a10                  |expand_key_128_0    |   384|
+|12    |          S4_0               |S4_454              |   256|
+|13    |            S_0              |S_455               |    64|
+|14    |            S_1              |S_456               |    64|
+|15    |            S_2              |S_457               |    64|
+|16    |            S_3              |S_458               |    64|
+|17    |        a2                   |expand_key_128_1    |   737|
+|18    |          S4_0               |S4_449              |   384|
+|19    |            S_0              |S_450               |    96|
+|20    |            S_1              |S_451               |    96|
+|21    |            S_2              |S_452               |    96|
+|22    |            S_3              |S_453               |    96|
+|23    |        a3                   |expand_key_128_2    |   737|
+|24    |          S4_0               |S4_444              |   384|
+|25    |            S_0              |S_445               |    96|
+|26    |            S_1              |S_446               |    96|
+|27    |            S_2              |S_447               |    96|
+|28    |            S_3              |S_448               |    96|
+|29    |        a4                   |expand_key_128_3    |   737|
+|30    |          S4_0               |S4_439              |   384|
+|31    |            S_0              |S_440               |    96|
+|32    |            S_1              |S_441               |    96|
+|33    |            S_2              |S_442               |    96|
+|34    |            S_3              |S_443               |    96|
+|35    |        a5                   |expand_key_128_4    |   737|
+|36    |          S4_0               |S4_434              |   384|
+|37    |            S_0              |S_435               |    96|
+|38    |            S_1              |S_436               |    96|
+|39    |            S_2              |S_437               |    96|
+|40    |            S_3              |S_438               |    96|
+|41    |        a6                   |expand_key_128_5    |   737|
+|42    |          S4_0               |S4_429              |   384|
+|43    |            S_0              |S_430               |    96|
+|44    |            S_1              |S_431               |    96|
+|45    |            S_2              |S_432               |    96|
+|46    |            S_3              |S_433               |    96|
+|47    |        a7                   |expand_key_128_6    |   737|
+|48    |          S4_0               |S4_424              |   384|
+|49    |            S_0              |S_425               |    96|
+|50    |            S_1              |S_426               |    96|
+|51    |            S_2              |S_427               |    96|
+|52    |            S_3              |S_428               |    96|
+|53    |        a8                   |expand_key_128_7    |   740|
+|54    |          S4_0               |S4_419              |   384|
+|55    |            S_0              |S_420               |    96|
+|56    |            S_1              |S_421               |    96|
+|57    |            S_2              |S_422               |    96|
+|58    |            S_3              |S_423               |    96|
+|59    |        a9                   |expand_key_128_8    |   740|
+|60    |          S4_0               |S4_414              |   384|
+|61    |            S_0              |S_415               |    96|
+|62    |            S_1              |S_416               |    96|
+|63    |            S_2              |S_417               |    96|
+|64    |            S_3              |S_418               |    96|
+|65    |        r1                   |one_round           |  2608|
+|66    |          t0                 |table_lookup_362    |   620|
+|67    |            t0               |T_402               |   155|
+|68    |              s0             |S_412               |    55|
+|69    |              s4             |xS_413              |   100|
+|70    |            t1               |T_403               |   155|
+|71    |              s0             |S_410               |   103|
+|72    |              s4             |xS_411              |    52|
+|73    |            t2               |T_404               |   155|
+|74    |              s0             |S_408               |    55|
+|75    |              s4             |xS_409              |   100|
+|76    |            t3               |T_405               |   155|
+|77    |              s0             |S_406               |   103|
+|78    |              s4             |xS_407              |    52|
+|79    |          t1                 |table_lookup_363    |   620|
+|80    |            t0               |T_390               |   155|
+|81    |              s0             |S_400               |   103|
+|82    |              s4             |xS_401              |    52|
+|83    |            t1               |T_391               |   155|
+|84    |              s0             |S_398               |    87|
+|85    |              s4             |xS_399              |    68|
+|86    |            t2               |T_392               |   155|
+|87    |              s0             |S_396               |   103|
+|88    |              s4             |xS_397              |    52|
+|89    |            t3               |T_393               |   155|
+|90    |              s0             |S_394               |    87|
+|91    |              s4             |xS_395              |    68|
+|92    |          t2                 |table_lookup_364    |   620|
+|93    |            t0               |T_378               |   155|
+|94    |              s0             |S_388               |   103|
+|95    |              s4             |xS_389              |    52|
+|96    |            t1               |T_379               |   155|
+|97    |              s0             |S_386               |    55|
+|98    |              s4             |xS_387              |   100|
+|99    |            t2               |T_380               |   155|
+|100   |              s0             |S_384               |   103|
+|101   |              s4             |xS_385              |    52|
+|102   |            t3               |T_381               |   155|
+|103   |              s0             |S_382               |    55|
+|104   |              s4             |xS_383              |   100|
+|105   |          t3                 |table_lookup_365    |   620|
+|106   |            t0               |T_366               |   155|
+|107   |              s0             |S_376               |    87|
+|108   |              s4             |xS_377              |    68|
+|109   |            t1               |T_367               |   155|
+|110   |              s0             |S_374               |   103|
+|111   |              s4             |xS_375              |    52|
+|112   |            t2               |T_368               |   155|
+|113   |              s0             |S_372               |    87|
+|114   |              s4             |xS_373              |    68|
+|115   |            t3               |T_369               |   155|
+|116   |              s0             |S_370               |   103|
+|117   |              s4             |xS_371              |    52|
+|118   |        r2                   |one_round_9         |  1664|
+|119   |          t0                 |table_lookup_310    |   384|
+|120   |            t0               |T_350               |    96|
+|121   |              s0             |S_360               |    36|
+|122   |              s4             |xS_361              |    60|
+|123   |            t1               |T_351               |    96|
+|124   |              s0             |S_358               |    63|
+|125   |              s4             |xS_359              |    33|
+|126   |            t2               |T_352               |    96|
+|127   |              s0             |S_356               |    36|
+|128   |              s4             |xS_357              |    60|
+|129   |            t3               |T_353               |    96|
+|130   |              s0             |S_354               |    63|
+|131   |              s4             |xS_355              |    33|
+|132   |          t1                 |table_lookup_311    |   384|
+|133   |            t0               |T_338               |    96|
+|134   |              s0             |S_348               |    63|
+|135   |              s4             |xS_349              |    33|
+|136   |            t1               |T_339               |    96|
+|137   |              s0             |S_346               |    54|
+|138   |              s4             |xS_347              |    42|
+|139   |            t2               |T_340               |    96|
+|140   |              s0             |S_344               |    63|
+|141   |              s4             |xS_345              |    33|
+|142   |            t3               |T_341               |    96|
+|143   |              s0             |S_342               |    54|
+|144   |              s4             |xS_343              |    42|
+|145   |          t2                 |table_lookup_312    |   384|
+|146   |            t0               |T_326               |    96|
+|147   |              s0             |S_336               |    63|
+|148   |              s4             |xS_337              |    33|
+|149   |            t1               |T_327               |    96|
+|150   |              s0             |S_334               |    36|
+|151   |              s4             |xS_335              |    60|
+|152   |            t2               |T_328               |    96|
+|153   |              s0             |S_332               |    63|
+|154   |              s4             |xS_333              |    33|
+|155   |            t3               |T_329               |    96|
+|156   |              s0             |S_330               |    36|
+|157   |              s4             |xS_331              |    60|
+|158   |          t3                 |table_lookup_313    |   384|
+|159   |            t0               |T_314               |    96|
+|160   |              s0             |S_324               |    54|
+|161   |              s4             |xS_325              |    42|
+|162   |            t1               |T_315               |    96|
+|163   |              s0             |S_322               |    63|
+|164   |              s4             |xS_323              |    33|
+|165   |            t2               |T_316               |    96|
+|166   |              s0             |S_320               |    54|
+|167   |              s4             |xS_321              |    42|
+|168   |            t3               |T_317               |    96|
+|169   |              s0             |S_318               |    63|
+|170   |              s4             |xS_319              |    33|
+|171   |        r3                   |one_round_10        |  1664|
+|172   |          t0                 |table_lookup_258    |   384|
+|173   |            t0               |T_298               |    96|
+|174   |              s0             |S_308               |    36|
+|175   |              s4             |xS_309              |    60|
+|176   |            t1               |T_299               |    96|
+|177   |              s0             |S_306               |    63|
+|178   |              s4             |xS_307              |    33|
+|179   |            t2               |T_300               |    96|
+|180   |              s0             |S_304               |    36|
+|181   |              s4             |xS_305              |    60|
+|182   |            t3               |T_301               |    96|
+|183   |              s0             |S_302               |    63|
+|184   |              s4             |xS_303              |    33|
+|185   |          t1                 |table_lookup_259    |   384|
+|186   |            t0               |T_286               |    96|
+|187   |              s0             |S_296               |    63|
+|188   |              s4             |xS_297              |    33|
+|189   |            t1               |T_287               |    96|
+|190   |              s0             |S_294               |    54|
+|191   |              s4             |xS_295              |    42|
+|192   |            t2               |T_288               |    96|
+|193   |              s0             |S_292               |    63|
+|194   |              s4             |xS_293              |    33|
+|195   |            t3               |T_289               |    96|
+|196   |              s0             |S_290               |    54|
+|197   |              s4             |xS_291              |    42|
+|198   |          t2                 |table_lookup_260    |   384|
+|199   |            t0               |T_274               |    96|
+|200   |              s0             |S_284               |    63|
+|201   |              s4             |xS_285              |    33|
+|202   |            t1               |T_275               |    96|
+|203   |              s0             |S_282               |    36|
+|204   |              s4             |xS_283              |    60|
+|205   |            t2               |T_276               |    96|
+|206   |              s0             |S_280               |    63|
+|207   |              s4             |xS_281              |    33|
+|208   |            t3               |T_277               |    96|
+|209   |              s0             |S_278               |    36|
+|210   |              s4             |xS_279              |    60|
+|211   |          t3                 |table_lookup_261    |   384|
+|212   |            t0               |T_262               |    96|
+|213   |              s0             |S_272               |    54|
+|214   |              s4             |xS_273              |    42|
+|215   |            t1               |T_263               |    96|
+|216   |              s0             |S_270               |    63|
+|217   |              s4             |xS_271              |    33|
+|218   |            t2               |T_264               |    96|
+|219   |              s0             |S_268               |    54|
+|220   |              s4             |xS_269              |    42|
+|221   |            t3               |T_265               |    96|
+|222   |              s0             |S_266               |    63|
+|223   |              s4             |xS_267              |    33|
+|224   |        r4                   |one_round_11        |  1664|
+|225   |          t0                 |table_lookup_206    |   384|
+|226   |            t0               |T_246               |    96|
+|227   |              s0             |S_256               |    36|
+|228   |              s4             |xS_257              |    60|
+|229   |            t1               |T_247               |    96|
+|230   |              s0             |S_254               |    70|
+|231   |              s4             |xS_255              |    26|
+|232   |            t2               |T_248               |    96|
+|233   |              s0             |S_252               |    36|
+|234   |              s4             |xS_253              |    60|
+|235   |            t3               |T_249               |    96|
+|236   |              s0             |S_250               |    63|
+|237   |              s4             |xS_251              |    33|
+|238   |          t1                 |table_lookup_207    |   384|
+|239   |            t0               |T_234               |    96|
+|240   |              s0             |S_244               |    63|
+|241   |              s4             |xS_245              |    33|
+|242   |            t1               |T_235               |    96|
+|243   |              s0             |S_242               |    54|
+|244   |              s4             |xS_243              |    42|
+|245   |            t2               |T_236               |    96|
+|246   |              s0             |S_240               |    70|
+|247   |              s4             |xS_241              |    26|
+|248   |            t3               |T_237               |    96|
+|249   |              s0             |S_238               |    54|
+|250   |              s4             |xS_239              |    42|
+|251   |          t2                 |table_lookup_208    |   384|
+|252   |            t0               |T_222               |    96|
+|253   |              s0             |S_232               |    63|
+|254   |              s4             |xS_233              |    33|
+|255   |            t1               |T_223               |    96|
+|256   |              s0             |S_230               |    36|
+|257   |              s4             |xS_231              |    60|
+|258   |            t2               |T_224               |    96|
+|259   |              s0             |S_228               |    63|
+|260   |              s4             |xS_229              |    33|
+|261   |            t3               |T_225               |    96|
+|262   |              s0             |S_226               |    29|
+|263   |              s4             |xS_227              |    67|
+|264   |          t3                 |table_lookup_209    |   384|
+|265   |            t0               |T_210               |    96|
+|266   |              s0             |S_220               |    40|
+|267   |              s4             |xS_221              |    56|
+|268   |            t1               |T_211               |    96|
+|269   |              s0             |S_218               |    63|
+|270   |              s4             |xS_219              |    33|
+|271   |            t2               |T_212               |    96|
+|272   |              s0             |S_216               |    54|
+|273   |              s4             |xS_217              |    42|
+|274   |            t3               |T_213               |    96|
+|275   |              s0             |S_214               |    63|
+|276   |              s4             |xS_215              |    33|
+|277   |        r5                   |one_round_12        |  1428|
+|278   |          t0                 |table_lookup_154    |   384|
+|279   |            t0               |T_194               |    96|
+|280   |              s0             |S_204               |    29|
+|281   |              s4             |xS_205              |    67|
+|282   |            t1               |T_195               |    96|
+|283   |              s0             |S_202               |    72|
+|284   |              s4             |xS_203              |    24|
+|285   |            t2               |T_196               |    96|
+|286   |              s0             |S_200               |    29|
+|287   |              s4             |xS_201              |    67|
+|288   |            t3               |T_197               |    96|
+|289   |              s0             |S_198               |    70|
+|290   |              s4             |xS_199              |    26|
+|291   |          t1                 |table_lookup_155    |   384|
+|292   |            t0               |T_182               |    96|
+|293   |              s0             |S_192               |    70|
+|294   |              s4             |xS_193              |    26|
+|295   |            t1               |T_183               |    96|
+|296   |              s0             |S_190               |    40|
+|297   |              s4             |xS_191              |    56|
+|298   |            t2               |T_184               |    96|
+|299   |              s0             |S_188               |    72|
+|300   |              s4             |xS_189              |    24|
+|301   |            t3               |T_185               |    96|
+|302   |              s0             |S_186               |    40|
+|303   |              s4             |xS_187              |    56|
+|304   |          t2                 |table_lookup_156    |   384|
+|305   |            t0               |T_170               |    96|
+|306   |              s0             |S_180               |    70|
+|307   |              s4             |xS_181              |    26|
+|308   |            t1               |T_171               |    96|
+|309   |              s0             |S_178               |    29|
+|310   |              s4             |xS_179              |    67|
+|311   |            t2               |T_172               |    96|
+|312   |              s0             |S_176               |    70|
+|313   |              s4             |xS_177              |    26|
+|314   |            t3               |T_173               |    96|
+|315   |              s0             |S_174               |    27|
+|316   |              s4             |xS_175              |    69|
+|317   |          t3                 |table_lookup_157    |   148|
+|318   |            t0               |T_158               |    37|
+|319   |              s0             |S_168               |    17|
+|320   |              s4             |xS_169              |    20|
+|321   |            t1               |T_159               |    37|
+|322   |              s0             |S_166               |    23|
+|323   |              s4             |xS_167              |    14|
+|324   |            t2               |T_160               |    37|
+|325   |              s0             |S_164               |    21|
+|326   |              s4             |xS_165              |    16|
+|327   |            t3               |T_161               |    37|
+|328   |              s0             |S_162               |    23|
+|329   |              s4             |xS_163              |    14|
+|330   |        r6                   |one_round_13        |   608|
+|331   |          t0                 |table_lookup_108    |   148|
+|332   |            t0               |T_142               |    37|
+|333   |              s0             |S_152               |    15|
+|334   |              s4             |xS_153              |    22|
+|335   |            t1               |T_143               |    37|
+|336   |              s0             |S_150               |    25|
+|337   |              s4             |xS_151              |    12|
+|338   |            t2               |T_144               |    37|
+|339   |              s0             |S_148               |    15|
+|340   |              s4             |xS_149              |    22|
+|341   |            t3               |T_145               |    37|
+|342   |              s0             |S_146               |    25|
+|343   |              s4             |xS_147              |    12|
+|344   |          t1                 |table_lookup_109    |   148|
+|345   |            t0               |T_130               |    37|
+|346   |              s0             |S_140               |    25|
+|347   |              s4             |xS_141              |    12|
+|348   |            t1               |T_131               |    37|
+|349   |              s0             |S_138               |    17|
+|350   |              s4             |xS_139              |    20|
+|351   |            t2               |T_132               |    37|
+|352   |              s0             |S_136               |    25|
+|353   |              s4             |xS_137              |    12|
+|354   |            t3               |T_133               |    37|
+|355   |              s0             |S_134               |    17|
+|356   |              s4             |xS_135              |    20|
+|357   |          t2                 |table_lookup_110    |   148|
+|358   |            t0               |T_118               |    37|
+|359   |              s0             |S_128               |    25|
+|360   |              s4             |xS_129              |    12|
+|361   |            t1               |T_119               |    37|
+|362   |              s0             |S_126               |    15|
+|363   |              s4             |xS_127              |    22|
+|364   |            t2               |T_120               |    37|
+|365   |              s0             |S_124               |    25|
+|366   |              s4             |xS_125              |    12|
+|367   |            t3               |T_121               |    37|
+|368   |              s0             |S_122               |    15|
+|369   |              s4             |xS_123              |    22|
+|370   |          t3                 |table_lookup_111    |    36|
+|371   |            t0               |T_112               |    18|
+|372   |              s0             |S_116               |    17|
+|373   |              s4             |xS_117              |     1|
+|374   |            t2               |T_113               |    18|
+|375   |              s0             |S_114               |    17|
+|376   |              s4             |xS_115              |     1|
+|377   |        r7                   |one_round_14        |   272|
+|378   |          t0                 |table_lookup_80     |    36|
+|379   |            t0               |T_102               |    18|
+|380   |              s0             |S_106               |    17|
+|381   |              s4             |xS_107              |     1|
+|382   |            t2               |T_103               |    18|
+|383   |              s0             |S_104               |    17|
+|384   |              s4             |xS_105              |     1|
+|385   |          t1                 |table_lookup_81     |    36|
+|386   |            t0               |T_96                |    18|
+|387   |              s0             |S_100               |    17|
+|388   |              s4             |xS_101              |     1|
+|389   |            t2               |T_97                |    18|
+|390   |              s0             |S_98                |    17|
+|391   |              s4             |xS_99               |     1|
+|392   |          t2                 |table_lookup_82     |    36|
+|393   |            t0               |T_90                |    18|
+|394   |              s0             |S_94                |    17|
+|395   |              s4             |xS_95               |     1|
+|396   |            t2               |T_91                |    18|
+|397   |              s0             |S_92                |    17|
+|398   |              s4             |xS_93               |     1|
+|399   |          t3                 |table_lookup_83     |    36|
+|400   |            t0               |T_84                |    18|
+|401   |              s0             |S_88                |    17|
+|402   |              s4             |xS_89               |     1|
+|403   |            t2               |T_85                |    18|
+|404   |              s0             |S_86                |    17|
+|405   |              s4             |xS_87               |     1|
+|406   |        r8                   |one_round_15        |   272|
+|407   |          t0                 |table_lookup_52     |    36|
+|408   |            t0               |T_74                |    18|
+|409   |              s0             |S_78                |    17|
+|410   |              s4             |xS_79               |     1|
+|411   |            t2               |T_75                |    18|
+|412   |              s0             |S_76                |    17|
+|413   |              s4             |xS_77               |     1|
+|414   |          t1                 |table_lookup_53     |    36|
+|415   |            t0               |T_68                |    18|
+|416   |              s0             |S_72                |    17|
+|417   |              s4             |xS_73               |     1|
+|418   |            t2               |T_69                |    18|
+|419   |              s0             |S_70                |    17|
+|420   |              s4             |xS_71               |     1|
+|421   |          t2                 |table_lookup_54     |    36|
+|422   |            t0               |T_62                |    18|
+|423   |              s0             |S_66                |    17|
+|424   |              s4             |xS_67               |     1|
+|425   |            t2               |T_63                |    18|
+|426   |              s0             |S_64                |    17|
+|427   |              s4             |xS_65               |     1|
+|428   |          t3                 |table_lookup_55     |    36|
+|429   |            t0               |T_56                |    18|
+|430   |              s0             |S_60                |    17|
+|431   |              s4             |xS_61               |     1|
+|432   |            t2               |T_57                |    18|
+|433   |              s0             |S_58                |    17|
+|434   |              s4             |xS_59               |     1|
+|435   |        r9                   |one_round_16        |   272|
+|436   |          t0                 |table_lookup        |    36|
+|437   |            t0               |T_46                |    18|
+|438   |              s0             |S_50                |    17|
+|439   |              s4             |xS_51               |     1|
+|440   |            t2               |T_47                |    18|
+|441   |              s0             |S_48                |    17|
+|442   |              s4             |xS_49               |     1|
+|443   |          t1                 |table_lookup_27     |    36|
+|444   |            t0               |T_40                |    18|
+|445   |              s0             |S_44                |    17|
+|446   |              s4             |xS_45               |     1|
+|447   |            t2               |T_41                |    18|
+|448   |              s0             |S_42                |    17|
+|449   |              s4             |xS_43               |     1|
+|450   |          t2                 |table_lookup_28     |    36|
+|451   |            t0               |T_34                |    18|
+|452   |              s0             |S_38                |    17|
+|453   |              s4             |xS_39               |     1|
+|454   |            t2               |T_35                |    18|
+|455   |              s0             |S_36                |    17|
+|456   |              s4             |xS_37               |     1|
+|457   |          t3                 |table_lookup_29     |    36|
+|458   |            t0               |T                   |    18|
+|459   |              s0             |S_32                |    17|
+|460   |              s4             |xS_33               |     1|
+|461   |            t2               |T_30                |    18|
+|462   |              s0             |S_31                |    17|
+|463   |              s4             |xS                  |     1|
+|464   |        rf                   |final_round         |   136|
+|465   |          S4_1               |S4                  |     2|
+|466   |            S_1              |S_25                |     1|
+|467   |            S_3              |S_26                |     1|
+|468   |          S4_2               |S4_17               |     2|
+|469   |            S_1              |S_23                |     1|
+|470   |            S_3              |S_24                |     1|
+|471   |          S4_3               |S4_18               |     2|
+|472   |            S_1              |S_21                |     1|
+|473   |            S_3              |S_22                |     1|
+|474   |          S4_4               |S4_19               |     2|
+|475   |            S_1              |S                   |     1|
+|476   |            S_3              |S_20                |     1|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:36 . Memory (MB): peak = 1333.020 ; gain = 556.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 1333.020 ; gain = 432.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:36 . Memory (MB): peak = 1333.020 ; gain = 556.430
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1345.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4152 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1348.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+246 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1348.121 ; gain = 841.762
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1348.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/project/SoC_project/SoC_project.runs/design_aes_AES_IP_0_0_synth_1/design_aes_AES_IP_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 1348.121 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1348.121 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1348.121 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_aes_AES_IP_0_0, cache-ID = 239010dfd470228c
+INFO: [Coretcl 2-1174] Renamed 475 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1348.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/project/SoC_project/SoC_project.runs/design_aes_AES_IP_0_0_synth_1/design_aes_AES_IP_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:36 . Memory (MB): peak = 1348.121 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_aes_AES_IP_0_0_utilization_synth.rpt -pb design_aes_AES_IP_0_0_utilization_synth.pb
+write_verilog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1348.121 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1348.121 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  9 11:08:58 2024...

@@ -1,0 +1,57 @@
+Nothing to build in platform 'design_aes_wrapper'
+
+14:02:03 **** Incremental Build of configuration Debug for project SoC_Vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/aes.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/aes.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/aes.d" -MT"src/aes.o" -o "src/aes.o" "../src/aes.c"
+In file included from ../src/aes.c:52:
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/aes.c:55:
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/aes.c:60:26: warning: initialization of 'Xuint32 *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ Xuint32 *key_base_addr = 0x43C00010;
+                          ^~~~~~~~~~
+../src/aes.c:61:34: warning: initialization of 'Xuint32 *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+ Xuint32 *cypher_text_base_addr = 0x43C00020;
+                                  ^~~~~~~~~~
+../src/aes.c:63:1: error: unknown type name 'uint8x16_t'; did you mean 'uint16_t'?
+ uint8x16_t cypher,plain;
+ ^~~~~~~~~~
+ uint16_t
+../src/aes.c: In function 'Encrypt_AES':
+../src/aes.c:76:10: warning: implicit declaration of function 'vld1q_u8' [-Wimplicit-function-declaration]
+  cypher= vld1q_u8(cypher_text_base_addr);
+          ^~~~~~~~
+../src/aes.c:78:9: warning: implicit declaration of function 'veorq_u8' [-Wimplicit-function-declaration]
+  cypher=veorq_u8(cypher,plain);
+         ^~~~~~~~
+../src/aes.c:79:2: warning: implicit declaration of function 'vst1q_u8' [-Wimplicit-function-declaration]
+  vst1q_u8(cypher_text,cypher);
+  ^~~~~~~~
+../src/aes.c: In function 'main':
+../src/aes.c:148:26: warning: passing argument 2 of 'Encrypt_AES' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  Encrypt_AES(plain_text, key_string, cypher_text);
+                          ^~~~~~~~~~
+../src/aes.c:65:42: note: expected 'char *' but argument is of type 'const char *'
+ void Encrypt_AES(char* plain_text, char* key, char* cypher_text){
+                                    ~~~~~~^~~
+../src/aes.c:150:28: warning: passing argument 2 of 'print_results' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  print_results(plain_text, key_string, cypher_text);
+                            ^~~~~~~~~~
+../src/aes.c:121:44: note: expected 'char *' but argument is of type 'const char *'
+ void print_results(char plain_text[], char key_string[], char cypher_text[]){
+                                       ~~~~~^~~~~~~~~~~~
+make[1]: *** [src/subdir.mk:26: src/aes.o] Error 1
+make: *** [makefile:34: all] Error 2
