@@ -62,37 +62,40 @@ Xuint32 *plain_text_base_addr = (Xuint32 *) 0x43C00000;
 Xuint32 *key_base_addr = (Xuint32 *)0x43C00010;
 Xuint32 *cypher_text_base_addr = (Xuint32 *)0x43C00020;
 
-uint8x16_t cypher,plain;
+uint8x16_t cypher, plain;
 
-void Encrypt_AES(char* plain_text, char* key, char* cypher_text){
-
-
-	for(int i=0;i<REGISTER_NUMBER;i++){
-		*(plain_text_base_addr+i)=*((Xuint32*)(plain_text)+i);
-		*(key_base_addr+i)=*((Xuint32*)(key)+i);
-	}
-	xil_printf("Waiting for encryption\n\r");
-	for(int i=0;i<REGISTER_NUMBER;i++){
-		*((Xuint32*)(cypher_text)+i)=*(cypher_text_base_addr+i);
+void Encrypt_AES(char* plaintext, const char* key, char* ciphertext){
+	for(int i = 0; i < REGISTER_NUMBER; i++){
+		*(plain_text_base_addr+i) = *((Xuint32*)(plaintext)+i);
+		*(key_base_addr+i) = *((Xuint32*)(key)+i);
 	}
 
+	xil_printf("Waiting for encryption...\n\r");
 
+	xil_printf("Waiting for encryption...\n\r");xil_printf("Waiting for encryption...\n\r");xil_printf("Waiting for encryption...\n\r");
+
+	for(int i = 0; i < REGISTER_NUMBER; i++){
+		*((Xuint32*)(ciphertext)+i) = *(cypher_text_base_addr+i);
+	}
+
+//	for(int i = 0; i < 16; i++)
+//		ciphertext[i] = ciphertext[i] ^ plaintext[i];
 }
 
-void print_results(char plain_text[], char key_string[], char cypher_text[]){
-	xil_printf("Plaintext: ");
+void print_results(char plaintext[], const char key[], char ciphertext[]){
+	xil_printf("\r\nPlaintext: ");
 	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED; i++)
-		xil_printf("%x ", plain_text[i]);
+		xil_printf("%x ", plaintext[i]);
 	xil_printf("\n\r");
 
 	xil_printf("Key: ");
 	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED; i++)
-		xil_printf("%x ", key_string[i]);
+		xil_printf("%x ", key[i]);
 	xil_printf("\n\r");
 
 	xil_printf("Ciphertext: ");
 	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED; i++)
-		xil_printf("%x ", cypher_text[i]);
+		xil_printf("%x ", ciphertext[i]);
 	xil_printf("\n\r");
 }
 
@@ -102,13 +105,20 @@ int main()
 
     print("\n\rInitialize program.\n\r");
 
-	const char key_string[16] = "abcdefghijklmnop";
-	char plain_text[16] = "thisistheplaintx";
-	char cypher_text[16];
 
-	Encrypt_AES(plain_text, key_string, cypher_text);
-	xil_printf("Printing arrays\n\r");
-	print_results(plain_text, key_string, cypher_text);
+    char plaintext[16] = { 0x32, 0x43, 0xF6, 0xA8,
+							0x88, 0x5A, 0x30, 0x8D,
+							0x31, 0x31, 0x98, 0xA2,
+							0xE0, 0x37, 0x07, 0x34 };
+    const char key[16] = { 0x2B, 0x7E, 0x15, 0x16,
+            0x28, 0xAE, 0xD2, 0xA6,
+            0xAB, 0xF7, 0x15, 0x88,
+            0x09, 0xCF, 0x4F, 0x3C };
+	char ciphertext[16];
+
+	Encrypt_AES(plaintext, key, ciphertext);
+	xil_printf("Printing arrays:\n\r");
+	print_results(plaintext, key, ciphertext);
 
 //Printing registers
 //	xil_printf("printing registers\n\r");
@@ -125,8 +135,8 @@ int main()
 //	}
 //	xil_printf("\n\r");
 
-	Encrypt_AES(cypher_text, key_string, plain_text);
-	print_results(cypher_text, key_string, plain_text);
+	Encrypt_AES(ciphertext, key, plaintext);
+	print_results(ciphertext, key, plaintext);
 
     cleanup_platform();
     return 0;

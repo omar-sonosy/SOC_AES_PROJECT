@@ -2,11 +2,11 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # 
-# Start of session at: Wed Oct 23 14:56:21 2024
-# Process ID: 372
-# Current directory: H:/SOC_Project/SOC_AES_PROJECT/SoC_project/webtalk
+# Start of session at: Thu Oct 24 13:20:30 2024
+# Process ID: 15372
+# Current directory: H:/project/SoC_project/webtalk
 # Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
-# Log file: H:/SOC_Project/SOC_AES_PROJECT/SoC_project/webtalk/webtalk.log
-# Journal file: H:/SOC_Project/SOC_AES_PROJECT/SoC_project/webtalk\webtalk.jou
+# Log file: H:/project/SoC_project/webtalk/webtalk.log
+# Journal file: H:/project/SoC_project/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source vitis_webtalk.tcl

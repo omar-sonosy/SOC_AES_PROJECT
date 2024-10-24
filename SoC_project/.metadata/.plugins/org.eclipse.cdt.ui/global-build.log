@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_aes_wrapper'
 
-14:51:38 **** Incremental Build of configuration Debug for project SoC_Vitis ****
+13:19:30 **** Incremental Build of configuration Debug for project SoC_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,53 +8,28 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/aes.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/aes.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJECT/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/aes.d" -MT"src/aes.o" -o "src/aes.o" "../src/aes.c"
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/aes.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/aes.d" -MT"src/aes.o" -o "src/aes.o" "../src/aes.c"
 In file included from ../src/aes.c:52:
-H:/SOC_Project/SOC_AES_PROJECT/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
  #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
   ^~~~~~~
-H:/SOC_Project/SOC_AES_PROJECT/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
  #warning  Please refer the Standalone BSP UG647 for further details
   ^~~~~~~
 In file included from ../src/aes.c:55:
-H:/SOC_Project/SOC_AES_PROJECT/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+H:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
-../src/aes.c: In function 'main':
-../src/aes.c:109:26: warning: passing argument 2 of 'Encrypt_AES' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  Encrypt_AES(plain_text, key_string, cypher_text);
-                          ^~~~~~~~~~
-../src/aes.c:67:42: note: expected 'char *' but argument is of type 'const char *'
- void Encrypt_AES(char* plain_text, char* key, char* cypher_text){
-                                    ~~~~~~^~~
-../src/aes.c:111:28: warning: passing argument 2 of 'print_results' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  print_results(plain_text, key_string, cypher_text);
-                            ^~~~~~~~~~
-../src/aes.c:82:44: note: expected 'char *' but argument is of type 'const char *'
- void print_results(char plain_text[], char key_string[], char cypher_text[]){
-                                       ~~~~~^~~~~~~~~~~~
-../src/aes.c:126:27: warning: passing argument 2 of 'Encrypt_AES' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  Encrypt_AES(cypher_text, key_string, plain_text);
-                           ^~~~~~~~~~
-../src/aes.c:67:42: note: expected 'char *' but argument is of type 'const char *'
- void Encrypt_AES(char* plain_text, char* key, char* cypher_text){
-                                    ~~~~~~^~~
-../src/aes.c:127:29: warning: passing argument 2 of 'print_results' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  print_results(cypher_text, key_string, plain_text);
-                             ^~~~~~~~~~
-../src/aes.c:82:44: note: expected 'char *' but argument is of type 'const char *'
- void print_results(char plain_text[], char key_string[], char cypher_text[]){
-                                       ~~~~~^~~~~~~~~~~~
 'Finished building: ../src/aes.c'
 ' '
 'Building target: SoC_Vitis.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/SOC_Project/SOC_AES_PROJECT/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bsplib/lib -o "SoC_Vitis.elf"  ./src/aes.o ./src/platform.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/project/SoC_project/design_aes_wrapper/export/design_aes_wrapper/sw/design_aes_wrapper/standalone_domain/bsplib/lib -o "SoC_Vitis.elf"  ./src/aes.o ./src/platform.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: SoC_Vitis.elf'
 ' '
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size SoC_Vitis.elf  |tee "SoC_Vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30280	   1552	  23304	  55136	   d760	SoC_Vitis.elf
+  30340	   1552	  23304	  55196	   d79c	SoC_Vitis.elf
 'Finished building: SoC_Vitis.elf.size'
 ' '
