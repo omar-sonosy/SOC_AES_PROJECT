@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../project_1.srcs/sources_1/bd/AES_ECB/opencores-ip-crypto_core_aes_rijndael_ip_core/opencores-ip-crypto_core_aes_rijndael_ip_core/rtl/verilog" --include "../../../../project_1.srcs/sources_1/bd/AES_ECB/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/bd/AES_ECB/ipshared/2d50/hdl" --include "../../../../project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_processing_system7_0_0_1" \
+"../../../bd/AES_ECB/ipshared/c41a/hdl/AES_ECB_ENCRYPT_2_v1_0_S00_AXI.v" \
+"../../../bd/AES_ECB/opencores-ip-crypto_core_aes_rijndael_ip_core/opencores-ip-crypto_core_aes_rijndael_ip_core/rtl/verilog/aes_cipher_top.v" \
+"../../../bd/AES_ECB/opencores-ip-crypto_core_aes_rijndael_ip_core/opencores-ip-crypto_core_aes_rijndael_ip_core/rtl/verilog/aes_key_expand_128.v" \
+"../../../bd/AES_ECB/opencores-ip-crypto_core_aes_rijndael_ip_core/opencores-ip-crypto_core_aes_rijndael_ip_core/rtl/verilog/aes_rcon.v" \
+"../../../bd/AES_ECB/opencores-ip-crypto_core_aes_rijndael_ip_core/opencores-ip-crypto_core_aes_rijndael_ip_core/rtl/verilog/aes_sbox.v" \
+"../../../bd/AES_ECB/ipshared/c41a/hdl/AES_ECB_ENCRYPT_2_v1_0.v" \
+"../../../bd/AES_ECB/ip/AES_ECB_AES_ECB_ENCRYPT_2_0_0_2/sim/AES_ECB_AES_ECB_ENCRYPT_2_0_0.v" \
+"../../../bd/AES_ECB/ip/AES_ECB_processing_system7_0_0_1/sim/AES_ECB_processing_system7_0_0.v" \
+"../../../bd/AES_ECB/ip/AES_ECB_auto_pc_0_2/sim/AES_ECB_auto_pc_0.v" \
+"../../../bd/AES_ECB/sim/AES_ECB.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

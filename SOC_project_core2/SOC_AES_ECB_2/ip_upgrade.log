@@ -1,0 +1,58 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Oct 24 17:51:47 2024
+| Host         : ES2172 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'AES_ECB_AES_ECB_ENCRYPT_2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of AES_ECB_AES_ECB_ENCRYPT_2_0_0 (inpg.fr:user:AES_ECB_ENCRYPT_2:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Oct 24 17:45:27 2024
+| Host         : ES2172 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'AES_ECB_AES_ECB_ENCRYPT_2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of AES_ECB_AES_ECB_ENCRYPT_2_0_0 (inpg.fr:user:AES_ECB_ENCRYPT_2:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Oct 24 17:36:38 2024
+| Host         : ES2172 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'AES_ECB_AES_ECB_ENCRYPT_2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of AES_ECB_AES_ECB_ENCRYPT_2_0_0 (inpg.fr:user:AES_ECB_ENCRYPT_2:1.0) from (Rev. 2) to (Rev. 3)
+

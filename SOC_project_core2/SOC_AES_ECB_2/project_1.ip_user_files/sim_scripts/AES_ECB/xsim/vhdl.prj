@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/AES_ECB/ip/AES_ECB_rst_ps7_0_50M_0_1/sim/AES_ECB_rst_ps7_0_50M_0.vhd" \
+
+nosort
