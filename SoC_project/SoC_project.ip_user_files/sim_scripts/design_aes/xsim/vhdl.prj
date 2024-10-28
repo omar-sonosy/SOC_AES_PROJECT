@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/design_aes/ip/design_aes_rst_ps7_0_50M_0/sim/design_aes_rst_ps7_0_50M_0.vhd" \
-
-nosort

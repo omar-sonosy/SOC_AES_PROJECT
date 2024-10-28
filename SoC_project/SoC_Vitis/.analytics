@@ -1,4 +1,0 @@
-timestamp=[2024-10-23 14:34:31], mode=WORKBENCH_START, duration=0:00:05.397, duration_ms=5397, data={}
-timestamp=[2024-10-23 14:34:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.204, duration_ms=204, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2024-10-23 14:36:05], mode=WORKBENCH_START, duration=0:00:03.733, duration_ms=3733, data={}
-timestamp=[2024-10-23 14:36:05], mode=WORKBENCH_UI_INIT, duration=0:00:00.407, duration_ms=407, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
