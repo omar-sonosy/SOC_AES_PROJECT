@@ -1,4 +1,4 @@
-18:25:03 **** Incremental Build of configuration Debug for project SOC_AES_ECB_Vitis ****
+12:55:38 **** Incremental Build of configuration Debug for project SOC_AES_ECB_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -28,9 +28,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size SOC_AES_ECB_Vitis.elf  |tee "SOC_AES_ECB_Vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30436	   1560	  23304	  55300	   d804	SOC_AES_ECB_Vitis.elf
+  30500	   1560	  23304	  55364	   d844	SOC_AES_ECB_Vitis.elf
 'Finished building: SOC_AES_ECB_Vitis.elf.size'
 ' '
 
-18:25:05 Build Finished (took 1s.265ms)
+12:55:39 Build Finished (took 1s.313ms)
 

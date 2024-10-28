@@ -48,7 +48,7 @@
 
 
 // IP VLNV: inpg.fr:user:AES_ECB_ENCRYPT_2:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 (* X_CORE_INFO = "AES_ECB_ENCRYPT_2_v1_0,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "AES_ECB_AES_ECB_ENCRYPT_2_0_0,AES_ECB_ENCRYPT_2_v1_0,{}" *)

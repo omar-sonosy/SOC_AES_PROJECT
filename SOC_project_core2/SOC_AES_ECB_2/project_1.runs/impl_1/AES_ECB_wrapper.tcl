@@ -74,21 +74,14 @@ set rc [catch {
   set_property parent.project_path H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.xpr [current_project]
   set_property ip_repo_paths {
   H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPT_2_1.0
+  H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPT_2_1.0
   H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPTION_1.0
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.runs/synth_1/AES_ECB_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -limit 0
-  set_param project.isImplRun true
-  add_files H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/AES_ECB.bd
-  set_param project.isImplRun false
-  set_param project.isImplRun true
   link_design -top AES_ECB_wrapper -part xc7z010clg400-1
-  set_param project.isImplRun false
-  write_hwdef -force -file AES_ECB_wrapper.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -183,7 +176,6 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force AES_ECB_wrapper.mmi }
   write_bitstream -force AES_ECB_wrapper.bit 
   catch {write_debug_probes -quiet -force AES_ECB_wrapper}

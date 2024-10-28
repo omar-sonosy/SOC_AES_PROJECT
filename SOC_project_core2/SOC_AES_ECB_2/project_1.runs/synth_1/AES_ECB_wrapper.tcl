@@ -23,14 +23,13 @@ create_project -in_memory -part xc7z010clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.cache/wt [current_project]
 set_property parent.project_path H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
 set_property ip_repo_paths {
+  h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPT_2_1.0
   h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPT_2_1.0
   h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_ENCRYPTION_1.0
 } [current_project]
@@ -38,14 +37,6 @@ update_ip_catalog
 set_property ip_output_repo h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/hdl/AES_ECB_wrapper.v
-add_files H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/AES_ECB.bd
-set_property used_in_implementation false [get_files -all h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_processing_system7_0_0_1/AES_ECB_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_auto_pc_0_2/AES_ECB_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_rst_ps7_0_50M_0_1/AES_ECB_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_rst_ps7_0_50M_0_1/AES_ECB_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all h:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/ip/AES_ECB_rst_ps7_0_50M_0_1/AES_ECB_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/project_1.srcs/sources_1/bd/AES_ECB/AES_ECB_ooc.xdc]
-
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -54,8 +45,6 @@ set_property used_in_implementation false [get_files -all H:/SOC_Project/SOC_AES
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

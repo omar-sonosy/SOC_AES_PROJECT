@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1729785293">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1729855043">
   <File Type="PA-TCL" Name="AES_ECB_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="AES_ECB_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="AES_ECB_wrapper_reports.tcl"/>
@@ -11,15 +11,24 @@
   <File Type="VDS-TIMING-PB" Name="AES_ECB_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/AES_ECB/AES_ECB.bd">
+    <File Path="$PSRCDIR/sources_1/bd/AES_ECB/hdl/AES_ECB_wrapper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/AES_ECB/hdl/AES_ECB_wrapper.v">
+    <File Path="$PSRCDIR/sources_1/bd/AES_ECB_2/AES_ECB_2.bd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/AES_ECB_2/hdl/AES_ECB_2_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -44,10 +53,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="AES_ECB_AES_ECB_ENCRYPT_2_0_0"/>
 </GenRun>

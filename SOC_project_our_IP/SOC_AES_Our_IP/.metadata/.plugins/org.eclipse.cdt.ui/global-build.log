@@ -1,0 +1,46 @@
+Nothing to build in platform 'SOC_Our_IP_wrapper'
+
+16:21:55 **** Incremental Build of configuration Debug for project SOC_AES_Our_IP_Vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/AES.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AES.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/sw/SOC_Our_IP_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/AES.d" -MT"src/AES.o" -o "src/AES.o" "../src/AES.c"
+In file included from ../src/AES.c:54:
+H:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/sw/SOC_Our_IP_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+H:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/sw/SOC_Our_IP_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/AES.c:57:
+H:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/sw/SOC_Our_IP_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/AES.c: In function 'Encrypt_AES':
+../src/AES.c:81:2: warning: implicit declaration of function 'print_registers' [-Wimplicit-function-declaration]
+  print_registers();
+  ^~~~~~~~~~~~~~~
+../src/AES.c: At top level:
+../src/AES.c:118:6: warning: conflicting types for 'print_registers'
+ void print_registers(void){
+      ^~~~~~~~~~~~~~~
+../src/AES.c:81:2: note: previous implicit declaration of 'print_registers' was here
+  print_registers();
+  ^~~~~~~~~~~~~~~
+'Finished building: ../src/AES.c'
+' '
+'Building target: SOC_AES_Our_IP_Vitis.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/sw/SOC_Our_IP_wrapper/standalone_domain/bsplib/lib -o "SOC_AES_Our_IP_Vitis.elf"  ./src/AES.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SOC_AES_Our_IP_Vitis.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SOC_AES_Our_IP_Vitis.elf  |tee "SOC_AES_Our_IP_Vitis.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31276	   1560	  23304	  56140	   db4c	SOC_AES_Our_IP_Vitis.elf
+'Finished building: SOC_AES_Our_IP_Vitis.elf.size'
+' '

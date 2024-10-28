@@ -71,10 +71,10 @@ void Encrypt_AES(char* plaintext, const char* key, char* ciphertext){
 		*(plain_text_base_addr+i) = *((Xuint32*)(plaintext)+i);
 		*(key_base_addr+i) = *((Xuint32*)(key)+i);
 	}
-	*load_rst=0x00000001;
-//	while(*done_flag ==0){
+	*load_rst=0x00000003;
 	xil_printf("Waiting for encryption...\n\r");
-//	}
+	*load_rst=0x00000002;
+	while(!(*done_flag)){	}
 
 	for(int i = 0; i < REGISTER_NUMBER ; i++){
 		*((Xuint32*)(ciphertext)+i) = *(cypher_text_base_addr+i);
@@ -96,7 +96,7 @@ void print_results(char plaintext[], const char key[], char ciphertext[]){
 	xil_printf("\n\r");
 
 	xil_printf("Ciphertext: ");
-	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED; i++)
+	for (int i = BYTES_TO_BE_ENCRYPTED-1; i>=0; i--)
 		xil_printf("%x ", ciphertext[i]);
 	xil_printf("\n\r");
 }

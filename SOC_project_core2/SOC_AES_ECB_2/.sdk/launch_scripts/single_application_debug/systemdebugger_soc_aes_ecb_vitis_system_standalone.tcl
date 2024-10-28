@@ -2,7 +2,7 @@ connect -url tcp:127.0.0.1:3121
 targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
-targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A78026A" && level==0} -index 1
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1
 fpga -file H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/SOC_AES_ECB_Vitis/_ide/bitstream/AES_ECB_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
 loadhw -hw H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2/AES_ECB_wrapper/export/AES_ECB_wrapper/hw/AES_ECB_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]

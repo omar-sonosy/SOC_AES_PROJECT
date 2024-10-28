@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="SOC_AES_Our_IP_Vitis" location="H:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_AES_Our_IP_Vitis" platform="H:/SOC_Project/SOC_AES_PROJECT/SOC_project_our_IP/SOC_AES_Our_IP/SOC_Our_IP_wrapper/export/SOC_Our_IP_wrapper/SOC_Our_IP_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="SOC_AES_Our_IP_Vitis_system" sysConfig="SOC_Our_IP_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="536fb271e899b652f9520f302be3ab5a">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.191246822">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1493594617" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

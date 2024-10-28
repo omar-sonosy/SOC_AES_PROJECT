@@ -48,7 +48,7 @@
 
 
 // IP VLNV: inpg.fr:user:AES_ECB_ENCRYPT_2:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 `timescale 1ns/1ps
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AES_ECB_2_Vitis" location="H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2_edited/AES_ECB_2_Vitis" platform="H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_2_edited/AES_ECB_wrapper/export/AES_ECB_wrapper/AES_ECB_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="AES_ECB_2_Vitis_system" sysConfig="AES_ECB_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="95c23680238b28e5b2c234bbfb84a485">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.765007836">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.885761382" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
