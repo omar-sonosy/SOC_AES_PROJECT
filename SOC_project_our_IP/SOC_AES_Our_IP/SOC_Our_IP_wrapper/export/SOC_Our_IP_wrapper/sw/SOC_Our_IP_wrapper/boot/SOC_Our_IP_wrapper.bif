@@ -1,7 +1,0 @@
-/*SOC_Our_IP_wrapper*/
-the_ROM_image:
-{
-  [bootloader]<SOC_Our_IP_wrapper/boot/fsbl.elf>
-   <bitstream> 
-  <elf,ps7_cortexa9_0>
-}

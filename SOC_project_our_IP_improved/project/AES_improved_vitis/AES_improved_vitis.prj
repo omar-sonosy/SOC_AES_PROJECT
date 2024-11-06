@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AES_improved_vitis" location="D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_improved_vitis" platform="D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/AES_Improved_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="AES_improved_vitis_system" sysConfig="AES_Improved_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="26d42c8831ce3ee7686167956657495a">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1855921288">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.58950018" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

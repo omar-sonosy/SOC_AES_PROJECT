@@ -1,0 +1,46 @@
+Nothing to build in platform 'AES_Improved_wrapper'
+
+09:30:06 **** Incremental Build of configuration Debug for project AES_improved_vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/AES.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AES.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/sw/AES_Improved_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/AES.d" -MT"src/AES.o" -o "src/AES.o" "../src/AES.c"
+In file included from ../src/AES.c:54:
+D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/sw/AES_Improved_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/sw/AES_Improved_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/AES.c:57:
+D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/sw/AES_Improved_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/AES.c: In function 'Encrypt_AES':
+../src/AES.c:80:2: warning: implicit declaration of function 'print_registers' [-Wimplicit-function-declaration]
+  print_registers();
+  ^~~~~~~~~~~~~~~
+../src/AES.c: At top level:
+../src/AES.c:132:6: warning: conflicting types for 'print_registers'
+ void print_registers(void)
+      ^~~~~~~~~~~~~~~
+../src/AES.c:80:2: note: previous implicit declaration of 'print_registers' was here
+  print_registers();
+  ^~~~~~~~~~~~~~~
+'Finished building: ../src/AES.c'
+' '
+'Building target: AES_improved_vitis.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_project_our_IP_improved/project/AES_Improved_wrapper/export/AES_Improved_wrapper/sw/AES_Improved_wrapper/standalone_domain/bsplib/lib -o "AES_improved_vitis.elf"  ./src/AES.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AES_improved_vitis.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AES_improved_vitis.elf  |tee "AES_improved_vitis.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55088	   2600	  23328	  81016	  13c78	AES_improved_vitis.elf
+'Finished building: AES_improved_vitis.elf.size'
+' '
