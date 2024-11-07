@@ -1,0 +1,1274 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Nov  7 13:57:30 2024
+| Host         : ES2167 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file AES_ECB_INTR_wrapper_timing_summary_routed.rpt -pb AES_ECB_INTR_wrapper_timing_summary_routed.pb -rpx AES_ECB_INTR_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : AES_ECB_INTR_wrapper
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 128 register/latch pins with no clock driven by root clock pin: AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/done_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 128 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     11.511        0.000                      0                 3020        0.020        0.000                      0                 3020        9.020        0.000                       0                  1378  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0         11.511        0.000                      0                 3020        0.020        0.000                      0                 3020        9.020        0.000                       0                  1378  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       11.511ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.020ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             11.511ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/ADDRBWRADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.470ns  (logic 2.702ns (36.170%)  route 4.768ns (63.830%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.151ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.729ns = ( 22.729 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.009ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.701     3.009    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     5.463 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOADO[0]
+                         net (fo=6, routed)           3.364     8.828    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/DOADO[0]
+    SLICE_X4Y27          LUT6 (Prop_lut6_I1_O)        0.124     8.952 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa22_reg_i_32/O
+                         net (fo=1, routed)           0.521     9.473    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa23_next__7[0]
+    SLICE_X3Y21          LUT4 (Prop_lut4_I2_O)        0.124     9.597 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa22_reg_i_16/O
+                         net (fo=1, routed)           0.883    10.480    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_223
+    RAMB18_X0Y9          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/ADDRBWRADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.537    22.729    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y9          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/CLKBWRCLK
+                         clock pessimism              0.130    22.859    
+                         clock uncertainty           -0.302    22.557    
+    RAMB18_X0Y9          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[4])
+                                                     -0.566    21.991    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg
+  -------------------------------------------------------------------
+                         required time                         21.991    
+                         arrival time                         -10.480    
+  -------------------------------------------------------------------
+                         slack                                 11.511    
+
+Slack (MET) :             11.563ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa30_reg/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.537ns  (logic 2.702ns (35.848%)  route 4.835ns (64.152%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.729ns = ( 22.729 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.026ns
+    Clock Pessimism Removal (CPR):    0.265ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.718     3.026    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y14         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y14         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[7])
+                                                      2.454     5.480 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/DOBDO[7]
+                         net (fo=12, routed)          3.324     8.805    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[119][7]
+    SLICE_X14Y27         LUT6 (Prop_lut6_I2_O)        0.124     8.929 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa30_reg_i_17/O
+                         net (fo=1, routed)           0.403     9.332    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa30_next__7[7]
+    SLICE_X15Y27         LUT4 (Prop_lut4_I2_O)        0.124     9.456 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa30_reg_i_1/O
+                         net (fo=1, routed)           1.108    10.564    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_128
+    RAMB18_X0Y11         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa30_reg/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.537    22.729    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y11         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa30_reg/CLKARDCLK
+                         clock pessimism              0.265    22.994    
+                         clock uncertainty           -0.302    22.692    
+    RAMB18_X0Y11         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.566    22.126    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa30_reg
+  -------------------------------------------------------------------
+                         required time                         22.126    
+                         arrival time                         -10.564    
+  -------------------------------------------------------------------
+                         slack                                 11.563    
+
+Slack (MET) :             11.649ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/ADDRBWRADDR[5]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.332ns  (logic 2.702ns (36.853%)  route 4.630ns (63.147%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.151ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.729ns = ( 22.729 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.009ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.701     3.009    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     5.463 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOADO[0]
+                         net (fo=6, routed)           3.350     8.814    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_sub[0]
+    SLICE_X4Y27          LUT6 (Prop_lut6_I4_O)        0.124     8.938 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg_i_31/O
+                         net (fo=1, routed)           0.748     9.686    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa22_reg_6
+    SLICE_X4Y22          LUT5 (Prop_lut5_I3_O)        0.124     9.810 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa22_reg_i_15/O
+                         net (fo=1, routed)           0.532    10.341    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_222
+    RAMB18_X0Y9          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/ADDRBWRADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.537    22.729    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y9          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/CLKBWRCLK
+                         clock pessimism              0.130    22.859    
+                         clock uncertainty           -0.302    22.557    
+    RAMB18_X0Y9          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[5])
+                                                     -0.566    21.991    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg
+  -------------------------------------------------------------------
+                         required time                         21.991    
+                         arrival time                         -10.341    
+  -------------------------------------------------------------------
+                         slack                                 11.649    
+
+Slack (MET) :             11.655ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.328ns  (logic 2.702ns (36.875%)  route 4.626ns (63.125%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.150ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.726ns = ( 22.726 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.005ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.697     3.005    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[7])
+                                                      2.454     5.459 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOBDO[7]
+                         net (fo=12, routed)          3.482     8.941    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[103][7]
+    SLICE_X4Y26          LUT6 (Prop_lut6_I1_O)        0.124     9.065 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_23/O
+                         net (fo=1, routed)           0.472     9.537    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_23_n_0
+    SLICE_X4Y24          LUT6 (Prop_lut6_I4_O)        0.124     9.661 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_7/O
+                         net (fo=1, routed)           0.672    10.333    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_198
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.534    22.726    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKARDCLK
+                         clock pessimism              0.130    22.856    
+                         clock uncertainty           -0.302    22.554    
+    RAMB18_X0Y8          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.566    21.988    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg
+  -------------------------------------------------------------------
+                         required time                         21.988    
+                         arrival time                         -10.333    
+  -------------------------------------------------------------------
+                         slack                                 11.655    
+
+Slack (MET) :             11.683ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.300ns  (logic 2.702ns (37.015%)  route 4.598ns (62.985%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.150ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.726ns = ( 22.726 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.005ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.697     3.005    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[0])
+                                                      2.454     5.459 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOBDO[0]
+                         net (fo=6, routed)           3.455     8.915    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[103][0]
+    SLICE_X4Y24          LUT6 (Prop_lut6_I2_O)        0.124     9.039 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_24/O
+                         net (fo=1, routed)           0.456     9.495    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_next__7[0]
+    SLICE_X4Y21          LUT4 (Prop_lut4_I2_O)        0.124     9.619 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_8/O
+                         net (fo=1, routed)           0.686    10.305    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_199
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.534    22.726    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKARDCLK
+                         clock pessimism              0.130    22.856    
+                         clock uncertainty           -0.302    22.554    
+    RAMB18_X0Y8          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[4])
+                                                     -0.566    21.988    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg
+  -------------------------------------------------------------------
+                         required time                         21.988    
+                         arrival time                         -10.305    
+  -------------------------------------------------------------------
+                         slack                                 11.683    
+
+Slack (MET) :             11.812ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.182ns  (logic 2.702ns (37.620%)  route 4.480ns (62.380%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.138ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 22.738 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.005ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.697     3.005    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[1])
+                                                      2.454     5.459 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOBDO[1]
+                         net (fo=6, routed)           2.905     8.364    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[103][1]
+    SLICE_X4Y30          LUT6 (Prop_lut6_I5_O)        0.124     8.488 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa10_reg_i_23/O
+                         net (fo=1, routed)           0.640     9.128    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa10_reg_i_23_n_0
+    SLICE_X5Y30          LUT6 (Prop_lut6_I4_O)        0.124     9.252 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa10_reg_i_7/O
+                         net (fo=1, routed)           0.936    10.188    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_206
+    RAMB18_X0Y14         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.546    22.738    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y14         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/CLKARDCLK
+                         clock pessimism              0.130    22.868    
+                         clock uncertainty           -0.302    22.566    
+    RAMB18_X0Y14         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.566    22.000    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg
+  -------------------------------------------------------------------
+                         required time                         22.000    
+                         arrival time                         -10.188    
+  -------------------------------------------------------------------
+                         slack                                 11.812    
+
+Slack (MET) :             11.951ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.029ns  (logic 2.702ns (38.440%)  route 4.327ns (61.560%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.734ns = ( 22.734 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.015ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.707     3.015    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y12         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y12         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[7])
+                                                      2.454     5.469 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg/DOADO[7]
+                         net (fo=12, routed)          3.062     8.532    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[63][7]
+    SLICE_X6Y30          LUT6 (Prop_lut6_I5_O)        0.124     8.656 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa12_reg_i_17/O
+                         net (fo=1, routed)           0.670     9.326    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa12_next__7[7]
+    SLICE_X6Y30          LUT4 (Prop_lut4_I2_O)        0.124     9.450 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa12_reg_i_1/O
+                         net (fo=1, routed)           0.594    10.045    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_208
+    RAMB18_X0Y12         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.542    22.734    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y12         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/CLKARDCLK
+                         clock pessimism              0.130    22.864    
+                         clock uncertainty           -0.302    22.562    
+    RAMB18_X0Y12         RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.566    21.996    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg
+  -------------------------------------------------------------------
+                         required time                         21.996    
+                         arrival time                         -10.045    
+  -------------------------------------------------------------------
+                         slack                                 11.951    
+
+Slack (MET) :             11.990ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        6.992ns  (logic 2.702ns (38.642%)  route 4.290ns (61.358%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.150ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.726ns = ( 22.726 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.005ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.697     3.005    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[3])
+                                                      2.454     5.459 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOBDO[3]
+                         net (fo=6, routed)           2.932     8.392    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[103][3]
+    SLICE_X7Y25          LUT6 (Prop_lut6_I5_O)        0.124     8.516 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_21/O
+                         net (fo=1, routed)           0.628     9.144    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_21_n_0
+    SLICE_X6Y22          LUT6 (Prop_lut6_I4_O)        0.124     9.268 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_5/O
+                         net (fo=1, routed)           0.730     9.998    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_196
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.534    22.726    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKARDCLK
+                         clock pessimism              0.130    22.856    
+                         clock uncertainty           -0.302    22.554    
+    RAMB18_X0Y8          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
+                                                     -0.566    21.988    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg
+  -------------------------------------------------------------------
+                         required time                         21.988    
+                         arrival time                          -9.998    
+  -------------------------------------------------------------------
+                         slack                                 11.990    
+
+Slack (MET) :             12.058ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/ADDRBWRADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        6.925ns  (logic 2.702ns (39.019%)  route 4.223ns (60.981%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.149ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.731ns = ( 22.731 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.009ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.701     3.009    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     5.463 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOADO[0]
+                         net (fo=6, routed)           2.848     8.312    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/DOADO[0]
+    SLICE_X4Y29          LUT6 (Prop_lut6_I1_O)        0.124     8.436 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa12_reg_i_32/O
+                         net (fo=1, routed)           0.454     8.890    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa13_next__7[0]
+    SLICE_X3Y29          LUT4 (Prop_lut4_I2_O)        0.124     9.014 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa12_reg_i_16/O
+                         net (fo=1, routed)           0.921     9.934    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_191
+    RAMB18_X0Y12         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/ADDRBWRADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.539    22.731    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y12         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg/CLKBWRCLK
+                         clock pessimism              0.130    22.861    
+                         clock uncertainty           -0.302    22.559    
+    RAMB18_X0Y12         RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_ADDRBWRADDR[4])
+                                                     -0.566    21.993    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa12_reg
+  -------------------------------------------------------------------
+                         required time                         21.993    
+                         arrival time                          -9.934    
+  -------------------------------------------------------------------
+                         slack                                 12.058    
+
+Slack (MET) :             12.131ns  (required time - arrival time)
+  Source:                 AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (clk_fpga_0 rise@20.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        6.851ns  (logic 2.702ns (39.437%)  route 4.149ns (60.563%))
+  Logic Levels:           2  (LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.150ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.726ns = ( 22.726 - 20.000 ) 
+    Source Clock Delay      (SCD):    3.005ns
+    Clock Pessimism Removal (CPR):    0.130ns
+  Clock Uncertainty:      0.302ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.600ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.697     3.005    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X1Y10         RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X1Y10         RAMB18E1 (Prop_ramb18e1_CLKBWRCLK_DOBDO[7])
+                                                      2.454     5.459 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/DOBDO[7]
+                         net (fo=12, routed)          3.220     8.680    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/text_out_reg[103][7]
+    SLICE_X8Y26          LUT6 (Prop_lut6_I2_O)        0.124     8.804 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_17/O
+                         net (fo=1, routed)           0.476     9.280    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_next__7[7]
+    SLICE_X8Y23          LUT4 (Prop_lut4_I2_O)        0.124     9.404 r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0/sa20_reg_i_1/O
+                         net (fo=1, routed)           0.453     9.857    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/u0_n_192
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     20.000    20.000 r  
+    PS7_X0Y0             PS7                          0.000    20.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    21.101    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    21.192 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        1.534    22.726    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/s00_axi_aclk
+    RAMB18_X0Y8          RAMB18E1                                     r  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKARDCLK
+                         clock pessimism              0.130    22.856    
+                         clock uncertainty           -0.302    22.554    
+    RAMB18_X0Y8          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.566    21.988    AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg
+  -------------------------------------------------------------------
+                         required time                         21.988    
+                         arrival time                          -9.857    
+  -------------------------------------------------------------------
+                         slack                                 12.131    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[58]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[58]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.382ns  (logic 0.186ns (48.653%)  route 0.196ns (51.347%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.222ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X1Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[58]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y50          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[58]/Q
+                         net (fo=1, routed)           0.196     1.260    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg_n_0_[58]
+    SLICE_X1Y49          LUT3 (Prop_lut3_I2_O)        0.045     1.305 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i[58]_i_1/O
+                         net (fo=1, routed)           0.000     1.305    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer[58]
+    SLICE_X1Y49          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[58]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.852     1.222    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X1Y49          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[58]/C
+                         clock pessimism             -0.029     1.193    
+    SLICE_X1Y49          FDRE (Hold_fdre_C_D)         0.092     1.285    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[58]
+  -------------------------------------------------------------------
+                         required time                         -1.285    
+                         arrival time                           1.305    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.063ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[10]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.320ns  (logic 0.128ns (39.960%)  route 0.192ns (60.040%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X1Y51          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y51          FDRE (Prop_fdre_C_Q)         0.128     1.051 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[12]/Q
+                         net (fo=1, routed)           0.192     1.243    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[10]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[10])
+                                                     -0.054     1.180    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.180    
+                         arrival time                           1.243    
+  -------------------------------------------------------------------
+                         slack                                  0.063    
+
+Slack (MET) :             0.064ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[11]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.322ns  (logic 0.128ns (39.794%)  route 0.194ns (60.206%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X1Y51          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y51          FDRE (Prop_fdre_C_Q)         0.128     1.051 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[13]/Q
+                         net (fo=1, routed)           0.194     1.244    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[11]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[11])
+                                                     -0.053     1.181    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.244    
+  -------------------------------------------------------------------
+                         slack                                  0.064    
+
+Slack (MET) :             0.067ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[4]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.141ns (37.267%)  route 0.237ns (62.733%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X1Y51          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y51          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[6]/Q
+                         net (fo=1, routed)           0.237     1.301    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[4]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[4])
+                                                      0.000     1.234    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.234    
+                         arrival time                           1.301    
+  -------------------------------------------------------------------
+                         slack                                  0.067    
+
+Slack (MET) :             0.067ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[6]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.141ns (37.267%)  route 0.237ns (62.733%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X1Y51          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y51          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[8]/Q
+                         net (fo=1, routed)           0.237     1.301    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[6]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[6])
+                                                      0.000     1.234    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.234    
+                         arrival time                           1.301    
+  -------------------------------------------------------------------
+                         slack                                  0.067    
+
+Slack (MET) :             0.074ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[60]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[60]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.436ns  (logic 0.186ns (42.617%)  route 0.250ns (57.383%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.222ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X1Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[60]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y50          FDRE (Prop_fdre_C_Q)         0.141     1.064 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg[60]/Q
+                         net (fo=1, routed)           0.250     1.314    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer_reg_n_0_[60]
+    SLICE_X1Y49          LUT3 (Prop_lut3_I2_O)        0.045     1.359 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i[60]_i_1/O
+                         net (fo=1, routed)           0.000     1.359    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/skid_buffer[60]
+    SLICE_X1Y49          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[60]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.852     1.222    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X1Y49          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[60]/C
+                         clock pessimism             -0.029     1.193    
+    SLICE_X1Y49          FDRE (Hold_fdre_C_D)         0.092     1.285    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[60]
+  -------------------------------------------------------------------
+                         required time                         -1.285    
+                         arrival time                           1.359    
+  -------------------------------------------------------------------
+                         slack                                  0.074    
+
+Slack (MET) :             0.078ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[57]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.128ns (35.163%)  route 0.236ns (64.837%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.223ns
+    Source Clock Delay      (SCD):    0.927ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.586     0.927    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/aclk
+    SLICE_X2Y49          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[57]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y49          FDRE (Prop_fdre_C_Q)         0.128     1.055 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg[57]/Q
+                         net (fo=1, routed)           0.236     1.291    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[11]_0[27]
+    SLICE_X2Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.853     1.223    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aclk
+    SLICE_X2Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[7]/C
+                         clock pessimism             -0.029     1.194    
+    SLICE_X2Y50          FDRE (Hold_fdre_C_D)         0.019     1.213    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/s_awid_r_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.213    
+                         arrival time                           1.291    
+  -------------------------------------------------------------------
+                         slack                                  0.078    
+
+Slack (MET) :             0.081ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[3]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.339ns  (logic 0.148ns (43.609%)  route 0.191ns (56.391%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X0Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y50          FDRE (Prop_fdre_C_Q)         0.148     1.071 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[5]/Q
+                         net (fo=1, routed)           0.191     1.262    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[3]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[3])
+                                                     -0.053     1.181    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.262    
+  -------------------------------------------------------------------
+                         slack                                  0.081    
+
+Slack (MET) :             0.086ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.248ns  (logic 0.128ns (51.616%)  route 0.120ns (48.384%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.220ns
+    Source Clock Delay      (SCD):    0.925ns
+    Clock Pessimism Removal (CPR):    0.262ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.584     0.925    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X3Y42          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y42          FDRE (Prop_fdre_C_Q)         0.128     1.053 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[2]/Q
+                         net (fo=1, routed)           0.120     1.172    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/in[3]
+    SLICE_X0Y42          SRLC32E                                      r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.850     1.220    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/aclk
+    SLICE_X0Y42          SRLC32E                                      r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/CLK
+                         clock pessimism             -0.262     0.958    
+    SLICE_X0Y42          SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.129     1.087    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.087    
+                         arrival time                           1.172    
+  -------------------------------------------------------------------
+                         slack                                  0.086    
+
+Slack (MET) :             0.092ns  (arrival time - required time)
+  Source:                 AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[2]
+                            (rising edge-triggered cell PS7 clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.403ns  (logic 0.164ns (40.684%)  route 0.239ns (59.316%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.311ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.263ns
+    Source Clock Delay      (SCD):    0.923ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.582     0.923    AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/aclk
+    SLICE_X0Y50          FDRE                                         r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y50          FDRE (Prop_fdre_C_Q)         0.164     1.087 r  AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg[4]/Q
+                         net (fo=1, routed)           0.239     1.326    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_BID[2]
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0BID[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    AES_ECB_INTR_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  AES_ECB_INTR_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1378, routed)        0.893     1.263    AES_ECB_INTR_i/processing_system7_0/inst/M_AXI_GP0_ACLK
+    PS7_X0Y0             PS7                                          r  AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/MAXIGP0ACLK
+                         clock pessimism             -0.029     1.234    
+    PS7_X0Y0             PS7 (Hold_ps7_MAXIGP0ACLK_MAXIGP0BID[2])
+                                                      0.000     1.234    AES_ECB_INTR_i/processing_system7_0/inst/PS7_i
+  -------------------------------------------------------------------
+                         required time                         -1.234    
+                         arrival time                           1.326    
+  -------------------------------------------------------------------
+                         slack                                  0.092    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { AES_ECB_INTR_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.000      17.424     RAMB18_X1Y10  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         20.000      17.424     RAMB18_X1Y10  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa32_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.000      17.424     RAMB18_X1Y12  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         20.000      17.424     RAMB18_X1Y12  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y8   AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y8   AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y14  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y14  AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa10_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y9   AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         20.000      17.424     RAMB18_X0Y9   AES_ECB_INTR_i/AES_ECB_INTR_0/inst/AES_ECB_INTR_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg/CLKBWRCLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][2]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][5]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X6Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][7]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][7]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][2]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][2]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X0Y42   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][5]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X4Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][5]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X6Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         10.000      9.020      SLICE_X6Y44   AES_ECB_INTR_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/CLK
+
+
+

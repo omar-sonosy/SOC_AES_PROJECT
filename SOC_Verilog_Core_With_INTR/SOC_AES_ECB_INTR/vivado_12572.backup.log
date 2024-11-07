@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  7 16:12:24 2024
+# Process ID: 12572
+# Current directory: H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13372 H:\SOC_Project\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\AES_ECB_INTR.xpr
+# Log file: H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/vivado.log
+# Journal file: H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.xpr
+INFO: [Project 1-313] Project file moved from 'H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/SOC_AES_ECB_INTR' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0', nor could it be found using path 'H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_INTR_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0', nor could it be found using path 'H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_INTR_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0', nor could it be found using path 'H:/SOC_Project/SOC_AES_PROJECT/SOC_project_core2/ip_repo/AES_ECB_INTR_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2207] Repository 'h:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2207] Repository 'h:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'AES_ECB_INTR.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+AES_ECB_INTR_AES_ECB_INTR_0_0
+
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.266 ; gain = 254.797
+open_bd_design {H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_ECB_INTR.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- inpg.fr:user:AES_ECB_INTR:1.0 - AES_ECB_INTR_0
+Successfully read diagram <AES_ECB_INTR> from BD file <H:/SOC_Project/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_ECB_INTR.bd>
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 16:13:02 2024...
