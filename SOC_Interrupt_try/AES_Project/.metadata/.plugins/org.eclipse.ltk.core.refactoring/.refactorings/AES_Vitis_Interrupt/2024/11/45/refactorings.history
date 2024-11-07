@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AES_Vitis_Interrupt/src/helloworld.c&apos; to &apos;AES.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="AES.c" stamp="1730978323798" updateReferences="true"/>
+</session>

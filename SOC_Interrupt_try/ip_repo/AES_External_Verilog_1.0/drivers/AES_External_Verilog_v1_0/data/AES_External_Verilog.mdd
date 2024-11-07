@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AES_External_Verilog
+	OPTION supported_peripherals = (AES_External_Verilog);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AES_External_Verilog;
+END DRIVER

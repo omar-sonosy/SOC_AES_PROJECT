@@ -1,0 +1,10 @@
+15:19:12 **** Build of configuration Debug for project AES_Interrupt_Vitis_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 63976 D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/system_design_wrapper.xpfm standalone_domain D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis_system/Debug/system.bif
+sdcard_gen --xpfm D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/system_design_wrapper.xpfm --sys_config system_design_wrapper --bif D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis_system/Debug/system.bif --bitstream D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit --elf D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:19:18 Build Finished (took 5s.370ms)
+

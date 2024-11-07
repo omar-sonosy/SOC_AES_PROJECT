@@ -1,0 +1,486 @@
+15:13:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\temp_xsdb_launch_script.tcl
+15:13:03 INFO  : XSCT server has started successfully.
+15:13:04 INFO  : Successfully done setting XSCT server connection channel  
+15:13:04 INFO  : plnx-install-location is set to ''
+15:13:04 INFO  : Successfully done query RDI_DATADIR 
+15:13:04 INFO  : Successfully done setting workspace for the tool. 
+15:13:04 INFO  : Registering command handlers for Vitis TCF services
+15:16:36 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:16:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:47 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:16:47 INFO  : 'jtag frequency' command is executed.
+15:16:47 INFO  : Context for 'APU' is selected.
+15:16:47 INFO  : System reset is completed.
+15:16:50 INFO  : 'after 3000' command is executed.
+15:16:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:16:51 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:16:52 INFO  : Context for 'APU' is selected.
+15:16:52 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:16:52 INFO  : 'configparams force-mem-access 1' command is executed.
+15:16:52 INFO  : Context for 'APU' is selected.
+15:16:52 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:16:52 INFO  : 'ps7_init' command is executed.
+15:16:52 INFO  : 'ps7_post_config' command is executed.
+15:16:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:52 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:16:52 INFO  : 'configparams force-mem-access 0' command is executed.
+15:16:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:16:52 INFO  : Memory regions updated for context APU
+15:16:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:16:52 INFO  : 'con' command is executed.
+15:16:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:16:52 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:17:30 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:17:39 INFO  : Disconnected from the channel tcfchan#2.
+15:17:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:17:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:17:39 INFO  : 'jtag frequency' command is executed.
+15:17:39 INFO  : Context for 'APU' is selected.
+15:17:39 INFO  : System reset is completed.
+15:17:42 INFO  : 'after 3000' command is executed.
+15:17:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:17:44 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:17:44 INFO  : Context for 'APU' is selected.
+15:17:44 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:17:44 INFO  : 'configparams force-mem-access 1' command is executed.
+15:17:44 INFO  : Context for 'APU' is selected.
+15:17:44 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:17:44 INFO  : 'ps7_init' command is executed.
+15:17:44 INFO  : 'ps7_post_config' command is executed.
+15:17:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:44 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:17:44 INFO  : 'configparams force-mem-access 0' command is executed.
+15:17:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:17:44 INFO  : Memory regions updated for context APU
+15:17:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:17:44 INFO  : 'con' command is executed.
+15:17:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:17:44 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:19:08 INFO  : Disconnected from the channel tcfchan#3.
+15:19:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:19:08 INFO  : 'jtag frequency' command is executed.
+15:19:08 INFO  : Context for 'APU' is selected.
+15:19:08 INFO  : System reset is completed.
+15:19:10 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:19:11 INFO  : 'after 3000' command is executed.
+15:19:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:19:12 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:19:12 INFO  : Context for 'APU' is selected.
+15:19:12 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:19:12 INFO  : 'configparams force-mem-access 1' command is executed.
+15:19:12 INFO  : Context for 'APU' is selected.
+15:19:12 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:19:13 INFO  : 'ps7_init' command is executed.
+15:19:13 INFO  : 'ps7_post_config' command is executed.
+15:19:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:13 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:19:13 INFO  : 'configparams force-mem-access 0' command is executed.
+15:19:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:19:13 INFO  : Memory regions updated for context APU
+15:19:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:13 INFO  : 'con' command is executed.
+15:19:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:19:13 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:19:22 INFO  : Disconnected from the channel tcfchan#4.
+15:19:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:19:22 INFO  : 'jtag frequency' command is executed.
+15:19:22 INFO  : Context for 'APU' is selected.
+15:19:22 INFO  : System reset is completed.
+15:19:25 INFO  : 'after 3000' command is executed.
+15:19:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:19:26 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:19:26 INFO  : Context for 'APU' is selected.
+15:19:26 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:19:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:19:26 INFO  : Context for 'APU' is selected.
+15:19:26 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:19:26 INFO  : 'ps7_init' command is executed.
+15:19:26 INFO  : 'ps7_post_config' command is executed.
+15:19:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:27 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:19:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:19:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:19:27 INFO  : Memory regions updated for context APU
+15:19:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:27 INFO  : 'con' command is executed.
+15:19:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:19:27 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:24:54 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:25:05 INFO  : Disconnected from the channel tcfchan#6.
+15:25:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:25:05 INFO  : 'jtag frequency' command is executed.
+15:25:05 INFO  : Context for 'APU' is selected.
+15:25:05 INFO  : System reset is completed.
+15:25:08 INFO  : 'after 3000' command is executed.
+15:25:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:25:09 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:25:09 INFO  : Context for 'APU' is selected.
+15:25:09 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:25:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:09 INFO  : Context for 'APU' is selected.
+15:25:09 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:25:10 INFO  : 'ps7_init' command is executed.
+15:25:10 INFO  : 'ps7_post_config' command is executed.
+15:25:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:10 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:10 INFO  : Memory regions updated for context APU
+15:25:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:10 INFO  : 'con' command is executed.
+15:25:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:25:10 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:28:13 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:28:21 INFO  : Disconnected from the channel tcfchan#7.
+15:28:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:28:22 INFO  : 'jtag frequency' command is executed.
+15:28:22 INFO  : Context for 'APU' is selected.
+15:28:22 INFO  : System reset is completed.
+15:28:25 INFO  : 'after 3000' command is executed.
+15:28:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:28:26 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:28:26 INFO  : Context for 'APU' is selected.
+15:28:26 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:28:26 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:26 INFO  : Context for 'APU' is selected.
+15:28:26 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:28:26 INFO  : 'ps7_init' command is executed.
+15:28:26 INFO  : 'ps7_post_config' command is executed.
+15:28:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:27 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:27 INFO  : Memory regions updated for context APU
+15:28:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:27 INFO  : 'con' command is executed.
+15:28:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:28:27 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:28:54 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:29:01 INFO  : Disconnected from the channel tcfchan#8.
+15:29:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:29:01 INFO  : 'jtag frequency' command is executed.
+15:29:01 INFO  : Context for 'APU' is selected.
+15:29:02 INFO  : System reset is completed.
+15:29:05 INFO  : 'after 3000' command is executed.
+15:29:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:29:06 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:29:06 INFO  : Context for 'APU' is selected.
+15:29:06 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:29:06 INFO  : 'configparams force-mem-access 1' command is executed.
+15:29:06 INFO  : Context for 'APU' is selected.
+15:29:06 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:29:06 INFO  : 'ps7_init' command is executed.
+15:29:06 INFO  : 'ps7_post_config' command is executed.
+15:29:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:06 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:29:06 INFO  : 'configparams force-mem-access 0' command is executed.
+15:29:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:29:06 INFO  : Memory regions updated for context APU
+15:29:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:29:06 INFO  : 'con' command is executed.
+15:29:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:29:06 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:30:38 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:30:50 INFO  : Disconnected from the channel tcfchan#9.
+15:30:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:30:50 INFO  : 'jtag frequency' command is executed.
+15:30:50 INFO  : Context for 'APU' is selected.
+15:30:50 INFO  : System reset is completed.
+15:30:53 INFO  : 'after 3000' command is executed.
+15:30:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:30:55 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:30:55 INFO  : Context for 'APU' is selected.
+15:30:55 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:30:55 INFO  : 'configparams force-mem-access 1' command is executed.
+15:30:55 INFO  : Context for 'APU' is selected.
+15:30:55 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:30:55 INFO  : 'ps7_init' command is executed.
+15:30:55 INFO  : 'ps7_post_config' command is executed.
+15:30:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:55 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:30:55 INFO  : 'configparams force-mem-access 0' command is executed.
+15:30:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:30:55 INFO  : Memory regions updated for context APU
+15:30:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:30:55 INFO  : 'con' command is executed.
+15:30:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:30:55 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:31:17 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:31:22 INFO  : Disconnected from the channel tcfchan#10.
+15:31:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:31:22 INFO  : 'jtag frequency' command is executed.
+15:31:22 INFO  : Context for 'APU' is selected.
+15:31:23 INFO  : System reset is completed.
+15:31:26 INFO  : 'after 3000' command is executed.
+15:31:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:31:27 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:31:27 INFO  : Context for 'APU' is selected.
+15:31:27 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:31:27 INFO  : 'configparams force-mem-access 1' command is executed.
+15:31:27 INFO  : Context for 'APU' is selected.
+15:31:27 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:31:27 INFO  : 'ps7_init' command is executed.
+15:31:27 INFO  : 'ps7_post_config' command is executed.
+15:31:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:27 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:31:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:31:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:31:27 INFO  : Memory regions updated for context APU
+15:31:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:31:27 INFO  : 'con' command is executed.
+15:31:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:31:27 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:35:17 INFO  : Checking for BSP changes to sync application flags for project 'AES_Interrupt_Vitis'...
+15:35:24 INFO  : Disconnected from the channel tcfchan#11.
+15:35:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:25 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6DD5A' is selected.
+15:35:25 INFO  : 'jtag frequency' command is executed.
+15:35:25 INFO  : Context for 'APU' is selected.
+15:35:25 INFO  : System reset is completed.
+15:35:28 INFO  : 'after 3000' command is executed.
+15:35:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1' command is executed.
+15:35:29 INFO  : FPGA configured successfully with bitstream "D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit"
+15:35:29 INFO  : Context for 'APU' is selected.
+15:35:29 INFO  : Hardware design information is loaded from 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa'.
+15:35:29 INFO  : 'configparams force-mem-access 1' command is executed.
+15:35:29 INFO  : Context for 'APU' is selected.
+15:35:29 INFO  : Sourcing of 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl' is done.
+15:35:29 INFO  : 'ps7_init' command is executed.
+15:35:29 INFO  : 'ps7_post_config' command is executed.
+15:35:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:29 INFO  : The application 'D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:35:30 INFO  : 'configparams force-mem-access 0' command is executed.
+15:35:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DD5A" && level==0} -index 1
+fpga -file D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/bitstream/system_design_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/system_design_wrapper/export/system_design_wrapper/hw/system_design_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/esisar/SOC/soc_git/SOC_AES_PROJECT/SOC_Interrupt_try/Vitis/AES_Interrupt_Vitis/Debug/AES_Interrupt_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:35:30 INFO  : Memory regions updated for context APU
+15:35:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:35:30 INFO  : 'con' command is executed.
+15:35:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:35:30 INFO  : Launch script is exported to file 'D:\esisar\SOC\soc_git\SOC_AES_PROJECT\SOC_Interrupt_try\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_interrupt_vitis_system_standalone.tcl'
+15:38:24 INFO  : Disconnected from the channel tcfchan#12.

@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/system_design/ipshared/6fae/hdl/AES_Custom_VHDL_v1_0_S00_AXI.vhd" \
+"../../../bd/system_design/vhdl_core/computeColumn.vhd" \
+"../../../bd/system_design/vhdl_core/design.vhd" \
+"../../../bd/system_design/vhdl_core/generateKeys.vhd" \
+"../../../bd/system_design/vhdl_core/keySchedule.vhd" \
+"../../../bd/system_design/vhdl_core/mixColumns.vhd" \
+"../../../bd/system_design/vhdl_core/shiftRows.vhd" \
+"../../../bd/system_design/vhdl_core/subBytes.vhd" \
+"../../../bd/system_design/ipshared/6fae/hdl/AES_Custom_VHDL_v1_0.vhd" \
+"../../../bd/system_design/ip/system_design_AES_Custom_VHDL_0_0/sim/system_design_AES_Custom_VHDL_0_0.vhd" \
+"../../../bd/system_design/ip/system_design_rst_ps7_0_50M_0/sim/system_design_rst_ps7_0_50M_0.vhd" \
+"../../../bd/system_design/sim/system_design.vhd" \
+
+nosort
