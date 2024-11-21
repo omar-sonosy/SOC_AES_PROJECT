@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 14:23:51 2024
+# Process ID: 3604
+# Current directory: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/impl_1
+# Command line: vivado.exe -log AES_ECB_INTR_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_ECB_INTR_wrapper.tcl -notrace
+# Log file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/impl_1/AES_ECB_INTR_wrapper.vdi
+# Journal file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AES_ECB_INTR_wrapper.tcl -notrace

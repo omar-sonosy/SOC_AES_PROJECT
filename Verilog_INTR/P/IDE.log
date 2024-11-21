@@ -1,0 +1,264 @@
+13:58:31 INFO  : Launching XSCT server: xsct.bat -n  -interactive H:\SOC_Project\SOC_AES_PROJECT\SOC_project_core2\SOC_AES_ECB_INTR\temp_xsdb_launch_script.tcl
+13:58:32 INFO  : Registering command handlers for Vitis TCF services
+13:58:33 INFO  : XSCT server has started successfully.
+13:58:33 INFO  : Successfully done setting XSCT server connection channel  
+13:58:33 INFO  : plnx-install-location is set to ''
+13:58:33 INFO  : Successfully done query RDI_DATADIR 
+13:58:33 INFO  : Successfully done setting workspace for the tool. 
+16:16:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive H:\SOC_Project\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\temp_xsdb_launch_script.tcl
+16:16:35 INFO  : Registering command handlers for Vitis TCF services
+16:16:36 INFO  : XSCT server has started successfully.
+16:16:36 INFO  : Successfully done setting XSCT server connection channel  
+16:16:36 INFO  : plnx-install-location is set to ''
+16:16:36 INFO  : Successfully done setting workspace for the tool. 
+16:16:36 INFO  : Successfully done query RDI_DATADIR 
+16:17:52 INFO  : Checking for BSP changes to sync application flags for project 'SOC_AES_INTR'...
+14:26:38 INFO  : Launching XSCT server: xsct.bat -n  -interactive H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\temp_xsdb_launch_script.tcl
+14:26:39 INFO  : XSCT server has started successfully.
+14:26:39 INFO  : Successfully done setting XSCT server connection channel  
+14:26:39 INFO  : plnx-install-location is set to ''
+14:26:39 INFO  : Successfully done setting workspace for the tool. 
+14:26:41 INFO  : Registering command handlers for Vitis TCF services
+14:26:41 INFO  : Successfully done query RDI_DATADIR 
+14:31:50 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:33:27 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:34:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:34:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6FA7A' is selected.
+14:34:06 INFO  : 'jtag frequency' command is executed.
+14:34:06 INFO  : Context for 'APU' is selected.
+14:34:06 INFO  : System reset is completed.
+14:34:09 INFO  : 'after 3000' command is executed.
+14:34:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1' command is executed.
+14:34:10 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit"
+14:34:10 INFO  : Context for 'APU' is selected.
+14:34:11 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa'.
+14:34:11 INFO  : 'configparams force-mem-access 1' command is executed.
+14:34:11 INFO  : Context for 'APU' is selected.
+14:34:11 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl' is done.
+14:34:11 INFO  : 'ps7_init' command is executed.
+14:34:11 INFO  : 'ps7_post_config' command is executed.
+14:34:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:34:11 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:34:11 INFO  : 'configparams force-mem-access 0' command is executed.
+14:34:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:34:11 INFO  : Memory regions updated for context APU
+14:34:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:34:11 INFO  : 'con' command is executed.
+14:34:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:34:11 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_verilog_full_intr_system_standalone.tcl'
+14:48:31 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:50:08 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:50:54 INFO  : Disconnected from the channel tcfchan#4.
+14:50:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:50:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6FA7A' is selected.
+14:50:54 INFO  : 'jtag frequency' command is executed.
+14:50:54 INFO  : Context for 'APU' is selected.
+14:50:54 INFO  : System reset is completed.
+14:50:57 INFO  : 'after 3000' command is executed.
+14:50:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1' command is executed.
+14:50:59 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit"
+14:50:59 INFO  : Context for 'APU' is selected.
+14:50:59 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa'.
+14:50:59 INFO  : 'configparams force-mem-access 1' command is executed.
+14:50:59 INFO  : Context for 'APU' is selected.
+14:50:59 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl' is done.
+14:50:59 INFO  : 'ps7_init' command is executed.
+14:50:59 INFO  : 'ps7_post_config' command is executed.
+14:50:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:50:59 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:51:00 INFO  : 'configparams force-mem-access 0' command is executed.
+14:51:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:51:00 INFO  : Memory regions updated for context APU
+14:51:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:00 INFO  : 'con' command is executed.
+14:51:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:51:00 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_verilog_full_intr_system_standalone.tcl'
+14:53:04 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:53:20 INFO  : Disconnected from the channel tcfchan#7.
+14:53:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:53:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6FA7A' is selected.
+14:53:20 INFO  : 'jtag frequency' command is executed.
+14:53:20 INFO  : Context for 'APU' is selected.
+14:53:20 INFO  : System reset is completed.
+14:53:23 INFO  : 'after 3000' command is executed.
+14:53:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1' command is executed.
+14:53:25 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit"
+14:53:25 INFO  : Context for 'APU' is selected.
+14:53:25 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa'.
+14:53:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:53:25 INFO  : Context for 'APU' is selected.
+14:53:25 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl' is done.
+14:53:25 INFO  : 'ps7_init' command is executed.
+14:53:25 INFO  : 'ps7_post_config' command is executed.
+14:53:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:53:25 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:53:25 INFO  : 'configparams force-mem-access 0' command is executed.
+14:53:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:53:25 INFO  : Memory regions updated for context APU
+14:53:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:53:25 INFO  : 'con' command is executed.
+14:53:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:53:25 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_verilog_full_intr_system_standalone.tcl'
+14:54:21 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:54:36 INFO  : Disconnected from the channel tcfchan#9.
+14:54:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6FA7A' is selected.
+14:54:36 INFO  : 'jtag frequency' command is executed.
+14:54:36 INFO  : Context for 'APU' is selected.
+14:54:36 INFO  : System reset is completed.
+14:54:39 INFO  : 'after 3000' command is executed.
+14:54:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1' command is executed.
+14:54:41 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit"
+14:54:41 INFO  : Context for 'APU' is selected.
+14:54:41 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa'.
+14:54:41 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:41 INFO  : Context for 'APU' is selected.
+14:54:41 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl' is done.
+14:54:41 INFO  : 'ps7_init' command is executed.
+14:54:41 INFO  : 'ps7_post_config' command is executed.
+14:54:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:41 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:41 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:41 INFO  : Memory regions updated for context APU
+14:54:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:42 INFO  : 'con' command is executed.
+14:54:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:42 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_verilog_full_intr_system_standalone.tcl'
+14:55:23 INFO  : Checking for BSP changes to sync application flags for project 'AES_VERILOG_FULL_INTR'...
+14:55:39 INFO  : Disconnected from the channel tcfchan#11.
+14:55:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB6FA7A' is selected.
+14:55:39 INFO  : 'jtag frequency' command is executed.
+14:55:39 INFO  : Context for 'APU' is selected.
+14:55:39 INFO  : System reset is completed.
+14:55:43 INFO  : 'after 3000' command is executed.
+14:55:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1' command is executed.
+14:55:44 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit"
+14:55:44 INFO  : Context for 'APU' is selected.
+14:55:44 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa'.
+14:55:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:55:44 INFO  : Context for 'APU' is selected.
+14:55:44 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl' is done.
+14:55:44 INFO  : 'ps7_init' command is executed.
+14:55:44 INFO  : 'ps7_post_config' command is executed.
+14:55:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:45 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:55:45 INFO  : 'configparams force-mem-access 0' command is executed.
+14:55:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6FA7A" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/bitstream/AES_ECB_INTR_FULL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/hw/AES_ECB_INTR_FULL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR/Debug/AES_VERILOG_FULL_INTR.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:55:45 INFO  : Memory regions updated for context APU
+14:55:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:45 INFO  : 'con' command is executed.
+14:55:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:55:45 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\SOC_Verilog_Core_With_INTR\SOC_AES_ECB_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_aes_verilog_full_intr_system_standalone.tcl'
+15:00:30 INFO  : Disconnected from the channel tcfchan#13.

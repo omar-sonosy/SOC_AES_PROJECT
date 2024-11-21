@@ -1,0 +1,529 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 14:21:21 2024
+# Process ID: 3272
+# Current directory: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_synth_1
+# Command line: vivado.exe -log AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.tcl
+# Log file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_synth_1/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.vds
+# Journal file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_DEC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/ip_repo/AES_ECB_INTR_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.cache/ip 
+Command: synth_design -top AES_ECB_INTR_AES_ECB_INTR_DEC_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10644 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 977.398 ; gain = 234.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AES_ECB_INTR_AES_ECB_INTR_DEC_0_1' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ip/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1/synth/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AES_ECB_INTR_DEC_v1_0' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AES_ECB_INTR_DEC_v1_0_S00_AXI' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:256]
+INFO: [Synth 8-226] default block is never used [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:493]
+INFO: [Synth 8-6157] synthesizing module 'aes_get_value_dec' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_cipher_top.v:60]
+INFO: [Synth 8-6157] synthesizing module 'aes_inv_cipher_top' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_cipher_top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'aes_key_expand_128' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_key_expand_128.v:59]
+INFO: [Synth 8-6157] synthesizing module 'aes_sbox' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_sbox.v:59]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_sbox.v:65]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_sbox.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'aes_sbox' (1#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_sbox.v:59]
+INFO: [Synth 8-6157] synthesizing module 'aes_rcon' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_rcon.v:59]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_rcon.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'aes_rcon' (2#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_rcon.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'aes_key_expand_128' (3#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_key_expand_128.v:59]
+INFO: [Synth 8-6157] synthesizing module 'aes_inv_sbox' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_sbox.v:59]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_sbox.v:65]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_sbox.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'aes_inv_sbox' (4#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_sbox.v:59]
+WARNING: [Synth 8-6014] Unused sequential element kdone_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_cipher_top.v:311]
+INFO: [Synth 8-6155] done synthesizing module 'aes_inv_cipher_top' (5#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_cipher_top.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'aes_get_value_dec' (6#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/AES_IP_CORE/AES_IP_CORE/rtl/verilog/aes_inv_cipher_top.v:60]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:244]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:245]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:246]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'AES_ECB_INTR_DEC_v1_0_S00_AXI' (7#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AES_ECB_INTR_DEC_v1_0' (8#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ipshared/0773/hdl/AES_ECB_INTR_DEC_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AES_ECB_INTR_AES_ECB_INTR_DEC_0_1' (9#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.srcs/sources_1/bd/AES_ECB_INTR/ip/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1/synth/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.v:56]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1052.676 ; gain = 309.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1052.676 ; gain = 309.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1052.676 ; gain = 309.840
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1052.676 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1153.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1156.641 ; gain = 3.031
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 96    
+	   9 Input      8 Bit         XORs := 16    
++---Registers : 
+	              128 Bit    Registers := 3     
+	               32 Bit    Registers := 18    
+	                8 Bit    Registers := 32    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aes_rcon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+Module aes_key_expand_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module aes_inv_cipher_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 96    
+	   9 Input      8 Bit         XORs := 16    
++---Registers : 
+	              128 Bit    Registers := 2     
+	                8 Bit    Registers := 32    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module aes_get_value_dec 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module AES_ECB_INTR_DEC_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_ECB_INTR_DEC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[8]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[9]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[10]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[11]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[12]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[13]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[14]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[15]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[16]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[17]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[18]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[19]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[20]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[21]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[22]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[23]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[0]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[1]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[2]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[3]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[4]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[5]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[6]' (FDR) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/r0/out_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg_rep[0]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg_rep[1]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg_rep[2]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg_rep[3]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/dcnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+-------------------+---------------+----------------+
+|Module Name        | RTL Object        | Depth x Width | Implemented As | 
++-------------------+-------------------+---------------+----------------+
+|aes_sbox           | d                 | 256x8         | LUT            | 
+|aes_inv_sbox       | d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | w_reg[3]_rep_bsel | 256x8         | Block RAM      | 
+|aes_key_expand_128 | w_reg[3]_rep      | 256x8         | Block RAM      | 
+|aes_key_expand_128 | w_reg[3]_rep_bsel | 256x8         | Block RAM      | 
+|aes_key_expand_128 | w_reg[3]_rep_bsel | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa00_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa01_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa02_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa03_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa13_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa10_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa11_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa12_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa22_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa23_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa20_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa21_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa31_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa32_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa33_reg          | 256x8         | Block RAM      | 
+|aes_inv_cipher_top | sa30_reg          | 256x8         | Block RAM      | 
++-------------------+-------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                       | RTL Object                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AES_ECB_INTR_AES_ECB_INTR_DEC_0_1 | inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/kb_reg | 16 x 128(READ_FIRST)   | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1156.641 ; gain = 413.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                       | RTL Object                                                   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AES_ECB_INTR_AES_ECB_INTR_DEC_0_1 | inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/kb_reg | 16 x 128(READ_FIRST)   | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++----------------------------------+--------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/w_reg[3]_rep_bsel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/w_reg[3]_rep_bsel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/w_reg[3]_rep_bsel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/u0/w_reg[3]_rep_bsel__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/kb_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/kb_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa00_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa00_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa02_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa13_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa13_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa11_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa22_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa20_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa31_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa31_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa33_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance inst/AES_ECB_INTR_DEC_v1_0_S00_AXI_inst/my_aes/my_aes/sa33_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1172.926 ; gain = 430.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.781 ; gain = 443.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.781 ; gain = 443.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.781 ; gain = 443.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.781 ; gain = 443.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.785 ; gain = 443.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.785 ; gain = 443.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT1       |     3|
+|2     |LUT2       |   158|
+|3     |LUT3       |    14|
+|4     |LUT4       |   123|
+|5     |LUT5       |   110|
+|6     |LUT6       |   499|
+|7     |MUXF7      |    64|
+|8     |MUXF8      |    32|
+|9     |RAMB18E1   |     2|
+|10    |RAMB18E1_1 |     8|
+|11    |RAMB36E1   |     2|
+|12    |FDRE       |   962|
+|13    |FDSE       |     4|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+------------------------------+------+
+|      |Instance                               |Module                        |Cells |
++------+---------------------------------------+------------------------------+------+
+|1     |top                                    |                              |  1981|
+|2     |  inst                                 |AES_ECB_INTR_DEC_v1_0         |  1981|
+|3     |    AES_ECB_INTR_DEC_v1_0_S00_AXI_inst |AES_ECB_INTR_DEC_v1_0_S00_AXI |  1974|
+|4     |      my_aes                           |aes_get_value_dec             |  1363|
+|5     |        my_aes                         |aes_inv_cipher_top            |  1139|
+|6     |          u0                           |aes_key_expand_128            |   314|
+|7     |            r0                         |aes_rcon                      |    64|
++------+---------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.785 ; gain = 443.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1186.785 ; gain = 339.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1186.785 ; gain = 443.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1198.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1198.824 ; gain = 728.336
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1198.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_synth_1/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP AES_ECB_INTR_AES_ECB_INTR_DEC_0_1, cache-ID = 020309ee9e9a5ce5
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1198.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR.runs/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_synth_1/AES_ECB_INTR_AES_ECB_INTR_DEC_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_utilization_synth.rpt -pb AES_ECB_INTR_AES_ECB_INTR_DEC_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 14:22:02 2024...

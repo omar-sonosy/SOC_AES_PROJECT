@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AES_VERILOG_FULL_INTR" location="H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_VERILOG_FULL_INTR" platform="H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_Verilog_Core_With_INTR/SOC_AES_ECB_INTR/AES_ECB_INTR_FULL_wrapper/export/AES_ECB_INTR_FULL_wrapper/AES_ECB_INTR_FULL_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="AES_VERILOG_FULL_INTR_system" sysConfig="AES_ECB_INTR_FULL_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0f99f170cbe88cf488011138887350d8">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1758966895">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1659189211" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
