@@ -4490,3 +4490,13 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-14: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-11-21 16:28:22.838
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '6'
+
+!ENTRY org.eclipse.core.resources 4 1 2024-11-21 16:40:42.367
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2024-11-21 16:40:42.367
+!MESSAGE Problem finding next change, code: 995
+
+!ENTRY org.eclipse.core.resources 4 1 2024-11-21 16:46:23.547
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2024-11-21 16:46:23.547
+!MESSAGE Problem finding next change, code: 995
