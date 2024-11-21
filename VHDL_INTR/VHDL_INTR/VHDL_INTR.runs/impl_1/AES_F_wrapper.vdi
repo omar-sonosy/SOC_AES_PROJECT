@@ -1,0 +1,1243 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 15:45:50 2024
+# Process ID: 13656
+# Current directory: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1
+# Command line: vivado.exe -log AES_F_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_F_wrapper.tcl -notrace
+# Log file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper.vdi
+# Journal file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AES_F_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/ip_repo/AES_DEC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/ip_repo/AES_ENC_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_VHDL_CORE_With_Interrupt/ip_repo/AES_ENC_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.cache/ip 
+Command: link_design -top AES_F_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_AES_DEC_0_1/AES_F_AES_DEC_0_1.dcp' for cell 'AES_F_i/AES_DEC_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_AES_ENC_0_0/AES_F_AES_ENC_0_0.dcp' for cell 'AES_F_i/AES_ENC_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_processing_system7_0_0/AES_F_processing_system7_0_0.dcp' for cell 'AES_F_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_rst_ps7_0_50M_0/AES_F_rst_ps7_0_50M_0.dcp' for cell 'AES_F_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_xbar_0/AES_F_xbar_0.dcp' for cell 'AES_F_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_auto_pc_0/AES_F_auto_pc_0.dcp' for cell 'AES_F_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 786.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_processing_system7_0_0/AES_F_processing_system7_0_0.xdc] for cell 'AES_F_i/processing_system7_0/inst'
+Finished Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_processing_system7_0_0/AES_F_processing_system7_0_0.xdc] for cell 'AES_F_i/processing_system7_0/inst'
+Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_rst_ps7_0_50M_0/AES_F_rst_ps7_0_50M_0_board.xdc] for cell 'AES_F_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_rst_ps7_0_50M_0/AES_F_rst_ps7_0_50M_0_board.xdc] for cell 'AES_F_i/rst_ps7_0_50M/U0'
+Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_rst_ps7_0_50M_0/AES_F_rst_ps7_0_50M_0.xdc] for cell 'AES_F_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_rst_ps7_0_50M_0/AES_F_rst_ps7_0_50M_0.xdc] for cell 'AES_F_i/rst_ps7_0_50M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 939.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 939.539 ; gain = 443.078
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.328 . Memory (MB): peak = 960.605 ; gain = 21.066
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c4a89c86
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.191 ; gain = 542.586
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 12fe20334
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.331 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 50 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 12fe20334
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.399 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 2176cfbf9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.620 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 257 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 2176cfbf9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.742 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 2176cfbf9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.837 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 2176cfbf9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.885 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |              50  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |             257  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1696.973 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1470505d8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1696.973 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1470505d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1696.973 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1470505d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1696.973 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1696.973 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1470505d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1696.973 ; gain = 757.434
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1696.973 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file AES_F_wrapper_drc_opted.rpt -pb AES_F_wrapper_drc_opted.pb -rpx AES_F_wrapper_drc_opted.rpx
+Command: report_drc -file AES_F_wrapper_drc_opted.rpt -pb AES_F_wrapper_drc_opted.pb -rpx AES_F_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1696.973 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: efd1dab6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1696.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1696.973 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ac765ce6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.724 . Memory (MB): peak = 1696.973 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 16b8090f3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 16b8090f3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1707.816 ; gain = 10.844
+Phase 1 Placer Initialization | Checksum: 16b8090f3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1717bde4d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1018] Found 34 candidate LUT instances to create LUTNM shape
+INFO: [Physopt 32-775] End 1 Pass. Optimized 190 nets or cells. Created 175 new cells, deleted 15 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1707.816 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          175  |             15  |                   190  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          175  |             15  |                   190  |           0  |           7  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1eb7f188d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1707.816 ; gain = 10.844
+Phase 2.2 Global Placement Core | Checksum: 14f59a3f4
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1707.816 ; gain = 10.844
+Phase 2 Global Placement | Checksum: 14f59a3f4
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 19c3b4db1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 21a0100ad
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1fe3c0346
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 229efbfc3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1a8a88276
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 26c8e08eb
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 18f634777
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 183beb1ba
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1ac542f5c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1707.816 ; gain = 10.844
+Phase 3 Detail Placement | Checksum: 1ac542f5c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1707.816 ; gain = 10.844
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1bb8a23ac
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1bb8a23ac
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 1744.262 ; gain = 47.289
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-14.231. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2263edfec
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+Phase 4.1 Post Commit Optimization | Checksum: 2263edfec
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2263edfec
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2263edfec
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1744.262 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1394d0e2a
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1394d0e2a
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+Ending Placer Task | Checksum: d781d151
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1744.262 ; gain = 47.289
+INFO: [Common 17-83] Releasing license: Implementation
+70 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1744.262 ; gain = 47.289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1744.262 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1744.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1744.262 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file AES_F_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1744.262 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file AES_F_wrapper_utilization_placed.rpt -pb AES_F_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file AES_F_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1744.262 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1761.582 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.231 | TNS=-6728.282 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1e5d107e1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.617 . Memory (MB): peak = 1766.344 ; gain = 4.762
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.231 | TNS=-6728.282 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1e5d107e1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.647 . Memory (MB): peak = 1766.344 ; gain = 4.762
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.231 | TNS=-6728.282 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[1]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.230 | TNS=-6722.808 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[25]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.222 | TNS=-6716.344 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[119]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[1]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.199 | TNS=-6714.872 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.196 | TNS=-6713.945 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.194 | TNS=-6704.729 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[17]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[17]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.184 | TNS=-6703.769 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.183 | TNS=-6703.449 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[44]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.181 | TNS=-6703.322 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[24]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[44].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[44]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[44]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[44]_i_4_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[44]_i_4
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[44]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[12].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__0/state[44]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.179 | TNS=-6703.302 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.179 | TNS=-6701.126 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[0]_replica
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1399].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[119]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1399]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b7__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b7__37_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b7__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.174 | TNS=-6700.990 |
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b7__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.174 | TNS=-6700.990 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b7__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b7__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.172 | TNS=-6700.795 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b4__52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1156] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1156].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_5__23
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1156]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1252].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_11__15
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1156]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_5__23_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1252]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.171 | TNS=-6700.730 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[8]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.155 | TNS=-6699.249 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.150 | TNS=-6693.531 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[114]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[114]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b2__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b2__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b2__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.150 | TNS=-6693.531 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b2__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b2__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.146 | TNS=-6693.374 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.145 | TNS=-6693.309 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[16]_replica
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_6_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_6
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_3_n_0. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_3_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[3]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.145 | TNS=-6692.871 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.144 | TNS=-6689.872 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[36].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[36]_i_2
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[36]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.141 | TNS=-6689.806 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[16]
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[1]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[1]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[1]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.139 | TNS=-6689.502 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g2_b4__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g2_b4__52
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g2_b4__52_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g2_b4__52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1153] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1153].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_2__23
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1153]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1249].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_8__15
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1153]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_2__23_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1249]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.139 | TNS=-6690.188 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1152] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1152].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_1__23
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1152]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1248].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_7__15
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1152]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_1__23_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/round_keys[1248]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.129 | TNS=-6689.311 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[24]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.124 | TNS=-6686.879 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_6_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_6
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_3_n_0. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_3_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[8]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.121 | TNS=-6686.252 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[40]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[40].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[40]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[40]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[40]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[40]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[40]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[8].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__0/state[40]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[8] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b0__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b0__52
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b0__52_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b0__52_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.119 | TNS=-6686.003 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2_n_0.  Re-placed instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.111 | TNS=-6685.985 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[49]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1329].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[49]_i_2
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1329]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.105 | TNS=-6685.973 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[33]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[33].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[33]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[33]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[33]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[33]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[33]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[1].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/state[33]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.104 | TNS=-6685.510 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[1]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.104 | TNS=-6683.998 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g1_b4__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g1_b4__52
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g1_b4__52_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.100 | TNS=-6683.724 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1329].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[49]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1329]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g3_b1__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g3_b1__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g3_b1__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.100 | TNS=-6683.676 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b1__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b1__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.100 | TNS=-6683.546 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[4]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[4]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.091 | TNS=-6683.384 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[80]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1360].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[80]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[80]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[80]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1360]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.091 | TNS=-6683.242 |
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[27]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.089 | TNS=-6678.058 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[81]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1361].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[81]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[81]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[81]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1361]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.089 | TNS=-6677.872 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[37]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[37].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[37]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[37]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[37]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[37]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[37]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[5].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/state[37]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[5] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.087 | TNS=-6677.510 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[24]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_6_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_6
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[10]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.086 | TNS=-6677.450 |
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/ciphertext[42].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/ciphertext_reg[42]
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/ciphertext[42]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.083 | TNS=-6676.469 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[43].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[11].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__0/state[43]_i_8
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.080 | TNS=-6676.470 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[2].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[2]
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.080 | TNS=-6673.620 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[67]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[16]
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1347].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[67]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1347]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b3__35. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b3__35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1181].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_6__18
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1181]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.077 | TNS=-6674.068 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[16]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[36].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[36]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[36]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[36]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[36]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[4].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/state[36]_i_8
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.077 | TNS=-6673.774 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[114]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[0]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[114]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b2__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b2__37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_5__16
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1196].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_11__15
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1196]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1260].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_17__16
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1260]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[9].key_exp_i/g1_b4__32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b4__32_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.077 | TNS=-6673.636 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[6]_i_2_n_0.  Re-placed instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[6]_i_2
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[6]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.075 | TNS=-6673.592 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[20]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[20]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[20]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[20].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__1/state[20]_i_3
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.072 | TNS=-6673.413 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_6_n_0.  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_6
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[14]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.072 | TNS=-6673.155 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.072 | TNS=-6673.155 |
+Phase 3 Critical Path Optimization | Checksum: 1e5d107e1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1772.398 ; gain = 10.816
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.072 | TNS=-6673.155 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[24]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[43].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[43]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[43]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[11].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__0/state[43]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[11] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.071 | TNS=-6672.883 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[16]_replica
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[38].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[38]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[38]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[38]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[38]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[6].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/state[38]_i_11
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.065 | TNS=-6672.863 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[116]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[0]_replica
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1396].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[116]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1396]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b4__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b4__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b4__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.064 | TNS=-6672.780 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[114]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[114]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1394]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b2__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b2__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b2__37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_5__16
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1196].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_11__15
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1164]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_5__16_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1196]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.062 | TNS=-6672.733 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[67]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[16]
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1347].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[67]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[67]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[67]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1347]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.060 | TNS=-6672.362 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.060 | TNS=-6672.362 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[9]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[9]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[60].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[60]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[60]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[60]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[60]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[60]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[28].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__2/state[60]_i_8
+INFO: [Physopt 32-572] Net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[28] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[28]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.055 | TNS=-6672.042 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[115]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1395].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[115]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1395]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b3__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b3__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b3__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.052 | TNS=-6672.016 |
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b4__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b4__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.052 | TNS=-6671.802 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[8]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[31]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[31]_i_2
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/p_0_in[31]. Critical path length was reduced through logic transformation on cell AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[31]_i_1_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[31]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.052 | TNS=-6671.495 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_6_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_6
+INFO: [Physopt 32-710] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_3_n_0. Critical path length was reduced through logic transformation on cell AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_3_comp.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[27]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.051 | TNS=-6671.061 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[101]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[16]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[16]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_3_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_6_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_6
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[101]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.050 | TNS=-6670.944 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[38]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[16]
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[16]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1318].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[38]_i_2
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1318]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.046 | TNS=-6670.940 |
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1318].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[38]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1318]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g3_b6__35. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g3_b6__35_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.046 | TNS=-6670.876 |
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b6__35_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.044 | TNS=-6670.780 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[0]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[0]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[0]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[0].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/state[0]_i_3
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b0__35_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b0__35
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g2_b0__35_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.042 | TNS=-6670.665 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[115]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[0]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1395].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[115]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1395]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b3__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b3__37_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.037 | TNS=-6670.390 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]_repN.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/slv_reg4_reg[8]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/key[8]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[25]_i_2_n_0.  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[25]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[25]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[25].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__2/state[25]_i_3
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/p_0_in_8[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.036 | TNS=-6670.169 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[119]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1399].  Did not re-place instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state[119]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1399]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/GENERATE_KEYS/generate_round_keys[10].key_exp_i/g1_b7__37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g1_b7__37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1161].  Re-placed instance AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/g0_b0_i_2__16
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/round_keys_out[1161]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.036 | TNS=-6670.015 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[2].  Re-placed instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[2]
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.036 | TNS=-6669.119 |
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state_reg_n_0_[42]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/slv_reg4_reg[24]_replica
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/key[24]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[42].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[42]_i_2
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state0[42]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[42]_i_5_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[42]_i_5
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/state[42]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[10].  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/sbox_table[0]_inferred__0/state[42]_i_8
+INFO: [Physopt 32-702] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/u4_genKeys/generate_round_keys[10].key_exp_i/p_0_in_8[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b2__52_n_0.  Did not re-place instance AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b2__52
+INFO: [Physopt 32-735] Processed net AES_F_i/AES_ENC_0/U0/AES_ENC_v1_0_S00_AXI_inst/my_aes/g3_b2__52_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.035 | TNS=-6669.033 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.035 | TNS=-6669.033 |
+Phase 4 Critical Path Optimization | Checksum: 1e5d107e1
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.398 ; gain = 10.816
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1772.398 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-14.035 | TNS=-6669.033 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.196  |         59.249  |           27  |              0  |                    71  |           0  |           2  |  00:00:13  |
+|  Total          |          0.196  |         59.249  |           27  |              0  |                    71  |           0  |           3  |  00:00:13  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1772.398 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1e5d107e1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 1772.398 ; gain = 10.816
+INFO: [Common 17-83] Releasing license: Implementation
+541 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1772.398 ; gain = 28.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1772.398 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1779.477 ; gain = 7.078
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1779.477 ; gain = 7.078
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: a0bedce6 ConstDB: 0 ShapeSum: 29dfa05b RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: a2173856
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1822.902 ; gain = 28.359
+Post Restoration Checksum: NetGraph: 2aa5a38a NumContArr: 777194cc Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: a2173856
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1822.902 ; gain = 28.359
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: a2173856
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.891 ; gain = 34.348
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: a2173856
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.891 ; gain = 34.348
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 12b6b7bca
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1850.438 ; gain = 55.895
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.989| TNS=-6112.492| WHS=-0.188 | THS=-21.171|
+
+Phase 2 Router Initialization | Checksum: 17dcf7d4f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.531 ; gain = 64.988
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9885
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9885
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 12780fe3a
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.531 ; gain = 64.988
+INFO: [Route 35-580] Design has 115 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |                                     AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg[86]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                     AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg[54]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                     AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg[83]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                    AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg[119]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                     AES_F_i/AES_DEC_0/U0/AES_DEC_v1_0_S00_AXI_inst/my_aes/state_reg[69]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 9469
+ Number of Nodes with overlaps = 4554
+ Number of Nodes with overlaps = 2836
+ Number of Nodes with overlaps = 367
+ Number of Nodes with overlaps = 102
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-19.029| TNS=-8599.850| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19031fe56
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 1862.543 ; gain = 68.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5065
+ Number of Nodes with overlaps = 2332
+ Number of Nodes with overlaps = 1355
+ Number of Nodes with overlaps = 431
+ Number of Nodes with overlaps = 239
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-18.796| TNS=-8522.359| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 228473073
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:47 . Memory (MB): peak = 1864.660 ; gain = 70.117
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 5293
+Phase 4.3 Global Iteration 2 | Checksum: 17ac1b982
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1864.660 ; gain = 70.117
+Phase 4 Rip-up And Reroute | Checksum: 17ac1b982
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1864.660 ; gain = 70.117
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d01f3b75
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1864.660 ; gain = 70.117
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-18.783| TNS=-8505.961| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 147ba1328
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 147ba1328
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+Phase 5 Delay and Skew Optimization | Checksum: 147ba1328
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1ba9ef28e
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-18.360| TNS=-8380.421| WHS=0.031  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 145154dd9
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+Phase 6 Post Hold Fix | Checksum: 145154dd9
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 11.3346 %
+  Global Horizontal Routing Utilization  = 14.7785 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 86.4865%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X12Y80 -> INT_L_X12Y80
+East Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 85.2941%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X17Y19 -> INT_R_X17Y19
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+
+Phase 7 Route finalize | Checksum: 17b6e9538
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 17b6e9538
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 10639ef3b
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-18.360| TNS=-8380.421| WHS=0.031  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 10639ef3b
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1870.414 ; gain = 75.871
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1870.414 ; gain = 75.871
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+560 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:26 ; elapsed = 00:00:53 . Memory (MB): peak = 1870.414 ; gain = 90.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1870.414 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1871.883 ; gain = 1.469
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1871.883 ; gain = 1.469
+INFO: [runtcl-4] Executing : report_drc -file AES_F_wrapper_drc_routed.rpt -pb AES_F_wrapper_drc_routed.pb -rpx AES_F_wrapper_drc_routed.rpx
+Command: report_drc -file AES_F_wrapper_drc_routed.rpt -pb AES_F_wrapper_drc_routed.pb -rpx AES_F_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file AES_F_wrapper_methodology_drc_routed.rpt -pb AES_F_wrapper_methodology_drc_routed.pb -rpx AES_F_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file AES_F_wrapper_methodology_drc_routed.rpt -pb AES_F_wrapper_methodology_drc_routed.pb -rpx AES_F_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/impl_1/AES_F_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file AES_F_wrapper_power_routed.rpt -pb AES_F_wrapper_power_summary_routed.pb -rpx AES_F_wrapper_power_routed.rpx
+Command: report_power -file AES_F_wrapper_power_routed.rpt -pb AES_F_wrapper_power_summary_routed.pb -rpx AES_F_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+572 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1926.703 ; gain = 14.781
+INFO: [runtcl-4] Executing : report_route_status -file AES_F_wrapper_route_status.rpt -pb AES_F_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file AES_F_wrapper_timing_summary_routed.rpt -pb AES_F_wrapper_timing_summary_routed.pb -rpx AES_F_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file AES_F_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file AES_F_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file AES_F_wrapper_bus_skew_routed.rpt -pb AES_F_wrapper_bus_skew_routed.pb -rpx AES_F_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force AES_F_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./AES_F_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+591 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2381.477 ; gain = 453.203
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 15:49:12 2024...

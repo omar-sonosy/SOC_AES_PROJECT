@@ -1,2 +1,0 @@
-second verilog core that was working for the encryption
-decryption not done yet

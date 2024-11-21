@@ -1,0 +1,55 @@
+16:28:03 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/AES_FULL.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AES_FULL.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/AES_FULL.d" -MT"src/AES_FULL.o" -o "src/AES_FULL.o" "../src/AES_FULL.c"
+In file included from ../src/AES_FULL.c:54:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/AES_FULL.c:57:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/AES_FULL.c: In function 'INTR_init':
+../src/AES_FULL.c:243:10: warning: 'return' with a value, in function returning void
+   return -1;
+          ^
+../src/AES_FULL.c:233:6: note: declared here
+ void INTR_init(void){
+      ^~~~~~~~~
+../src/AES_FULL.c:251:10: warning: 'return' with a value, in function returning void
+   return -1;
+          ^
+../src/AES_FULL.c:233:6: note: declared here
+ void INTR_init(void){
+      ^~~~~~~~~
+../src/AES_FULL.c:261:10: warning: 'return' with a value, in function returning void
+   return -1;
+          ^
+../src/AES_FULL.c:233:6: note: declared here
+ void INTR_init(void){
+      ^~~~~~~~~
+'Finished building: ../src/AES_FULL.c'
+' '
+'Building target: VHDL_Vitis.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bsplib/lib -o "VHDL_Vitis.elf"  ./src/AES_FULL.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: VHDL_Vitis.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VHDL_Vitis.elf  |tee "VHDL_Vitis.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59172	   3360	  23408	  85940	  14fb4	VHDL_Vitis.elf
+'Finished building: VHDL_Vitis.elf.size'
+' '
+
+16:28:05 Build Finished (took 1s.384ms)
+

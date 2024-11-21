@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 21 15:43:41 2024
+# Process ID: 4724
+# Current directory: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/AES_F_AES_ENC_0_0_synth_1
+# Command line: vivado.exe -log AES_F_AES_ENC_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_F_AES_ENC_0_0.tcl
+# Log file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/AES_F_AES_ENC_0_0_synth_1/AES_F_AES_ENC_0_0.vds
+# Journal file: H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/AES_F_AES_ENC_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source AES_F_AES_ENC_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/ip_repo/AES_DEC_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/ip_repo/AES_ENC_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/SOC_VHDL_CORE_With_Interrupt/ip_repo/AES_ENC_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.cache/ip 
+Command: synth_design -top AES_F_AES_ENC_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 982.543 ; gain = 234.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES_F_AES_ENC_0_0' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_AES_ENC_0_0/synth/AES_F_AES_ENC_0_0.vhd:83]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AES_ENC_v1_0' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0.vhd:5' bound to instance 'U0' of component 'AES_ENC_v1_0' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_AES_ENC_0_0/synth/AES_F_AES_ENC_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'AES_ENC_v1_0' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AES_ENC_v1_0_S00_AXI' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:5' bound to instance 'AES_ENC_v1_0_S00_AXI_inst' of component 'AES_ENC_v1_0_S00_AXI' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'AES_ENC_v1_0_S00_AXI' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:262]
+INFO: [Synth 8-226] default block is never used [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:500]
+WARNING: [Synth 8-614] signal 'cipher' is read in the process but is not in the sensitivity list [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:495]
+INFO: [Synth 8-638] synthesizing module 'aes_core_encrypt' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/design.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'subBytes_encrypt' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/subBytes.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'subBytes_encrypt' (1#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/subBytes.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'shiftRows_encrypt' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/ShiftRows.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'shiftRows_encrypt' (2#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/ShiftRows.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'mixColumns_encrypt' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/MixColumns.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'computeColumn_encrypt' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/ComputeColumn.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'computeColumn_encrypt' (3#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/ComputeColumn.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mixColumns_encrypt' (4#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/MixColumns.vhd:11]
+INFO: [Synth 8-3491] module 'generateKeys' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:5' bound to instance 'u4_genKeys' of component 'generateKeys' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/design.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'generateKeys' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:12]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'KeyExpansion' (5#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:13]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-3491] module 'KeyExpansion' declared at 'h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/KeySchedule.vhd:5' bound to instance 'key_exp_i' of component 'KeyExpansion' [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'generateKeys' (6#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/GenerateKeys.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'aes_core_encrypt' (7#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/VHDL IP_code/design.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:253]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:254]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'AES_ENC_v1_0_S00_AXI' (8#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'AES_ENC_v1_0' (9#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ipshared/1df9/hdl/AES_ENC_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'AES_F_AES_ENC_0_0' (10#1) [h:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.srcs/sources_1/bd/AES_F/ip/AES_F_AES_ENC_0_0/synth/AES_F_AES_ENC_0_0.vhd:83]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1057.473 ; gain = 309.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1057.473 ; gain = 309.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1057.473 ; gain = 309.078
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1057.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1168.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1171.359 ; gain = 2.996
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 3     
+	   3 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 30    
+	   2 Input      8 Bit         XORs := 16    
+	   3 Input      8 Bit         XORs := 12    
+	   5 Input      8 Bit         XORs := 8     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 12    
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      8 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module computeColumn_encrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   3 Input      8 Bit         XORs := 3     
+	   5 Input      8 Bit         XORs := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+Module KeyExpansion 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 1     
+Module aes_core_encrypt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 3     
++---Registers : 
+	              128 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module AES_ENC_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AES_ENC_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'U0/AES_ENC_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/AES_ENC_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AES_ENC_v1_0_S00_AXI_inst /\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/AES_ENC_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/AES_ENC_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AES_ENC_v1_0_S00_AXI_inst /\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+---------------+---------------+----------------+
+|Module Name      | RTL Object    | Depth x Width | Implemented As | 
++-----------------+---------------+---------------+----------------+
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|subBytes_encrypt | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
+|KeyExpansion     | sbox_table[0] | 256x8         | LUT            | 
++-----------------+---------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 1171.359 ; gain = 422.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1301.793 ; gain = 553.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |   334|
+|3     |LUT3  |   299|
+|4     |LUT4  |   128|
+|5     |LUT5  |   253|
+|6     |LUT6  |  3118|
+|7     |MUXF7 |   883|
+|8     |MUXF8 |   184|
+|9     |FDCE  |   140|
+|10    |FDRE  |   553|
+|11    |FDSE  |     5|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------+---------------------+------+
+|      |Instance                                      |Module               |Cells |
++------+----------------------------------------------+---------------------+------+
+|1     |top                                           |                     |  5898|
+|2     |  U0                                          |AES_ENC_v1_0         |  5898|
+|3     |    AES_ENC_v1_0_S00_AXI_inst                 |AES_ENC_v1_0_S00_AXI |  5894|
+|4     |      my_aes                                  |aes_core_encrypt     |  5187|
+|5     |        u1_SubBytes                           |subBytes_encrypt     |   384|
+|6     |        u4_genKeys                            |generateKeys         |   592|
+|7     |          \generate_round_keys[10].key_exp_i  |KeyExpansion         |    96|
+|8     |          \generate_round_keys[1].key_exp_i   |KeyExpansion_0       |    96|
+|9     |          \generate_round_keys[2].key_exp_i   |KeyExpansion_1       |    72|
+|10    |          \generate_round_keys[3].key_exp_i   |KeyExpansion_2       |    48|
+|11    |          \generate_round_keys[4].key_exp_i   |KeyExpansion_3       |    48|
+|12    |          \generate_round_keys[5].key_exp_i   |KeyExpansion_4       |    48|
+|13    |          \generate_round_keys[6].key_exp_i   |KeyExpansion_5       |    48|
+|14    |          \generate_round_keys[7].key_exp_i   |KeyExpansion_6       |    48|
+|15    |          \generate_round_keys[8].key_exp_i   |KeyExpansion_7       |    48|
+|16    |          \generate_round_keys[9].key_exp_i   |KeyExpansion_8       |    40|
++------+----------------------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 1306.719 ; gain = 444.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1306.719 ; gain = 558.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1306.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1067 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1306.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:44 . Memory (MB): peak = 1306.719 ; gain = 828.887
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1306.719 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/AES_F_AES_ENC_0_0_synth_1/AES_F_AES_ENC_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP AES_F_AES_ENC_0_0, cache-ID = 637df261fe750783
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1306.719 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_INTR.runs/AES_F_AES_ENC_0_0_synth_1/AES_F_AES_ENC_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_F_AES_ENC_0_0_utilization_synth.rpt -pb AES_F_AES_ENC_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 15:44:43 2024...
