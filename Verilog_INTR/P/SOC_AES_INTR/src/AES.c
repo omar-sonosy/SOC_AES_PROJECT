@@ -75,10 +75,6 @@ XScuGic IntInstance;
 
 uint8_t plaintext[BYTES_TO_BE_ENCRYPTED], key[BYTES_TO_BE_ENCRYPTED], ciphertext[BYTES_TO_BE_ENCRYPTED];
 
-
-
-
-
 void Encrypt_AES(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext)
 {
 	*control_bits = 0x00000000;
@@ -90,7 +86,6 @@ void Encrypt_AES(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext)
 	}
 	SET_BIT(control_bits, 0);
 	CLEAR_BIT(control_bits, 0);
-
 }
 
 void text_to_hexstring(const char *text_string, char *hex_string)
@@ -155,53 +150,47 @@ void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
 	xil_printf("\n\r");
 }
 
-
-static void AES_ISR(void){
-	XScuGic_Disable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
+static void AES_ISR(void)
+{
+	XScuGic_Disable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 	print("\n\rInside ISR.\n\r");
 	for (int i = 0; i < REGISTER_NUMBER; i++)
-		{
-			*((Xuint32 *)(ciphertext) + i) = *(cipher_base_addr + i);
-		}
-	XScuGic_Enable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
-
-
+	{
+		*((Xuint32 *)(ciphertext) + i) = *(cipher_base_addr + i);
+	}
+	XScuGic_Enable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 }
 
-
-static void AES_Encryption_Interrupt_init(){
+static void AES_Encryption_Interrupt_init()
+{
 	// ENable Interrupts
 
+	XScuGic_Config *IntConfig;
+	u32 status;
 
-		XScuGic_Config* IntConfig;
-		u32 status;
+	IntConfig = XScuGic_LookupConfig(XPAR_AES_ECB_INTR_0_DEVICE_ID);
+	status = XScuGic_CfgInitialize(&IntInstance, IntConfig, IntConfig->CpuBaseAddress);
+	if (status != XST_SUCCESS)
+	{
+		print("Interrupt controller Initialization failed.\n\r");
+		return -1;
+	}
 
+	XScuGic_SetPriorityTriggerType(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR, 100, 3);
+	status = XScuGic_Connect(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR, (Xil_InterruptHandler)AES_ISR, 0);
+	if (status != XST_SUCCESS)
+	{
+		print("Interrupt controller Connection failed.\n\r");
+		return -1;
+	}
 
+	XScuGic_Enable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 
-		IntConfig= XScuGic_LookupConfig(XPAR_AES_ECB_INTR_0_DEVICE_ID);
-		status= XScuGic_CfgInitialize(&IntInstance, IntConfig,IntConfig->CpuBaseAddress);
-		if(status!= XST_SUCCESS){
-			print("Interrupt controller Initialization failed.\n\r");
-			return -1;
-		}
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, (void *)&IntInstance);
+	Xil_ExceptionEnable();
 
-
-		XScuGic_SetPriorityTriggerType(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR,100,3);
-		status= XScuGic_Connect(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR,(Xil_InterruptHandler)AES_ISR,0);
-		if(status!= XST_SUCCESS){
-				print("Interrupt controller Connection failed.\n\r");
-				return -1;
-		}
-
-		XScuGic_Enable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
-
-
-
-		Xil_ExceptionInit();
-		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)XScuGic_InterruptHandler, (void*) &IntInstance );
-		Xil_ExceptionEnable();
-
-		print("\n\rInitialized Interrupts.\n\r");
+	print("\n\rInitialized Interrupts.\n\r");
 }
 
 int main()

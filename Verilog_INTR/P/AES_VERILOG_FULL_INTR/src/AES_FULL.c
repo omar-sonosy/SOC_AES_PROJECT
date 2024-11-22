@@ -1,38 +1,4 @@
-/******************************************************************************
- *
- * Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Use of the Software is limited solely to applications:
- * (a) running on a Xilinx device, or
- * (b) that interact with a Xilinx device through a bus or interconnect.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
- * XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
- * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- * Except as contained in this notice, the name of the Xilinx shall not be used
- * in advertising or otherwise to promote the sale, use or other dealings in
- * this Software without prior written authorization from Xilinx.
- *
- ******************************************************************************/
-
 /*
- * helloworld.c: simple test application
- *
  * This application configures UART 16550 to baud rate 9600.
  * PS7 UART (Zynq) is not initialized by this application, since
  * bootrom/bsp configures it to baud rate 115200
@@ -59,48 +25,43 @@
 #include <arm_neon.h>
 
 #define REGISTER_NUMBER 4
-#define BYTES_TO_BE_ENCRYPTED 16
-#define MODE 1 // 1 - readable text from file, 2 - hexadecimal strings from file
+#define BYTES_TO_ENCRYPT 16
 
 #define SET_BIT(REG, BIT_NUM) (*REG = (*REG | (1 << (BIT_NUM))))
 #define CLEAR_BIT(REG, BIT_NUM) (*REG = (*REG & ~(1 << (BIT_NUM))))
 #define CHECK_BIT(REG, BIT_NUM) ((*REG) & (1 << (BIT_NUM)))
 
-Xuint32 *plain_base_addr = (Xuint32 *)0x43C00000;
-Xuint32 *key_base_addr = (Xuint32 *)0x43C00010;
-Xuint32 *cipher_base_addr = (Xuint32 *)0x43C00020;
-Xuint32 *control_bits = (Xuint32 *)0x43C00030;
-Xuint32 *done_flag = (Xuint32 *)0x43C00034;
+Xuint32 *enc_plain_base_addr = (Xuint32 *)0x43C00000;
+Xuint32 *enc_key_base_addr = (Xuint32 *)0x43C00010;
+Xuint32 *enc_cipher_base_addr = (Xuint32 *)0x43C00020;
+Xuint32 *enc_control_bits = (Xuint32 *)0x43C00030;
+Xuint32 *enc_done_flag = (Xuint32 *)0x43C00034;
 
-Xuint32* const dec_cipher_base_addr = (Xuint32 *)XPAR_AES_ECB_INTR_DEC_0_S00_AXI_BASEADDR;
-Xuint32* const dec_key_base_addr = dec_cipher_base_addr+4;
-Xuint32* const dec_plain_base_addr = dec_key_base_addr+4;
-Xuint32* const dec_control_bits = dec_plain_base_addr+4;
+Xuint32 *const dec_cipher_base_addr = (Xuint32 *)XPAR_AES_ECB_INTR_DEC_0_S00_AXI_BASEADDR;
+Xuint32 *const dec_key_base_addr = dec_cipher_base_addr + 4;
+Xuint32 *const dec_plain_base_addr = dec_key_base_addr + 4;
+Xuint32 *const dec_control_bits = dec_plain_base_addr + 4;
 
 XScuGic IntInstance;
 
-uint8_t plaintext[BYTES_TO_BE_ENCRYPTED], key[BYTES_TO_BE_ENCRYPTED], ciphertext[BYTES_TO_BE_ENCRYPTED], plain_text_dec[BYTES_TO_BE_ENCRYPTED];
+uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
+uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 
-
-
-
-
-void Encrypt_AES(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext)
+void encrypt(uint8_t *plaintext, uint8_t *key)
 {
-	*control_bits = 0x00000000;
-	SET_BIT(control_bits, 1);
+	*enc_control_bits = 0x00000000;
+	SET_BIT(enc_control_bits, 1);
 	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
-		*(plain_base_addr + i) = *((Xuint32 *)(plaintext) + i);
-		*(key_base_addr + i) = *((Xuint32 *)(key) + i);
+		*(enc_plain_base_addr + i) = *((Xuint32 *)(plaintext) + i);
+		*(enc_key_base_addr + i) = *((Xuint32 *)(key) + i);
 	}
-	SET_BIT(control_bits, 0);
-	CLEAR_BIT(control_bits, 0);
-
+	SET_BIT(enc_control_bits, 0);
+	CLEAR_BIT(enc_control_bits, 0);
 }
 
-
-void Decrypt_AES(uint8_t *ciphertext, uint8_t *key, uint8_t *plaintext){
+void decrypt(uint8_t *enc_ciphertext, uint8_t *key)
+{
 
 	*dec_control_bits = 0x00000000;
 	SET_BIT(dec_control_bits, 1);
@@ -110,13 +71,14 @@ void Decrypt_AES(uint8_t *ciphertext, uint8_t *key, uint8_t *plaintext){
 	}
 	SET_BIT(dec_control_bits, 2);
 	CLEAR_BIT(dec_control_bits, 2);
-	for (int i = 0; i < REGISTER_NUMBER; i++){
+	for (int i = 0; i < REGISTER_NUMBER; i++)
+	{
 		*(dec_cipher_base_addr + i) = *((Xuint32 *)(plaintext) + i);
 	}
 	SET_BIT(dec_control_bits, 0);
 	CLEAR_BIT(dec_control_bits, 0);
-
 }
+
 void text_to_hexstring(const char *text_string, char *hex_string)
 {
 	while (*text_string)
@@ -129,8 +91,8 @@ void text_to_hexstring(const char *text_string, char *hex_string)
 
 void hexstring_to_bytes(const char *hex_string, uint8_t *bytes_arr)
 {
-	int j = BYTES_TO_BE_ENCRYPTED - 1;
-	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED * 2; i += 2)
+	int j = BYTES_TO_ENCRYPT - 1;
+	for (int i = 0; i < BYTES_TO_ENCRYPT * 2; i += 2)
 	{
 		char temp_str[3] = {hex_string[i], hex_string[i + 1], '\0'};
 		bytes_arr[j--] = (uint8_t)strtol(temp_str, NULL, 16);
@@ -140,124 +102,109 @@ void hexstring_to_bytes(const char *hex_string, uint8_t *bytes_arr)
 void print_registers(void)
 {
 	xil_printf("Printing registers:\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
-		xil_printf("%x ", *((char *)plain_base_addr + i));
+		xil_printf("%x ", *((char *)enc_plain_base_addr + i));
 	}
 	xil_printf("\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
-		xil_printf("%x ", *((char *)key_base_addr + i));
+		xil_printf("%x ", *((char *)enc_key_base_addr + i));
 	}
 	xil_printf("\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
-		xil_printf("%x ", *((char *)cipher_base_addr + i));
+		xil_printf("%x ", *((char *)enc_cipher_base_addr + i));
 	}
-	xil_printf("\n\r");
-	xil_printf("%x ", *((char *)control_bits));
-	xil_printf("\n\r");
-	xil_printf("%x ", *((char *)done_flag));
-	xil_printf("\n\r");
+	xil_printf("\n\r%x \n\r", *((char *)enc_control_bits));
+	xil_printf("%x \n\r", *((char *)enc_done_flag));
 }
 
-void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
+void print_results(uint8_t plaintext[], uint8_t key[], uint8_t enc_ciphertext[])
 {
 	xil_printf("\r\nPlaintext: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 		xil_printf("%x ", plaintext[i]);
-	xil_printf("\n\r");
 
-	xil_printf("Key: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	xil_printf("\n\rKey: ");
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 		xil_printf("%x ", key[i]);
-	xil_printf("\n\r");
 
-	xil_printf("Ciphertext: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
-		xil_printf("%x ", ciphertext[i]);
+	xil_printf("\n\rCiphertext: ");
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		xil_printf("%x ", enc_ciphertext[i]);
 	xil_printf("\n\r");
 }
 
-
-static void AES_ISR(void){
-	XScuGic_Disable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
+static void enc_ISR(void)
+{
+	XScuGic_Disable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 	print("\n\rInside ENC ISR.\n\r");
 	for (int i = 0; i < REGISTER_NUMBER; i++)
-		{
-			*((Xuint32 *)(ciphertext) + i) = *(cipher_base_addr + i);
-		}
-	XScuGic_Enable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
-
-
+	{
+		*((Xuint32 *)(enc_ciphertext) + i) = *(enc_cipher_base_addr + i);
+	}
+	XScuGic_Enable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 }
 
-static void AES_DEC_ISR(void){
-	XScuGic_Disable(&IntInstance,62U);
+static void dec_ISR(void)
+{
+	XScuGic_Disable(&IntInstance, 62U);
 	print("\n\rInside DEC ISR.\n\r");
 	for (int i = 0; i < REGISTER_NUMBER; i++)
-		{
-			*((Xuint32 *)(plain_text_dec) + i) = *(dec_plain_base_addr + i);
-		}
-	XScuGic_Enable(&IntInstance,62U);
-
+	{
+		*((Xuint32 *)(dec_plaintext) + i) = *(dec_plain_base_addr + i);
+	}
+	XScuGic_Enable(&IntInstance, 62U);
 }
 
+static void interrupts_init()
+{
+	XScuGic_Config *IntConfig;
+	u32 status;
 
+	IntConfig = XScuGic_LookupConfig(XPAR_AES_ECB_INTR_0_DEVICE_ID);
+	status = XScuGic_CfgInitialize(&IntInstance, IntConfig, IntConfig->CpuBaseAddress);
+	if (status != XST_SUCCESS)
+	{
+		print("Interrupt controller Initialization failed.\n\r");
+		return -1;
+	}
 
-static void AES_Encryption_Interrupt_init(){
-	// ENable Interrupts
+	// Set up encryption interrupt.
+	XScuGic_SetPriorityTriggerType(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR, 100, 3);
+	status = XScuGic_Connect(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR, (Xil_InterruptHandler)enc_ISR, 0);
+	if (status != XST_SUCCESS)
+	{
+		print("Interrupt controller Connection failed.\n\r");
+		return -1;
+	}
+	XScuGic_Enable(&IntInstance, XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
 
+	// Set up decryption interrupt.
+	XScuGic_SetPriorityTriggerType(&IntInstance, 62U, 100, 3);
+	status = XScuGic_Connect(&IntInstance, 62U, (Xil_InterruptHandler)dec_ISR, 0);
+	if (status != XST_SUCCESS)
+	{
+		print("Interrupt controller Connection failed.\n\r");
+		return -1;
+	}
+	XScuGic_Enable(&IntInstance, 62U);
 
-		XScuGic_Config* IntConfig;
-		u32 status;
+	// Set up exception handling.
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, (void *)&IntInstance);
+	Xil_ExceptionEnable();
 
-
-
-		IntConfig= XScuGic_LookupConfig(XPAR_AES_ECB_INTR_0_DEVICE_ID);
-		status= XScuGic_CfgInitialize(&IntInstance, IntConfig,IntConfig->CpuBaseAddress);
-		if(status!= XST_SUCCESS){
-			print("Interrupt controller Initialization failed.\n\r");
-			return -1;
-		}
-
-
-		XScuGic_SetPriorityTriggerType(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR,100,3);
-		status= XScuGic_Connect(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR,(Xil_InterruptHandler)AES_ISR,0);
-		if(status!= XST_SUCCESS){
-				print("Interrupt controller Connection failed.\n\r");
-				return -1;
-		}
-
-		XScuGic_Enable(&IntInstance,XPAR_FABRIC_AES_ECB_INTR_0_INTR_INTR);
-
-
-
-
-		XScuGic_SetPriorityTriggerType(&IntInstance,62U,120,3);
-		status= XScuGic_Connect(&IntInstance,62U,(Xil_InterruptHandler)AES_DEC_ISR,0);
-		if(status!= XST_SUCCESS){
-				print("Interrupt controller Connection failed.\n\r");
-				return -1;
-		}
-
-		XScuGic_Enable(&IntInstance,62U);
-
-
-
-		Xil_ExceptionInit();
-		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)XScuGic_InterruptHandler, (void*) &IntInstance );
-		Xil_ExceptionEnable();
-
-		print("\n\rInitialized Interrupts.\n\r");
+	print("\n\rInitialized Interrupts.\n\r");
 }
 
 int main()
 {
-
 	init_platform();
 	print("\n\rInitialize program.\n\r");
-	AES_Encryption_Interrupt_init();
+
+	interrupts_init();
 
 	char plaintext_hex[32] = "7468697369736D79706C61696E747878";
 	char key_hex[32] = "6162636465666768696A6B6C6D6E6F70";
@@ -265,14 +212,13 @@ int main()
 	hexstring_to_bytes(plaintext_hex, plaintext);
 	hexstring_to_bytes(key_hex, key);
 
-	Encrypt_AES(plaintext, key, ciphertext);
+	print("\n\rStart encryption.\n\r");
+	encrypt(plaintext, key);
+	print_results(plaintext, key, enc_ciphertext);
 
-	xil_printf("Printing arrays:\n\r");
-	print_results(plaintext, key, ciphertext);
-
-	Decrypt_AES(ciphertext,key,plaintext);
-	xil_printf("Printing arrays:\n\r");
-	print_results(plain_text_dec, key, ciphertext);
+	print("\n\rStart decryption.\n\r");
+	decrypt(enc_ciphertext, key);
+	print_results(dec_plaintext, key, enc_ciphertext);
 
 	cleanup_platform();
 	return 0;
