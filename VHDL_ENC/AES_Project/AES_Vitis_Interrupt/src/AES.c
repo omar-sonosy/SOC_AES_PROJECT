@@ -1,38 +1,4 @@
-/******************************************************************************
- *
- * Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Use of the Software is limited solely to applications:
- * (a) running on a Xilinx device, or
- * (b) that interact with a Xilinx device through a bus or interconnect.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
- * XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
- * OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
- * Except as contained in this notice, the name of the Xilinx shall not be used
- * in advertising or otherwise to promote the sale, use or other dealings in
- * this Software without prior written authorization from Xilinx.
- *
- ******************************************************************************/
-
 /*
- * helloworld.c: simple test application
- *
  * This application configures UART 16550 to baud rate 9600.
  * PS7 UART (Zynq) is not initialized by this application, since
  * bootrom/bsp configures it to baud rate 115200
@@ -59,8 +25,7 @@
 #include <xscugic.h>
 
 #define REGISTER_NUMBER 4
-#define BYTES_TO_BE_ENCRYPTED 16
-#define MODE 1 // 1 - readable text from file, 2 - hexadecimal strings from file
+#define BYTES_TO_ENCRYPT 16
 
 #define SET_BIT(REG, BIT_NUM) (*REG = (*REG | (1 << (BIT_NUM))))
 #define CLEAR_BIT(REG, BIT_NUM) (*REG = (*REG & ~(1 << (BIT_NUM))))
@@ -72,19 +37,17 @@ Xuint32 *cipher_base_addr = (Xuint32 *)0x43C00020;
 Xuint32 *control_bits = (Xuint32 *)0x43C00030;
 Xuint32 *done_flag = (Xuint32 *)0x43C00034;
 
-void print_registers(void);
-void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[]);
+uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT], ciphertext[BYTES_TO_ENCRYPT];
 
 XScuGic IntrInst;
 
+void print_registers(void);
+void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[]);
 
-void Encrypt_AES(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext)
+void encrypt(uint8_t *plaintext, uint8_t *key)
 {
-	print("\n\rReset Core.\n\r");
-
 	*control_bits = 0x00000000;
 	SET_BIT(control_bits, 0);
-	print_registers();
 	CLEAR_BIT(control_bits, 0);
 
 	for (int i = 0; i < REGISTER_NUMBER; i++)
@@ -93,25 +56,8 @@ void Encrypt_AES(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext)
 		*(key_base_addr + i) = *((Xuint32 *)(key) + i);
 	}
 
-	print_registers();
-
-	print("\n\rStart encryption.\n\r");
-
 	SET_BIT(control_bits, 1);
-	print_registers();
 	CLEAR_BIT(control_bits, 1);
-
-//	while (*done_flag == 0)
-//	{
-//	}
-//
-//	for (int i = 0; i < REGISTER_NUMBER; i++)
-//	{
-//		*((Xuint32 *)(ciphertext) + i) = *(cipher_base_addr + i);
-//	}
-//	print_registers();
-
-//	print("\n\rFinished encryption.\n\r");
 }
 
 void text_to_hexstring(const char *text_string, char *hex_string)
@@ -126,8 +72,8 @@ void text_to_hexstring(const char *text_string, char *hex_string)
 
 void hexstring_to_bytes(const char *hex_string, uint8_t *bytes_arr)
 {
-	int j = BYTES_TO_BE_ENCRYPTED - 1;
-	for (int i = 0; i < BYTES_TO_BE_ENCRYPTED * 2; i += 2)
+	int j = BYTES_TO_ENCRYPT - 1;
+	for (int i = 0; i < BYTES_TO_ENCRYPT * 2; i += 2)
 	{
 		char temp_str[3] = {hex_string[i], hex_string[i + 1], '\0'};
 		bytes_arr[j--] = (uint8_t)strtol(temp_str, NULL, 16);
@@ -137,59 +83,46 @@ void hexstring_to_bytes(const char *hex_string, uint8_t *bytes_arr)
 void print_registers(void)
 {
 	xil_printf("Printing registers:\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
 		xil_printf("%x ", *((char *)plain_base_addr + i));
 	}
 	xil_printf("\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
 		xil_printf("%x ", *((char *)key_base_addr + i));
 	}
 	xil_printf("\n\r");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 	{
 		xil_printf("%x ", *((char *)cipher_base_addr + i));
 	}
-	xil_printf("\n\r");
-	xil_printf("%x ", *((char *)control_bits));
-	xil_printf("\n\r");
-	xil_printf("%x ", *((char *)done_flag));
-	xil_printf("\n\r");
+	xil_printf("\n\r%x \n\r", *((char *)control_bits));
+	xil_printf("%x \n\r", *((char *)done_flag));
 }
 
 void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
 {
 	xil_printf("\r\nPlaintext: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 		xil_printf("%x ", plaintext[i]);
-	xil_printf("\n\r");
 
-	xil_printf("Key: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	xil_printf("\n\rKey: ");
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 		xil_printf("%x ", key[i]);
-	xil_printf("\n\r");
 
-	xil_printf("Ciphertext: ");
-	for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
+	xil_printf("\n\rCiphertext: ");
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
 		xil_printf("%x ", ciphertext[i]);
 	xil_printf("\n\r");
 }
 
-static void aes_ISR()
+static void enc_ISR()
 {
 	XScuGic_Disable(&IntrInst, XPAR_FABRIC_AES_CUSTOM_VHDL_0_INTERRUPT_INTR);
-	if (*done_flag != 0)
+	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
-		xil_printf("Ciphertext: ");
-		for (int i = BYTES_TO_BE_ENCRYPTED - 1; i >= 0; i--)
-		{
-			xil_printf("%x ", *((char *)cipher_base_addr + i));
-		}
-	}
-	else
-	{
-		xil_printf("AES operation not yet complete.\n\r");
+		*((Xuint32 *)(ciphertext) + i) = *(cipher_base_addr + i);
 	}
 	XScuGic_Enable(&IntrInst, XPAR_FABRIC_AES_CUSTOM_VHDL_0_INTERRUPT_INTR);
 }
@@ -198,22 +131,20 @@ int main()
 {
 	init_platform();
 	int32_t done;
-
 	XScuGic_Config *IntrConfig;
 
 	IntrConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
-
 	done = XScuGic_CfgInitialize(&IntrInst, IntrConfig, IntrConfig->CpuBaseAddress);
-
-	if(done != XST_SUCCESS){
+	if (done != XST_SUCCESS)
+	{
 		print("\n\rInterrupt controller initialization failed!\n\r");
 		return -1;
 	}
 
 	XScuGic_SetPriorityTriggerType(&IntrInst, XPAR_FABRIC_AES_CUSTOM_VHDL_0_INTERRUPT_INTR, 0x00, 3);
-
-	done = XScuGic_Connect(&IntrInst, XPAR_FABRIC_AES_CUSTOM_VHDL_0_INTERRUPT_INTR, (Xil_InterruptHandler)aes_ISR, 0);
-	if(done != XST_SUCCESS){
+	done = XScuGic_Connect(&IntrInst, XPAR_FABRIC_AES_CUSTOM_VHDL_0_INTERRUPT_INTR, (Xil_InterruptHandler)enc_ISR, 0);
+	if (done != XST_SUCCESS)
+	{
 		print("\n\rInterrupt controller connection failed!\n\r");
 		return -1;
 	}
@@ -229,14 +160,13 @@ int main()
 	char plaintext_hex[32] = "7468697369736D79706C61696E747878";
 	char key_hex[32] = "6162636465666768696A6B6C6D6E6F70";
 
-	uint8_t plaintext[BYTES_TO_BE_ENCRYPTED], key[BYTES_TO_BE_ENCRYPTED], ciphertext[BYTES_TO_BE_ENCRYPTED];
-
 	hexstring_to_bytes(plaintext_hex, plaintext);
 	hexstring_to_bytes(key_hex, key);
 
-	Encrypt_AES(plaintext, key, ciphertext);
+	print("\n\rStart encryption.\n\r");
 
-	xil_printf("Printing arrays:\n\r");
+	encrypt(plaintext, key);
+
 	print_results(plaintext, key, ciphertext);
 
 	cleanup_platform();

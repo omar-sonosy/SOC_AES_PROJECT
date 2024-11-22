@@ -71,14 +71,12 @@ void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
     xil_printf("\r\nPlaintext: ");
     for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
         xil_printf("%x ", plaintext[i]);
-    xil_printf("\n\r");
 
-    xil_printf("Key: ");
+    xil_printf("\n\rKey: ");
     for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
         xil_printf("%x ", key[i]);
-    xil_printf("\n\r");
 
-    xil_printf("Ciphertext: ");
+    xil_printf("\n\rCiphertext: ");
     for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
         xil_printf("%x ", ciphertext[i]);
     xil_printf("\n\r");
