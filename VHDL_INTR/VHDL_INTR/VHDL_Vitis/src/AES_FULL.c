@@ -11,58 +11,71 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
-#include "helper_functions.h"
-#include "platform.h"
-#include "xbasic_types.h"
-#include "xparameters.h"
-#include "sleep.h"
-#include "xtime_l.h"
-#include <arm_neon.h>
-#include <xscugic.h>
+#include "AES_FULL.h"
 
-#define SET_BIT(REG, BIT_NUM) (*REG = (*REG | (1 << (BIT_NUM))))
-#define CLEAR_BIT(REG, BIT_NUM) (*REG = (*REG & ~(1 << (BIT_NUM))))
-#define CHECK_BIT(REG, BIT_NUM) ((*REG) & (1 << (BIT_NUM)))
 
-#define ENC_INTR_ID 61U
-#define DEC_INTR_ID 62U
-
+// Global variables for addresses of the Encryption IP registers
 Xuint32 *const enc_plain_base_addr = (Xuint32 *)XPAR_AES_ENC_0_S00_AXI_BASEADDR;
 Xuint32 *const enc_key_base_addr = enc_plain_base_addr + 4;
 Xuint32 *const enc_cipher_base_addr = enc_key_base_addr + 4;
 Xuint32 *const enc_control_bits = enc_cipher_base_addr + 4;
 Xuint32 *const done_flag = enc_control_bits + 1;
 
+// Global variables for addresses of the Decryption IP registers
 Xuint32 *const dec_plain_base_addr = (Xuint32 *)XPAR_AES_DEC_0_S00_AXI_BASEADDR;
 Xuint32 *const dec_key_base_addr = dec_plain_base_addr + 4;
 Xuint32 *const dec_cipher_base_addr = dec_key_base_addr + 4;
 Xuint32 *const dec_control_bits = dec_cipher_base_addr + 4;
 Xuint32 *const dec_done_flag = dec_control_bits + 1;
 
+//Global variable for interrupts Initialization
+XScuGic IntrInst;
+
+//Global Variables for encryption and decryption:
 uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
 uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 
-XScuGic IntrInst;
 
-void print_registers(void)
+void print_registers(bool ENC_DEC)
 {
-	xil_printf("Printing registers:\n\r");
-	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
-	{
-		xil_printf("%x ", *((char *)enc_plain_base_addr + i));
+	if(ENC_DEC==PRINT_ENC){
+		xil_printf("Printing Encryption registers:\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)enc_plain_base_addr + i));
+		}
+		xil_printf("\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)enc_key_base_addr + i));
+		}
+		xil_printf("\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)enc_cipher_base_addr + i));
+		}
+		xil_printf("\n\r%x \n\r", *((char *)enc_control_bits));
+		xil_printf("%x \n\r", *((char *)done_flag));
+	}else{
+		xil_printf("Printing Decryption registers:\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)dec_plain_base_addr + i));
+		}
+		xil_printf("\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)dec_key_base_addr + i));
+		}
+		xil_printf("\n\r");
+		for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		{
+			xil_printf("%x ", *((char *)dec_cipher_base_addr + i));
+		}
+		xil_printf("\n\r%x \n\r", *((char *)dec_control_bits));
+		xil_printf("%x \n\r", *((char *)dec_done_flag));
 	}
-	xil_printf("\n\r");
-	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
-	{
-		xil_printf("%x ", *((char *)enc_key_base_addr + i));
-	}
-	xil_printf("\n\r");
-	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
-	{
-		xil_printf("%x ", *((char *)enc_cipher_base_addr + i));
-	}
-	xil_printf("\n\r%x \n\r", *((char *)enc_control_bits));
-	xil_printf("%x \n\r", *((char *)done_flag));
+	
 }
 
 void encrypt(uint8_t *plaintext, uint8_t *key)
@@ -152,31 +165,3 @@ void interrupts_init(void)
 	Xil_ExceptionEnable();
 }
 
-int main()
-{
-	init_platform();
-	interrupts_init();
-
-	print("\n\rInitialize program.\n\r");
-
-	char plaintext_hex[32] = "7468697369736D79706C61696E747878";
-	char key_hex[32] = "6162636465666768696A6B6C6D6E6F70";
-
-	hexstring_to_bytes(plaintext_hex, plaintext);
-	hexstring_to_bytes(key_hex, key);
-
-	print("\n\rStart encryption.\n\r");
-
-	encrypt(plaintext, key);
-
-	print_results(plaintext, key, enc_ciphertext);
-
-	print("\n\rStart decryption.\n\r");
-
-	decrypt(enc_ciphertext, key);
-
-	print_results(enc_ciphertext, key, dec_plaintext);
-
-	cleanup_platform();
-	return 0;
-}
