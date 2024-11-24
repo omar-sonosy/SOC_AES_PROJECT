@@ -9,7 +9,7 @@
 #include "xil_printf.h"
 
 #define REGISTER_NUMBER 4
-#define BYTES_TO_ENCRYPT 16
+//#define BYTES_TO_ENCRYPT 16
 
 char *print_error(const char *);
 
