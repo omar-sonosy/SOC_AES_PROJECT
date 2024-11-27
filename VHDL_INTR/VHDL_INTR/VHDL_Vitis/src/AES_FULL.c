@@ -35,6 +35,15 @@ XScuGic IntrInst;
 uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
 uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 
+XTime enc_elapsed_time;
+XTime dec_elapsed_time;
+
+
+uint8_t plain_buffer[BUFFER_SIZE];
+uint8_t cipher_buffer[BUFFER_SIZE];
+int File_size = 0;
+int encrypted_bytes = 0;
+
 
 void print_registers(bool ENC_DEC)
 {
@@ -113,20 +122,30 @@ void decrypt(uint8_t *plaintext, uint8_t *key)
 static void enc_ISR()
 {
 	XScuGic_Disable(&IntrInst, ENC_INTR_ID);
-
-	xil_printf("Inside ENC ISR.\n\r");
+	XTime_GetTime(&enc_elapsed_time);
 	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
 		*((Xuint32 *)(enc_ciphertext) + i) = *(enc_cipher_base_addr + i);
 	}
+
+	for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
+		plaintext[i-encrypted_bytes] = plain_buffer[i];
+		cipher_buffer[i-BYTES_TO_ENCRYPT] = enc_ciphertext[i-encrypted_bytes];
+	}
+
 	XScuGic_Enable(&IntrInst, ENC_INTR_ID);
+
+	if(encrypted_bytes < File_size){
+		encrypt(plaintext, key);
+		encrypted_bytes += BYTES_TO_ENCRYPT;
+	}
 }
 
 static void dec_ISR()
 {
 	XScuGic_Disable(&IntrInst, DEC_INTR_ID);
+	XTime_GetTime(&dec_elapsed_time);
 
-	xil_printf("Inside DEC ISR.\n\r");
 	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
 		*((Xuint32 *)(dec_plaintext) + i) = *(dec_cipher_base_addr + i);
@@ -143,20 +162,20 @@ void interrupts_init(void)
 	IntrConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
 	done = XScuGic_CfgInitialize(&IntrInst, IntrConfig, IntrConfig->CpuBaseAddress);
 	if (done != XST_SUCCESS)
-		return print_error("\n\rInterrupt controller initialization failed!\n\r");
+		print_error("\n\rInterrupt controller initialization failed!\n\r");
 
 	// Set up interrupt for encryption.
 	XScuGic_SetPriorityTriggerType(&IntrInst, ENC_INTR_ID, 100, 3);
 	done = XScuGic_Connect(&IntrInst, ENC_INTR_ID, (Xil_InterruptHandler)enc_ISR, 0);
 	if (done != XST_SUCCESS)
-		return print_error("\n\rInterrupt controller connection failed!\n\r");
+		print_error("\n\rInterrupt controller connection failed!\n\r");
 	XScuGic_Enable(&IntrInst, ENC_INTR_ID);
 
 	// Set up interrupt for decryption.
 	XScuGic_SetPriorityTriggerType(&IntrInst, DEC_INTR_ID, 100, 3);
 	done = XScuGic_Connect(&IntrInst, DEC_INTR_ID, (Xil_InterruptHandler)dec_ISR, 0);
 	if (done != XST_SUCCESS)
-		return print_error("\n\rInterrupt controller connection failed!\n\r");
+		print_error("\n\rInterrupt controller connection failed!\n\r");
 	XScuGic_Enable(&IntrInst, DEC_INTR_ID);
 
 	// Setup for exception handling of the interrupt instance.
