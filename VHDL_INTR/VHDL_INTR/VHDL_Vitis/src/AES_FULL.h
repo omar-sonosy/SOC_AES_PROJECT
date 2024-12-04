@@ -14,6 +14,7 @@
 #include "UART_FILE.h"
 
 
+
 //Helping Macros:
 #define SET_BIT(REG, BIT_NUM) (*REG = (*REG | (1 << (BIT_NUM))))
 #define CLEAR_BIT(REG, BIT_NUM) (*REG = (*REG & ~(1 << (BIT_NUM))))
@@ -39,6 +40,7 @@ extern uint8_t plain_buffer[BUFFER_SIZE];
 extern uint8_t cipher_buffer[BUFFER_SIZE];
 extern int File_size;
 extern int encrypted_bytes;
+extern 	int Plain_is_hex;
 
 
 // Prototypes of functions

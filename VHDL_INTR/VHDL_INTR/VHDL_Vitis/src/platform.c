@@ -78,8 +78,7 @@ disable_caches()
 #endif
 }
 
-void
-init_uart()
+void init_uart()
 {
 #ifdef STDOUT_IS_16550
     XUartNs550_SetBaud(STDOUT_BASEADDR, XPAR_XUARTNS550_CLOCK_HZ, UART_BAUD);
@@ -101,7 +100,7 @@ init_platform()
     /* ps7_init();*/
     /* psu_init();*/
     enable_caches();
-    init_uart();
+    //init_uart();
 }
 
 void

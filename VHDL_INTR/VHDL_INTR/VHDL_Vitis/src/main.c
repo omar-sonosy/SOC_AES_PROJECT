@@ -1,54 +1,67 @@
 
 #include "AES_FULL.h"
 
+
+
 int main()
 {
 	init_platform();
+	int status = UartInit();
 	interrupts_init();
 	double total_time;
-	XUartPs UART_INST;
+	int padding_num;
 
-		xil_printf("\n\rWaiting for file.\n\r");
-		//ReceiveFile(&UART_INST, &plain_buffer, &File_size);
-		xil_printf("\n\rRecived File.\n\r");
-	//	for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
-	//		hexstring_to_bytes(plaintext_hex, &plain_buffer[i]);
-	//	}
-	//	hexstring_to_bytes(key_hex, key);
 
-	//	File_size = 32;
-		if(File_size>0){
-			for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
-					plaintext[i] = plain_buffer[i];
+	while(1){
+		xil_printf("\n\rPlease type 'E' for Encryption and 'D' for Decryption.\n\r");
+		while(UartRead(plain_buffer)!=1){}
+		if(plain_buffer[0]=='E'){
+
+
+			xil_printf("\n\rPlease Enter your plaintext.\n\r");
+			File_size=UartRead(plain_buffer);
+			xil_printf("\n\rPlaintext recieved.\n\r");
+
+			if(File_size>0){
+				padding_num=16-File_size%16;
+
+				for(int i=0;i<padding_num;i++){
+					plain_buffer[File_size+i]=padding_num;
 				}
-			encrypted_bytes += BYTES_TO_ENCRYPT;
-
-			XTime_SetTime(enc_elapsed_time);
-			encrypt(plaintext,key);
-			while(encrypted_bytes < File_size){}
-			//SendFile(&UART_INST, &cipher_buffer, File_size);
-			for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
-				print_results(&plain_buffer[i], key, &cipher_buffer[i]);
+				File_size+=padding_num;
+				if(is_hex_string(plain_buffer)){
+					Plain_is_hex=1;
+				}else{
+					Plain_is_hex=0;
+				}
+				if(Plain_is_hex){
+					hexstring_to_bytes(plain_buffer,plaintext);
+				}else{
+					for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
+						plaintext[BYTES_TO_ENCRYPT-i-1] = plain_buffer[i];
+					}
+				}
+				encrypted_bytes += BYTES_TO_ENCRYPT;
+				XTime_SetTime(enc_elapsed_time);
+				encrypt(plaintext,key);
+				while(encrypted_bytes < File_size){}
+				print_buffers(plain_buffer, key, cipher_buffer ,File_size);
+				total_time = 2000000.0 * enc_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
+				xil_printf("\r\nEncryption takes %f ns.\r\n", total_time);
 			}
-			total_time = 2000000.0 * enc_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-			xil_printf("\r\nEncryption takes %f ns.\r\n", total_time);
+		}else if(plain_buffer[0]=='D'){
+			xil_printf("\n\rSorry Decryption code is still to be implemented\n\r");
+		}else{
+			xil_printf("\n\rInvalid input, exiting......\n\r");
+			break;
 		}
+	}
 
-
-
-//	print("\n\rStart decryption.\n\r");
-//
-//	XTime_SetTime(dec_elapsed_time);
-//	decrypt(enc_ciphertext, key);
-//
-//	print_results(enc_ciphertext, key, dec_plaintext);
-//
-//	total_time = 2000000.0 * dec_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-//	printf("\r\nDecryption takes %f ns.\r\n", total_time);
 
 	cleanup_platform();
 	return 0;
 }
+
 
 
 

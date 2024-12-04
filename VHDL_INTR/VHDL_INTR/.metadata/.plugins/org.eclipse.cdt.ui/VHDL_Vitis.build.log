@@ -1,10 +1,69 @@
-10:41:48 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
+16:31:27 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/AES_FULL.h:7,
+                 from ../src/main.c:2:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/AES_FULL.h:10,
+                 from ../src/main.c:2:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/AES_FULL.h:14,
+                 from ../src/main.c:2:
+../src/UART_FILE.h:8: warning: "UART_DEVICE_ID" redefined
+ #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+ 
+In file included from ../src/platform.h:36,
+                 from ../src/AES_FULL.h:6,
+                 from ../src/main.c:2:
+../src/platform_config.h:5: note: this is the location of the previous definition
+ #define UART_DEVICE_ID 0
+ 
+../src/main.c: In function 'main':
+../src/main.c:32:22: warning: pointer targets in passing argument 1 of 'is_hex_string' differ in signedness [-Wpointer-sign]
+     if(is_hex_string(plain_buffer)){
+                      ^~~~~~~~~~~~
+In file included from ../src/AES_FULL.h:5,
+                 from ../src/main.c:2:
+../src/helper_functions.h:16:5: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+ int is_hex_string(const char *);
+     ^~~~~~~~~~~~~
+../src/main.c:38:25: warning: pointer targets in passing argument 1 of 'hexstring_to_bytes' differ in signedness [-Wpointer-sign]
+      hexstring_to_bytes(plain_buffer,plaintext);
+                         ^~~~~~~~~~~~
+In file included from ../src/AES_FULL.h:5,
+                 from ../src/main.c:2:
+../src/helper_functions.h:19:6: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+ void hexstring_to_bytes(const char *, uint8_t *);
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:9:6: warning: unused variable 'status' [-Wunused-variable]
+  int status = UartInit();
+      ^~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: VHDL_Vitis.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bsplib/lib -o "VHDL_Vitis.elf"  ./src/AES_FULL.o ./src/UART_FILE.o ./src/helper_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: VHDL_Vitis.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VHDL_Vitis.elf  |tee "VHDL_Vitis.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64380	   3392	  25536	  93308	  16c7c	VHDL_Vitis.elf
+'Finished building: VHDL_Vitis.elf.size'
+' '
 
-10:41:49 Build Finished (took 516ms)
+16:31:29 Build Finished (took 1s.625ms)
 

@@ -1,287 +1,1299 @@
-!SESSION 2024-12-04 09:31:13.077 -----------------------------------------------
+!SESSION 2024-12-04 14:30:09.135 -----------------------------------------------
 eclipse.buildId=2019.2
 java.version=9.0.4
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
 Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
-This is a continuation of log file H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\.metadata\.bak_1.log
-Created Time: 2024-12-04 10:28:40.277
+This is a continuation of log file H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\.metadata\.bak_2.log
+Created Time: 2024-12-04 16:28:57.908
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:28:40.292
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '16'
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.908
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:28:40.308
-!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '16'
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.924
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.ui 4 4 2024-12-04 10:41:01.867
-!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@3a182eaf} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.924
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.ui 2 2 2024-12-04 10:41:01.899
-!MESSAGE Invalid preference category path: com.xilinx.sdk.ui.preferences.page (bundle: com.xilinx.sdk.ui.customize, page: com.xilinx.sdk.ui.customize.sdkCustomizationPreferences)
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.939
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.ui 2 2 2024-12-04 10:41:01.899
-!MESSAGE Invalid preference category path: com.autoesl.autopilot.ui.startup.preferences.AutoPilotRootPreferencePage (bundle: com.autoesl.autopilot.ui.cdfg.diagram, page: com.autoesl.autopilot.ui.cdfg.diagram.general)
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.955
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.874
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.955
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.874
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:28:57.971
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.890
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.408
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.906
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.423
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.921
-!MESSAGE XSCT Command: [version -server], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.423
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.921
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.439
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.937
-!MESSAGE XSCT Command: [version], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.439
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.952
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.455
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.455
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.501
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:00.501
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:01.939
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:01.970
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:01.970
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:01.986
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:02.001
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:606)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:29:02.017
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:779)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1522)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:608)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:12.940
+!MESSAGE XSCT Command: [disconnect tcfchan#30], Thread: Thread-3234
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:12.954
+!MESSAGE XSCT command with result: [disconnect tcfchan#30], Result: [null, ]. Thread: Thread-3234
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:13.972
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:13.988
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#31]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.004
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.019
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.035
+!MESSAGE XSCT Command: [version -server], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.051
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.051
+!MESSAGE XSCT Command: [version], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.066
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
 SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.968
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.066
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.968
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.082
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.984
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.097
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:44.999
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.129
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.015
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.144
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.031
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.160
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.031
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.160
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.046
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.191
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.062
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.191
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.077
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.207
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.093
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.222
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.109
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.238
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.124
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.254
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.124
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.269
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.140
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.269
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.156
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.301
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.171
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.301
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.187
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.316
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.187
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.332
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.218
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.347
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.218
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.347
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.234
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.363
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.249
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.379
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.265
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.394
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.265
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.394
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.281
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.410
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.296
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.426
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.312
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.426
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.312
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.441
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.327
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.457
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.343
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.472
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.468
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.551
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:45.484
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:14.551
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:47.285
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Thread: Worker-38: Build VHDL_Vitis
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.569
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.504
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.535
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.600
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.535
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-38: Build VHDL_Vitis
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.616
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.550
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-38: Build VHDL_Vitis
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.632
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.566
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.663
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.582
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.679
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.582
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.694
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:17.710
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:18.953
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:18.985
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:19.000
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:19.000
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.922
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_29]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.937
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.937
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.953
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.969
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:21.969
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.000
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.000
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.156
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.172
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.172
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.187
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.203
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.219
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.503
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.519
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.581
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.644
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.675
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.675
+!MESSAGE XSCT Command: [con], Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:29:22.706
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-74: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:29:22.722
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '31'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:08.414
+!MESSAGE XSCT Command: [disconnect tcfchan#31], Thread: Thread-3283
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:08.439
+!MESSAGE XSCT command with result: [disconnect tcfchan#31], Result: [null, ]. Thread: Thread-3283
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.454
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.470
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#32]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.485
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.501
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.517
+!MESSAGE XSCT Command: [version -server], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.532
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.548
+!MESSAGE XSCT Command: [version], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.548
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.563
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.579
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.595
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.626
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.626
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.642
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.657
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.673
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.673
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.688
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.704
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.720
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.735
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.751
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.751
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.767
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.782
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.798
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.798
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.813
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.829
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.845
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.845
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.860
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.876
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.892
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.907
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.907
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.923
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.938
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:09.938
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:10.032
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:10.048
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.065
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.096
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.112
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.112
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.143
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.143
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.159
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:13.174
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:14.436
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:14.467
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:14.483
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:14.483
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.482
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_30]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.482
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.498
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.513
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.513
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.529
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.560
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.560
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.732
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.732
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.748
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.748
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.763
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:17.779
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.096
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.096
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.127
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.189
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.205
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.220
+!MESSAGE XSCT Command: [con], Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:18.236
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-52: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:30:18.252
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '32'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:25.691
+!MESSAGE XSCT Command: [disconnect tcfchan#32], Thread: Thread-3332
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:25.704
+!MESSAGE XSCT command with result: [disconnect tcfchan#32], Result: [null, ]. Thread: Thread-3332
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.705
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.736
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#33]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.736
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.751
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.751
+!MESSAGE XSCT Command: [version -server], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.767
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.767
+!MESSAGE XSCT Command: [version], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.783
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.783
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.798
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.814
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.830
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.830
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.845
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.845
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.861
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.876
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.876
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.892
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.908
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.908
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.939
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.954
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.954
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.970
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.970
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:26.986
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.001
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.017
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.017
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.033
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.048
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.064
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.079
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.079
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.095
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.111
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.126
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.204
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:27.204
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.237
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.269
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.284
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.284
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.300
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.315
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.331
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:30.347
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:31.601
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:31.632
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:31.648
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:31.663
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.460
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_31]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.476
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.476
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.476
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.491
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.507
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.522
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.522
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.694
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.710
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.726
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.741
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.741
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:34.757
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.058
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.058
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.090
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.105
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.137
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.137
+!MESSAGE XSCT Command: [con], Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:30:35.168
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-69: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:30:35.183
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '33'
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.530
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.577
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Thread: Worker-76: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.593
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-76: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.593
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-76: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.608
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.1",
-}]. Thread: Worker-38: Build VHDL_Vitis
+}]. Thread: Worker-76: Build Project
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:41:48.597
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:31:27.624
 !MESSAGE Generating MD5 hash for file: H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\AES_F_wrapper\export\AES_F_wrapper\sw\AES_F_wrapper\standalone_domain\system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.613
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.624
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.624
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.613
-!MESSAGE XSCT Command: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-38: Build VHDL_Vitis
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.640
+!MESSAGE XSCT Command: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-76: Build Project
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.628
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.644
-!MESSAGE XSCT command with result: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-38: Build VHDL_Vitis
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.660
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:48.675
-!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.912
-!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.927
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.943
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.943
-!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.959
-!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.974
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.974
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.990
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:49.990
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.006
-!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.021
-!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.037
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.209
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.224
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.240
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.240
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.256
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.256
-!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.474
-!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.490
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.537
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.599
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.615
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.630
-!MESSAGE XSCT Command: [con], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:41:50.646
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:41:50.662
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '17'
-
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.708
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.640
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -298,13 +1310,40 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
 	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
 	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
-	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:627)
-	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:545)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1127)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
 	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.724
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:27.655
+!MESSAGE XSCT command with result: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-76: Build Project
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.733
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:963)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.733
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -327,7 +1366,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.724
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:27.749
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -349,7 +1388,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.740
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.046
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -372,7 +1411,77 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.740
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.139
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.139
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.155
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1127)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.249
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Erreur rÃ©seau inattendue
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.pwrite(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:188)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:801)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:749)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1102)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:963)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.249
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -395,7 +1504,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:41:51.755
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.264
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -417,10 +1526,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:42:00.345
-!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
-
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.423
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.264
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -443,7 +1549,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.423
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.280
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -466,7 +1572,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.438
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.280
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -488,7 +1594,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.438
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.296
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -511,7 +1617,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.454
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.296
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -534,7 +1640,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.454
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:29.311
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -556,7 +1662,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.470
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.842
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -579,7 +1685,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.470
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.842
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -602,7 +1708,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.470
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.858
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -624,7 +1730,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.501
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.858
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -647,7 +1753,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.516
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.874
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -670,7 +1776,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.516
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.874
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -692,7 +1798,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.532
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.889
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -715,7 +1821,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.532
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.889
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -738,7 +1844,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.532
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:31.905
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -760,7 +1866,13 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.548
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:33.233
+!MESSAGE XSCT Command: [disconnect tcfchan#33], Thread: Thread-3410
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:33.243
+!MESSAGE XSCT command with result: [disconnect tcfchan#33], Result: [null, ]. Thread: Thread-3410
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.274
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -783,7 +1895,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.548
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.289
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -806,7 +1918,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.563
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.289
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -828,7 +1940,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.563
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.305
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -851,7 +1963,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.579
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.305
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -874,7 +1986,7 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 10:42:00.579
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-04 16:31:33.321
 !MESSAGE IOException
 !STACK 0
 java.io.IOException: Erreur rÃ©seau inattendue
@@ -896,516 +2008,248 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:09.696
-!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-1141
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.243
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:09.705
-!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-1141
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.258
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#34]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.721
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.258
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.736
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.274
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.752
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.289
+!MESSAGE XSCT Command: [version -server], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.767
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.289
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.783
-!MESSAGE XSCT Command: [version -server], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.305
+!MESSAGE XSCT Command: [version], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.783
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.799
-!MESSAGE XSCT Command: [version], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.814
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.305
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
 SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.814
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.305
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.830
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.321
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.846
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.336
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.861
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.336
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.877
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.352
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.877
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.367
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.892
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.367
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.908
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.383
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.908
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.399
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.924
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.414
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.939
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.414
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.955
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.430
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.955
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.430
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.971
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.446
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.971
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.461
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.986
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.477
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:10.986
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.477
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.002
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.492
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.017
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.492
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.049
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.508
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.049
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.508
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.064
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.524
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.064
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.539
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.080
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.555
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.095
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.555
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.111
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.571
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BD5A" && level == 0}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.111
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.571
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.127
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.586
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.142
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.586
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.158
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.602
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.174
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.617
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.255
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.680
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:11.255
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:34.696
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.271
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.711
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.302
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.742
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.318
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.742
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BD5A]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.333
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.758
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.364
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.773
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
      3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.364
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.789
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.396
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.805
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BD5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:14.396
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:37.820
 !MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.657
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:39.060
 !MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.688
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:39.091
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.704
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:39.107
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.720
-!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:39.123
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.735
-!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.200
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_32]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.735
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.200
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.735
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.216
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.751
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.216
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.767
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.232
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.767
-!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.247
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.782
-!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.263
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.798
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.278
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.970
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.419
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:15.985
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.435
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.001
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.450
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.017
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.450
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.032
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.466
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.032
-!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.482
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.329
-!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.761
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.329
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.761
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.360
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.793
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.438
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.855
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.470
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.871
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.485
-!MESSAGE XSCT Command: [con], Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.871
+!MESSAGE XSCT Command: [con], Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:16.501
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-39: Launching Debugger_VHDL_Vitis-Default
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:31:42.918
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-70: Launching Debugger_VHDL_Vitis-Default
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:42:16.516
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '18'
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:31:42.949
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '34'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:35.049
-!MESSAGE XSCT Command: [disconnect tcfchan#18], Thread: Thread-1190
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:32:18.090
+!MESSAGE XSCT Command: [disconnect tcfchan#34], Thread: Thread-3460
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:35.063
-!MESSAGE XSCT command with result: [disconnect tcfchan#18], Result: [null, ]. Thread: Thread-1190
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 16:32:18.097
+!MESSAGE XSCT command with result: [disconnect tcfchan#34], Result: [null, ]. Thread: Thread-3460
 
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.095
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.111
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#19]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.111
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.142
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.142
-!MESSAGE XSCT Command: [version -server], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.158
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.158
-!MESSAGE XSCT Command: [version], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.173
-!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
-SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.173
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.189
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.205
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.220
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.236
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.236
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.251
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.267
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.267
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.283
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.283
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.298
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.314
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.345
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.361
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.392
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.392
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.408
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.423
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.439
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.439
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.455
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.455
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.470
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.501
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.517
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A77BDFA" && level == 0}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.533
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.533
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.548
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.564
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.564
-!MESSAGE XSCT Command: [rst -system], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.659
-!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:36.659
-!MESSAGE XSCT Command: [after 3000], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.690
-!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.722
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.737
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A77BDFA]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.737
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.768
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.768
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.784
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:39.800
-!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.055
-!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.087
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.102
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.118
-!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.149
-!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.165
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.165
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.180
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.196
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.196
-!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.227
-!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.227
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.430
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.446
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.477
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.493
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.524
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.524
-!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.821
-!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.821
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.836
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.915
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.930
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.961
-!MESSAGE XSCT Command: [con], Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:42:41.993
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-29: Launching Debugger_VHDL_Vitis-Default
-
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 10:42:42.008
-!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '19'
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:43:30.562
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:43:30.578
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ], Result: [null, {"ps7_cortexa9_0": "",
-"ps7_cortexa9_1": "",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:58:13.158
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 10:58:13.236
-!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ], Result: [null, {"ps7_cortexa9_0": "",
-"ps7_cortexa9_1": "",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 11:12:45.979
-!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-1242
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 11:12:45.995
-!MESSAGE XSCT Command: [disconnect tcfchan#19], Thread: Thread-1244
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 11:12:46.010
-!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [{Format=channel "tcfchan#16" closed, Time=1733307165995, Code=1}, ]. Thread: Thread-1242
-
-!ENTRY com.xilinx.sdk.utils 0 0 2024-12-04 11:12:46.021
-!MESSAGE XSCT command with result: [disconnect tcfchan#19], Result: [null, ]. Thread: Thread-1244
-
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 11:12:46.067
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:32:18.144
 !MESSAGE Executing command: cmd /C C:\Xilinx\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
 
-!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 11:12:46.130
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-04 16:32:18.229
 !MESSAGE Executed Webtalk command

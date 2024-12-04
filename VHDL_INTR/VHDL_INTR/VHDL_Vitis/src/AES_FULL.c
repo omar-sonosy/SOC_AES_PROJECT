@@ -32,7 +32,8 @@ Xuint32 *const dec_done_flag = dec_control_bits + 1;
 XScuGic IntrInst;
 
 //Global Variables for encryption and decryption:
-uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
+uint8_t plaintext[BYTES_TO_ENCRYPT];
+uint8_t key[BYTES_TO_ENCRYPT]={0x70,0x6F,0x6E,0x6D,0x6C,0x6B,0x6A,0x69,0x68,0x67,0x66,0x65,0x64,0x63,0x62,0x61};
 uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 
 XTime enc_elapsed_time;
@@ -43,6 +44,7 @@ uint8_t plain_buffer[BUFFER_SIZE];
 uint8_t cipher_buffer[BUFFER_SIZE];
 int File_size = 0;
 int encrypted_bytes = 0;
+int Plain_is_hex;
 
 
 void print_registers(bool ENC_DEC)
@@ -129,13 +131,19 @@ static void enc_ISR()
 	}
 
 	for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
-		plaintext[i-encrypted_bytes] = plain_buffer[i];
-		cipher_buffer[i-BYTES_TO_ENCRYPT] = enc_ciphertext[i-encrypted_bytes];
+		cipher_buffer[i-BYTES_TO_ENCRYPT] = enc_ciphertext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1];
 	}
 
 	XScuGic_Enable(&IntrInst, ENC_INTR_ID);
 
 	if(encrypted_bytes < File_size){
+		if(Plain_is_hex){
+			hexstring_to_bytes(plain_buffer,plaintext);
+		}else{
+			for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
+				plaintext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1] = plain_buffer[i];
+			}
+		}
 		encrypt(plaintext, key);
 		encrypted_bytes += BYTES_TO_ENCRYPT;
 	}

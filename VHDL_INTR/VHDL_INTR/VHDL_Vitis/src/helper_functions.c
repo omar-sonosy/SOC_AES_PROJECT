@@ -8,11 +8,11 @@ char *print_error(const char *msg)
 
 void hexstring_to_bytes(const char *hex_string, uint8_t *bytes_arr)
 {
-    int j = BYTES_TO_ENCRYPT - 1;
+    int j = 0;
     for (int i = 0; i < BYTES_TO_ENCRYPT * 2; i += 2)
     {
         char temp_str[3] = {hex_string[i], hex_string[i + 1], '\0'};
-        bytes_arr[j--] = (uint8_t)strtol(temp_str, NULL, 16);
+        bytes_arr[j++] = (uint8_t)strtol(temp_str, NULL, 16);
     }
 }
 
@@ -80,4 +80,19 @@ void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
     for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
         xil_printf("%x ", ciphertext[i]);
     xil_printf("\n\r");
+}
+
+void print_buffers(const uint8_t*  plain_buffer, const uint8_t* key, const uint8_t* cipher_buffer, int file_size){
+	xil_printf("\r\nPlaintext: ");
+	for (int i = 0; i < file_size; i++)
+		xil_printf("%x ", plain_buffer[i]);
+
+	xil_printf("\n\rKey: ");
+	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
+		xil_printf("%x ", key[i]);
+
+	xil_printf("\n\rCiphertext: ");
+	for (int i = 0; i < file_size; i++)
+		xil_printf("%x ", cipher_buffer[i]);
+	xil_printf("\n\r");
 }
