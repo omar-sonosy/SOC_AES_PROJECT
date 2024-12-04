@@ -1,15 +1,10 @@
-10:18:03 **** Incremental Build of configuration Debug for project VHDL_Vitis_system ****
+10:41:52 **** Incremental Build of configuration Debug for project VHDL_Vitis_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 60931 H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/AES_F_wrapper.xpfm standalone_domain H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/Debug/system.bif
-xpfm path is not valid
-    invoked from within
-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{::scw::generate_bif -xpfm H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/AES_F_wrapper.xpfm -domains standalone_domain -bifpath H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/Debug/system.bif}}}"
-    (procedure "::tcf::send_command" line 4)
-    invoked from within
-"tcf send_command $::xsdb::curchan xsdb eval s es [list "::scw::generate_bif $GENERATE_BIF_ARGS"]"
-    (file "C:/Xilinx/Vitis/2019.2\scripts\vitis\util\generate_system_bif.tcl" line 25)
-make: *** [makefile:36: sd_card] Error 1
+generate_system_bif.bat 54371 H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/AES_F_wrapper.xpfm standalone_domain H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/Debug/system.bif
+sdcard_gen --xpfm H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/AES_F_wrapper.xpfm --sys_config AES_F_wrapper --bif H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/Debug/system.bif --bitstream H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit --elf H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf,ps7_cortexa9_0
+creating BOOT.BIN using H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit
+Running C:/Xilinx/Vitis/2019.2/bin/bootgen  -image H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-10:18:04 Build Finished (took 1s.18ms)
+10:42:00 Build Finished (took 7s.621ms)
 

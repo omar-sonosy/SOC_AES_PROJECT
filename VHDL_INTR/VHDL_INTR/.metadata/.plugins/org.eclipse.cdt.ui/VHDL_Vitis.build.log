@@ -1,85 +1,10 @@
-11:09:47 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
+10:41:48 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/AES_FULL.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AES_FULL.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/AES_FULL.d" -MT"src/AES_FULL.o" -o "src/AES_FULL.o" "../src/AES_FULL.c"
-In file included from ../src/AES_FULL.h:7,
-                 from ../src/AES_FULL.c:14:
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
- #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-  ^~~~~~~
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
- #warning  Please refer the Standalone BSP UG647 for further details
-  ^~~~~~~
-In file included from ../src/AES_FULL.h:10,
-                 from ../src/AES_FULL.c:14:
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from ../src/AES_FULL.h:14,
-                 from ../src/AES_FULL.c:14:
-../src/UART_FILE.h:8: warning: "UART_DEVICE_ID" redefined
- #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
- 
-In file included from ../src/platform.h:36,
-                 from ../src/AES_FULL.h:6,
-                 from ../src/AES_FULL.c:14:
-../src/platform_config.h:5: note: this is the location of the previous definition
- #define UART_DEVICE_ID 0
- 
-'Finished building: ../src/AES_FULL.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/AES_FULL.h:7,
-                 from ../src/main.c:2:
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
- #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-  ^~~~~~~
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
- #warning  Please refer the Standalone BSP UG647 for further details
-  ^~~~~~~
-In file included from ../src/AES_FULL.h:10,
-                 from ../src/main.c:2:
-H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
- #pragma message ("For the sleep routines, Global timer is being used")
-         ^~~~~~~
-In file included from ../src/AES_FULL.h:14,
-                 from ../src/main.c:2:
-../src/UART_FILE.h:8: warning: "UART_DEVICE_ID" redefined
- #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
- 
-In file included from ../src/platform.h:36,
-                 from ../src/AES_FULL.h:6,
-                 from ../src/main.c:2:
-../src/platform_config.h:5: note: this is the location of the previous definition
- #define UART_DEVICE_ID 0
- 
-../src/main.c: In function 'main':
-../src/main.c:11:2: warning: implicit declaration of function 'ReceiveFile' [-Wimplicit-function-declaration]
-  ReceiveFile(&UART_INST, &plain_buffer, &File_size);
-  ^~~~~~~~~~~
-../src/main.c:32:2: warning: implicit declaration of function 'SendFile' [-Wimplicit-function-declaration]
-  SendFile(&UART_INST, &cipher_buffer, File_size);
-  ^~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building target: VHDL_Vitis.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bsplib/lib -o "VHDL_Vitis.elf"  ./src/AES_FULL.o ./src/UART_FILE.o ./src/helper_functions.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: VHDL_Vitis.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size VHDL_Vitis.elf  |tee "VHDL_Vitis.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  78980	   3360	  25488	 107828	  1a534	VHDL_Vitis.elf
-'Finished building: VHDL_Vitis.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-11:09:50 Build Finished (took 2s.547ms)
+10:41:49 Build Finished (took 516ms)
 

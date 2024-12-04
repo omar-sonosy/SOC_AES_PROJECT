@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="VHDL_Vitis_system" key="programflash.hwplatform"/>
+	<item value="" key="VHDL_Vitis_system-offSet"/>
+	<item value="false" key="VHDL_Vitis_system-verifyFlash"/>
+	<item value="Auto Detect" key="VHDL_Vitis_system-device"/>
+	<item value="Local" key="VHDL_Vitis_system-target"/>
+	<item value="H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis_system/_ide/bootimage/BOOT.bin" key="VHDL_Vitis_system-imgFile"/>
+	<item value="H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/boot/fsbl.elf" key="VHDL_Vitis_system-fsblFile"/>
+	<item value="qspi-x4-single" key="VHDL_Vitis_system-flashType"/>
+	<item value="false" key="VHDL_Vitis_system-blankCheck"/>
+</section>

@@ -4,7 +4,7 @@ void ReceiveFile(XUartPs *UartInstancePtr, uint8_t *Buffer, int *FileSize) {
     int ReceivedBytes = 0;
     int Byte;
 
-    xil_printf("Waiting for file...\n");
+    //xil_printf("Waiting for file...\n");
     while (1) {
         Byte = XUartPs_Recv(UartInstancePtr, &Buffer[ReceivedBytes], 1);
         if (Byte > 0) {
@@ -23,13 +23,13 @@ void ReceiveFile(XUartPs *UartInstancePtr, uint8_t *Buffer, int *FileSize) {
     }
 
     *FileSize = ReceivedBytes;
-    xil_printf("File received. Size: %d bytes\n", *FileSize);
+    //xil_printf("File received. Size: %d bytes\n", *FileSize);
 }
 
 void SendFile(XUartPs *UartInstancePtr, uint8_t *Buffer, int FileSize) {
-    xil_printf("Sending encrypted file...\n");
+    //xil_printf("Sending encrypted file...\n");
     XUartPs_Send(UartInstancePtr, Buffer, FileSize);
-    xil_printf("File sent.\n");
+    //xil_printf("File sent.\n");
 }
 
 

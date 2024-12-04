@@ -8,31 +8,33 @@ int main()
 	double total_time;
 	XUartPs UART_INST;
 
-	ReceiveFile(&UART_INST, &plain_buffer, &File_size);
+		xil_printf("\n\rWaiting for file.\n\r");
+		//ReceiveFile(&UART_INST, &plain_buffer, &File_size);
+		xil_printf("\n\rRecived File.\n\r");
+	//	for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
+	//		hexstring_to_bytes(plaintext_hex, &plain_buffer[i]);
+	//	}
+	//	hexstring_to_bytes(key_hex, key);
 
-//	for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
-//		hexstring_to_bytes(plaintext_hex, &plain_buffer[i]);
-//	}
-//	hexstring_to_bytes(key_hex, key);
+	//	File_size = 32;
+		if(File_size>0){
+			for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
+					plaintext[i] = plain_buffer[i];
+				}
+			encrypted_bytes += BYTES_TO_ENCRYPT;
 
-//	File_size = 32;
+			XTime_SetTime(enc_elapsed_time);
+			encrypt(plaintext,key);
+			while(encrypted_bytes < File_size){}
+			//SendFile(&UART_INST, &cipher_buffer, File_size);
+			for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
+				print_results(&plain_buffer[i], key, &cipher_buffer[i]);
+			}
+			total_time = 2000000.0 * enc_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
+			xil_printf("\r\nEncryption takes %f ns.\r\n", total_time);
+		}
 
-	for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
-		plaintext[i] = plain_buffer[i];
-	}
-	encrypted_bytes += BYTES_TO_ENCRYPT;
 
-	XTime_SetTime(enc_elapsed_time);
-	encrypt(plaintext,key);
-
-//	for(int i = 0; i < File_size; i += BYTES_TO_ENCRYPT){
-//		print_results(&plain_buffer[i], key, &cipher_buffer[i]);
-//	}
-
-	SendFile(&UART_INST, &cipher_buffer, File_size);
-
-	total_time = 2000000.0 * enc_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-	printf("\r\nEncryption takes %f ns.\r\n", total_time);
 
 //	print("\n\rStart decryption.\n\r");
 //

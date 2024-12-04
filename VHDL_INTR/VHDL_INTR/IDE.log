@@ -596,3 +596,58 @@ con
 ----------------End of Script----------------
 
 09:01:56 INFO  : Launch script is exported to file 'H:\SOC_AES\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_vhdl_vitis_system_standalone.tcl'
+09:31:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\temp_xsdb_launch_script.tcl
+09:31:43 INFO  : XSCT server has started successfully.
+09:31:43 INFO  : Successfully done setting XSCT server connection channel  
+09:31:43 INFO  : plnx-install-location is set to ''
+09:31:43 INFO  : Successfully done setting workspace for the tool. 
+09:31:43 INFO  : Registering command handlers for Vitis TCF services
+09:31:44 INFO  : Successfully done query RDI_DATADIR 
+09:33:55 INFO  : Checking for BSP changes to sync application flags for project 'VHDL_Vitis'...
+09:34:18 INFO  : Checking for BSP changes to sync application flags for project 'VHDL_Vitis'...
+09:35:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:35:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77BDFA' is selected.
+09:35:59 INFO  : 'jtag frequency' command is executed.
+09:36:00 INFO  : Context for 'APU' is selected.
+09:36:00 INFO  : System reset is completed.
+09:36:03 INFO  : 'after 3000' command is executed.
+09:36:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1' command is executed.
+09:36:05 INFO  : FPGA configured successfully with bitstream "H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit"
+09:36:06 INFO  : Context for 'APU' is selected.
+09:36:06 INFO  : Hardware design information is loaded from 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa'.
+09:36:06 INFO  : 'configparams force-mem-access 1' command is executed.
+09:36:06 INFO  : Context for 'APU' is selected.
+09:36:06 INFO  : Sourcing of 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl' is done.
+09:36:07 INFO  : 'ps7_init' command is executed.
+09:36:07 INFO  : 'ps7_post_config' command is executed.
+09:36:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:36:08 INFO  : The application 'H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:36:08 INFO  : 'configparams force-mem-access 0' command is executed.
+09:36:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77BDFA" && level==0} -index 1
+fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:36:08 INFO  : Memory regions updated for context APU
+09:36:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:36:08 INFO  : 'con' command is executed.
+09:36:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+09:36:08 INFO  : Launch script is exported to file 'H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\.sdk\launch_scripts\single_application_debug\systemdebugger_vhdl_vitis_system_standalone.tcl'

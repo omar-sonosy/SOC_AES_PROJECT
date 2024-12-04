@@ -3084,3 +3084,596 @@ TRACE::2024-11-27.08:43:36::SCWMssOS::DEBUG:  swdes dump  H:/SOC_AES/SOC_AES_PRO
 H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2024-11-27.08:43:36::SCWMssOS::Sw design exists and opened at  H:/SOC_AES/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:05::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:05::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:05::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:06::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:06::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:06::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:06::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-12-04.09:33:10::SCWPlatform::Opened new HwDB with name AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWReader::Active system found as  AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWReader::Handling sysconfig AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWDomain::checking for install qemu data   : 
+TRACE::2024-12-04.09:33:10::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2024-12-04.09:33:10::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:10::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:10::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-12-04.09:33:10::SCWMssOS::No sw design opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:10::SCWMssOS::mss exists loading the mss file  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:10::SCWMssOS::Opened the sw design from mss  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:10::SCWMssOS::Adding the swdes entry H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-12-04.09:33:10::SCWMssOS::updating the scw layer about changes
+TRACE::2024-12-04.09:33:10::SCWMssOS::Opened the sw design.  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:10::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:10::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:11::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:11::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:11::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:11::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2024-12-04.09:33:11::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-12-04.09:33:11::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:11::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:11::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWReader::No isolation master present  
+TRACE::2024-12-04.09:33:11::SCWDomain::checking for install qemu data   : 
+TRACE::2024-12-04.09:33:11::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2024-12-04.09:33:11::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:11::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:11::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:11::SCWMssOS::No sw design opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::mss exists loading the mss file  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::Opened the sw design from mss  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:11::SCWMssOS::Adding the swdes entry H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-12-04.09:33:11::SCWMssOS::updating the scw layer about changes
+TRACE::2024-12-04.09:33:11::SCWMssOS::Opened the sw design.  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:12::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-12-04.09:33:12::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-12-04.09:33:12::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:12::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:12::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:12::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:12::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:12::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:12::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:12::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:12::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:12::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:12::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:12::SCWReader::No isolation master present  
+LOG::2024-12-04.09:33:12::SCWPlatform::Started generating the artifacts platform AES_F_wrapper
+TRACE::2024-12-04.09:33:12::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-12-04.09:33:13::SCWPlatform::Started generating the artifacts for system configuration AES_F_wrapper
+LOG::2024-12-04.09:33:13::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-12-04.09:33:13::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-12-04.09:33:13::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-12-04.09:33:13::SCWDomain::Building the domain :  zynq_fsbl
+TRACE::2024-12-04.09:33:13::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:13::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:13::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:13::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:13::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:13::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:13::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:13::SCWBDomain::Completed writing the mss file at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-12-04.09:33:13::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-12-04.09:33:13::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-12-04.09:33:13::SCWBDomain::System Command Ran  H:&  cd  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl & make 
+TRACE::2024-12-04.09:33:13::SCWBDomain::make: Nothing to be done for 'all'.
+
+LOG::2024-12-04.09:33:13::SCWSystem::Checking the domain standalone_domain
+LOG::2024-12-04.09:33:13::SCWSystem::Not a boot domain 
+LOG::2024-12-04.09:33:13::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-12-04.09:33:13::SCWDomain::Generating domain artifcats
+TRACE::2024-12-04.09:33:13::SCWMssOS::Generating standalone artifcats
+TRACE::2024-12-04.09:33:13::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/qemu/
+TRACE::2024-12-04.09:33:13::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/qemu/
+TRACE::2024-12-04.09:33:13::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-12-04.09:33:13::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:13::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:13::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:14::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:14::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:14::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:14::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:14::SCWMssOS::Completed writing the mss file at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-12-04.09:33:14::SCWMssOS::Mss edits present, copying mssfile into export location H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:14::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-12-04.09:33:14::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-12-04.09:33:14::SCWDomain::Building the domain :  standalone_domain
+TRACE::2024-12-04.09:33:14::SCWMssOS::doing bsp build ... 
+TRACE::2024-12-04.09:33:14::SCWMssOS::System Command Ran  H: & cd  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AES_DEC_v1_0/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AES_DEC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-12-04.09:33:14::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-12-04.09:33:14::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AES_ENC_v1_0/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AES_ENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-12-04.09:33:14::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-12-04.09:33:14::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-12-04.09:33:14::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-12-04.09:33:14::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-12-04.09:33:14::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-12-04.09:33:14::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-12-04.09:33:14::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-12-04.09:33:14::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-12-04.09:33:14::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:15::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:15::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-12-04.09:33:15::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-12-04.09:33:15::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-12-04.09:33:15::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-12-04.09:33:15::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:15::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:15::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-12-04.09:33:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-12-04.09:33:16::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-12-04.09:33:16::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-12-04.09:33:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-12-04.09:33:16::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-12-04.09:33:16::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:17::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-12-04.09:33:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-12-04.09:33:17::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-12-04.09:33:17::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-12-04.09:33:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:19::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-12-04.09:33:20::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-12-04.09:33:20::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-12-04.09:33:20::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-12-04.09:33:20::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/AES_DEC_v1_0/src"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AES_DEC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-12-04.09:33:20::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-12-04.09:33:20::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:20::SCWMssOS::"Compiling AES_DEC..."
+
+TRACE::2024-12-04.09:33:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/AES_ENC_v1_0/src"
+
+TRACE::2024-12-04.09:33:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AES_ENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-12-04.09:33:21::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-12-04.09:33:21::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:21::SCWMssOS::"Compiling AES_ENC..."
+
+TRACE::2024-12-04.09:33:22::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-12-04.09:33:22::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-12-04.09:33:22::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-12-04.09:33:22::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:22::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-12-04.09:33:23::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-12-04.09:33:23::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-12-04.09:33:23::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-12-04.09:33:23::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Compiling ddrps"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:23::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:23::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:23::SCWMssOS::"Compiling devcfg"
+
+TRACE::2024-12-04.09:33:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-12-04.09:33:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-12-04.09:33:24::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-12-04.09:33:24::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:24::SCWMssOS::"Compiling dmaps"
+
+TRACE::2024-12-04.09:33:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-12-04.09:33:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-12-04.09:33:26::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-12-04.09:33:26::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:26::SCWMssOS::"Compiling emacps"
+
+TRACE::2024-12-04.09:33:28::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-12-04.09:33:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:28::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:28::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:28::SCWMssOS::"Compiling gpiops"
+
+TRACE::2024-12-04.09:33:30::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-12-04.09:33:30::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:30::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:30::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:30::SCWMssOS::"Compiling qspips"
+
+TRACE::2024-12-04.09:33:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-12-04.09:33:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:31::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:31::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:31::SCWMssOS::"Compiling scugic"
+
+TRACE::2024-12-04.09:33:33::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-12-04.09:33:33::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-12-04.09:33:33::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-12-04.09:33:33::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:33::SCWMssOS::"Compiling scutimer"
+
+TRACE::2024-12-04.09:33:34::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-12-04.09:33:34::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:34::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:34::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:34::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2024-12-04.09:33:35::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-12-04.09:33:35::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-12-04.09:33:35::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-12-04.09:33:35::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:35::SCWMssOS::"Compiling sdps"
+
+TRACE::2024-12-04.09:33:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-12-04.09:33:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-12-04.09:33:37::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-12-04.09:33:37::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:37::SCWMssOS::"Compiling standalone"
+
+TRACE::2024-12-04.09:33:44::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-12-04.09:33:44::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:44::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:44::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:44::SCWMssOS::"Compiling uartps"
+
+TRACE::2024-12-04.09:33:46::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-12-04.09:33:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-12-04.09:33:46::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-12-04.09:33:46::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:46::SCWMssOS::"Compiling usbps"
+
+TRACE::2024-12-04.09:33:48::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-12-04.09:33:48::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-12-04.09:33:48::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-12-04.09:33:48::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-12-04.09:33:48::SCWMssOS::"Compiling xadcps"
+
+TRACE::2024-12-04.09:33:50::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-12-04.09:33:51::SCWMssOS::Copying to export directory.
+TRACE::2024-12-04.09:33:54::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-12-04.09:33:54::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-12-04.09:33:54::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-12-04.09:33:54::SCWSystem::Completed Processing the sysconfig AES_F_wrapper
+LOG::2024-12-04.09:33:54::SCWPlatform::Completed generating the artifacts for system configuration AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Started preparing the platform 
+TRACE::2024-12-04.09:33:54::SCWSystem::Writing the bif file for system config AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWSystem::dir created 
+TRACE::2024-12-04.09:33:54::SCWSystem::Writing the bif 
+TRACE::2024-12-04.09:33:54::SCWPlatform::Started writing the spfm file 
+TRACE::2024-12-04.09:33:54::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-12-04.09:33:54::SCWPlatform::Completed generating the platform
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:54::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:54::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:54::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:54::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:54::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:54::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:54::SCWWriter::formatted JSON is {
+	"platformName":	"AES_F_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"AES_F_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/AES_F_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"AES_F_wrapper",
+	"systems":	[{
+			"systemName":	"AES_F_wrapper",
+			"systemDesc":	"AES_F_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"AES_F_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9e4bb834889149603106c618909c5f75",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"1668735db61f7c535b19ca3559aa1ebc",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-12-04.09:33:54::SCWPlatform::updated the xpfm file.
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to open the hw design at H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA given H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA absoulate path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform::DSA directory H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Platform Path H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/hw/AES_F_wrapper.xsa
+TRACE::2024-12-04.09:33:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-12-04.09:33:54::SCWPlatform::Trying to set the existing hwdb with name AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Opened existing hwdb AES_F_wrapper
+TRACE::2024-12-04.09:33:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-12-04.09:33:54::SCWMssOS::Checking the sw design at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-12-04.09:33:54::SCWMssOS::DEBUG:  swdes dump  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-12-04.09:33:54::SCWMssOS::Sw design exists and opened at  H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss
