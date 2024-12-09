@@ -19,38 +19,67 @@ int main()
 
 
 			xil_printf("\n\rPlease Enter your plaintext.\n\r");
+			encrypted_bytes=0;
 			File_size=UartRead(plain_buffer);
 			xil_printf("\n\rPlaintext recieved.\n\r");
 
 			if(File_size>0){
 				padding_num=16-File_size%16;
-
+				plain_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size+padding_num));
+				cipher_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size+padding_num));
+				for(int i=0;i<File_size;i++){
+					plain_pointer[i]=plain_buffer[i];
+				}
 				for(int i=0;i<padding_num;i++){
-					plain_buffer[File_size+i]=padding_num;
+					plain_pointer[i+File_size]=padding_num;
 				}
 				File_size+=padding_num;
-				if(is_hex_string(plain_buffer)){
-					Plain_is_hex=1;
-				}else{
-					Plain_is_hex=0;
-				}
-				if(Plain_is_hex){
-					hexstring_to_bytes(plain_buffer,plaintext);
-				}else{
-					for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
-						plaintext[BYTES_TO_ENCRYPT-i-1] = plain_buffer[i];
-					}
+				for(int i = 0; i < BYTES_TO_ENCRYPT; i++){
+					plaintext[BYTES_TO_ENCRYPT-i-1] = plain_pointer[i];
 				}
 				encrypted_bytes += BYTES_TO_ENCRYPT;
 				XTime_SetTime(enc_elapsed_time);
 				encrypt(plaintext,key);
 				while(encrypted_bytes < File_size){}
-				print_buffers(plain_buffer, key, cipher_buffer ,File_size);
-				total_time = 2000000.0 * enc_elapsed_time / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-				xil_printf("\r\nEncryption takes %f ns.\r\n", total_time);
+				print_buffers(plain_pointer, key, cipher_pointer ,File_size,padding_num);
+				free(plain_pointer);
+				free(cipher_pointer);
 			}
 		}else if(plain_buffer[0]=='D'){
-			xil_printf("\n\rSorry Decryption code is still to be implemented\n\r");
+			xil_printf("\n\rPlease enter your ciphertext in hexadecimeal without spaces\n\r");
+			encrypted_bytes=0;
+			File_size=UartRead(plain_buffer);
+			xil_printf("\n\rCiphertext recieved.\n\r");
+			plain_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size));
+			cipher_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size));
+			if(File_size>0){
+				if(is_hex_string(plain_buffer)){
+					Plain_is_hex=1;
+				}else{
+					xil_printf("\n\rInvalid input, please enter cipher text in hexadecimal without spaces\n\r");
+					continue;
+				}
+				if(File_size%BYTES_TO_ENCRYPT){
+					xil_printf("\n\rInvalid input, please enter Input cipher with length multiple of 16\n\r");
+					continue;
+				}
+				for(int i=0;i<File_size;i+=(BYTES_TO_ENCRYPT*2)){
+					hexstring_to_bytes(&plain_buffer[i],&cipher_pointer[i/2]);
+				}
+				File_size=File_size/2;
+				for(int i=0;i<BYTES_TO_ENCRYPT;i++){
+					plaintext[BYTES_TO_ENCRYPT-i-1]=cipher_pointer[i];
+				}
+				encrypted_bytes += BYTES_TO_ENCRYPT;
+				XTime_SetTime(dec_elapsed_time);
+				decrypt(plaintext,key);
+				while(encrypted_bytes < File_size){}
+				padding_num=plain_pointer[File_size-1];
+				print_buffers(plain_pointer, key, cipher_pointer ,File_size,padding_num);
+				free(plain_pointer);
+				free(cipher_pointer);
+			}
+
 		}else{
 			xil_printf("\n\rInvalid input, exiting......\n\r");
 			break;

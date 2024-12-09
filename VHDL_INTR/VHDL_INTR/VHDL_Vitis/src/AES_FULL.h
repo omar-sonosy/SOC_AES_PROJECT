@@ -34,14 +34,15 @@
 // extern for the global variables that are common with other files
 extern uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
 extern uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
-extern XTime enc_elapsed_time;
-extern XTime dec_elapsed_time;
+extern volatile XTime enc_elapsed_time;
+extern volatile XTime dec_elapsed_time;
 extern uint8_t plain_buffer[BUFFER_SIZE];
 extern uint8_t cipher_buffer[BUFFER_SIZE];
 extern int File_size;
-extern int encrypted_bytes;
+extern volatile int encrypted_bytes;
 extern 	int Plain_is_hex;
-
+extern uint8_t* plain_pointer;
+extern uint8_t* cipher_pointer;
 
 // Prototypes of functions
 void print_registers(bool ENC_DEC);

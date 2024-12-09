@@ -1,4 +1,4 @@
-16:31:27 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
+16:40:58 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -32,7 +32,7 @@ In file included from ../src/platform.h:36,
  #define UART_DEVICE_ID 0
  
 ../src/main.c: In function 'main':
-../src/main.c:32:22: warning: pointer targets in passing argument 1 of 'is_hex_string' differ in signedness [-Wpointer-sign]
+../src/main.c:56:22: warning: pointer targets in passing argument 1 of 'is_hex_string' differ in signedness [-Wpointer-sign]
      if(is_hex_string(plain_buffer)){
                       ^~~~~~~~~~~~
 In file included from ../src/AES_FULL.h:5,
@@ -40,14 +40,17 @@ In file included from ../src/AES_FULL.h:5,
 ../src/helper_functions.h:16:5: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
  int is_hex_string(const char *);
      ^~~~~~~~~~~~~
-../src/main.c:38:25: warning: pointer targets in passing argument 1 of 'hexstring_to_bytes' differ in signedness [-Wpointer-sign]
-      hexstring_to_bytes(plain_buffer,plaintext);
-                         ^~~~~~~~~~~~
+../src/main.c:67:25: warning: pointer targets in passing argument 1 of 'hexstring_to_bytes' differ in signedness [-Wpointer-sign]
+      hexstring_to_bytes(&plain_buffer[i],&cipher_pointer[i/2]);
+                         ^~~~~~~~~~~~~~~~
 In file included from ../src/AES_FULL.h:5,
                  from ../src/main.c:2:
 ../src/helper_functions.h:19:6: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
  void hexstring_to_bytes(const char *, uint8_t *);
       ^~~~~~~~~~~~~~~~~~
+../src/main.c:11:9: warning: unused variable 'total_time' [-Wunused-variable]
+  double total_time;
+         ^~~~~~~~~~
 ../src/main.c:9:6: warning: unused variable 'status' [-Wunused-variable]
   int status = UartInit();
       ^~~~~~
@@ -61,9 +64,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size VHDL_Vitis.elf  |tee "VHDL_Vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  64380	   3392	  25536	  93308	  16c7c	VHDL_Vitis.elf
+  64796	   3392	  25552	  93740	  16e2c	VHDL_Vitis.elf
 'Finished building: VHDL_Vitis.elf.size'
 ' '
 
-16:31:29 Build Finished (took 1s.625ms)
+16:41:00 Build Finished (took 1s.625ms)
 

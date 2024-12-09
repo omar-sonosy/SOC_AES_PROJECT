@@ -82,17 +82,17 @@ void print_results(uint8_t plaintext[], uint8_t key[], uint8_t ciphertext[])
     xil_printf("\n\r");
 }
 
-void print_buffers(const uint8_t*  plain_buffer, const uint8_t* key, const uint8_t* cipher_buffer, int file_size){
+void print_buffers(const uint8_t*  plain_buffer, const uint8_t* key, const uint8_t* cipher_buffer, int file_size, int padding){
 	xil_printf("\r\nPlaintext: ");
-	for (int i = 0; i < file_size; i++)
-		xil_printf("%x ", plain_buffer[i]);
+	for (int i = 0; i < file_size-padding; i++)
+		xil_printf("%c", plain_buffer[i]);
 
 	xil_printf("\n\rKey: ");
 	for (int i = BYTES_TO_ENCRYPT - 1; i >= 0; i--)
-		xil_printf("%x ", key[i]);
+		xil_printf("%02x", key[i]);
 
 	xil_printf("\n\rCiphertext: ");
 	for (int i = 0; i < file_size; i++)
-		xil_printf("%x ", cipher_buffer[i]);
+		xil_printf("%02x", cipher_buffer[i]);
 	xil_printf("\n\r");
 }

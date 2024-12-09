@@ -36,14 +36,16 @@ uint8_t plaintext[BYTES_TO_ENCRYPT];
 uint8_t key[BYTES_TO_ENCRYPT]={0x70,0x6F,0x6E,0x6D,0x6C,0x6B,0x6A,0x69,0x68,0x67,0x66,0x65,0x64,0x63,0x62,0x61};
 uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 
-XTime enc_elapsed_time;
-XTime dec_elapsed_time;
+volatile XTime enc_elapsed_time;
+volatile XTime dec_elapsed_time;
 
 
 uint8_t plain_buffer[BUFFER_SIZE];
 uint8_t cipher_buffer[BUFFER_SIZE];
+uint8_t* plain_pointer;
+uint8_t* cipher_pointer;
 int File_size = 0;
-int encrypted_bytes = 0;
+volatile int encrypted_bytes = 0;
 int Plain_is_hex;
 
 
@@ -124,42 +126,50 @@ void decrypt(uint8_t *plaintext, uint8_t *key)
 static void enc_ISR()
 {
 	XScuGic_Disable(&IntrInst, ENC_INTR_ID);
-	XTime_GetTime(&enc_elapsed_time);
 	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
 		*((Xuint32 *)(enc_ciphertext) + i) = *(enc_cipher_base_addr + i);
 	}
 
 	for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
-		cipher_buffer[i-BYTES_TO_ENCRYPT] = enc_ciphertext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1];
+		cipher_pointer[i-BYTES_TO_ENCRYPT] = enc_ciphertext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1];
 	}
 
 	XScuGic_Enable(&IntrInst, ENC_INTR_ID);
 
 	if(encrypted_bytes < File_size){
-		if(Plain_is_hex){
-			hexstring_to_bytes(plain_buffer,plaintext);
-		}else{
-			for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
-				plaintext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1] = plain_buffer[i];
-			}
+		for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
+			plaintext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1] = plain_pointer[i];
 		}
 		encrypt(plaintext, key);
 		encrypted_bytes += BYTES_TO_ENCRYPT;
+	}else{
+		XTime_GetTime(&enc_elapsed_time);
 	}
 }
 
 static void dec_ISR()
 {
 	XScuGic_Disable(&IntrInst, DEC_INTR_ID);
-	XTime_GetTime(&dec_elapsed_time);
 
 	for (int i = 0; i < REGISTER_NUMBER; i++)
 	{
 		*((Xuint32 *)(dec_plaintext) + i) = *(dec_cipher_base_addr + i);
 	}
+	for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
+		plain_pointer[i-BYTES_TO_ENCRYPT] = dec_plaintext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1];
+	}
 
 	XScuGic_Enable(&IntrInst, DEC_INTR_ID);
+	if(encrypted_bytes < File_size){
+		for(int i = encrypted_bytes; i < (BYTES_TO_ENCRYPT + encrypted_bytes); i++){
+			plaintext[BYTES_TO_ENCRYPT-(i-encrypted_bytes)-1] = cipher_pointer[i];
+		}
+		decrypt(plaintext, key);
+		encrypted_bytes += BYTES_TO_ENCRYPT;
+	}else{
+		XTime_GetTime(&dec_elapsed_time);
+	}
 }
 
 void interrupts_init(void)
