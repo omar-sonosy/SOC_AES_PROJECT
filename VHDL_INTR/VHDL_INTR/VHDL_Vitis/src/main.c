@@ -1,7 +1,6 @@
 
 #include "AES_FULL.h"
 #include "UART_FILE.h"
-#include "helper_functions.h"
 
 int main()
 {

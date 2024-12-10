@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
+  <diagram name="Page-1" id="_En3aG1eVPpiFEDkc72I">
+    <mxGraphModel dx="2253" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ztdGjRFsdOMcVXPntAQP-1" target="ztdGjRFsdOMcVXPntAQP-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-24" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ztdGjRFsdOMcVXPntAQP-23">
+          <mxGeometry x="0.0333" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ztdGjRFsdOMcVXPntAQP-1" target="ztdGjRFsdOMcVXPntAQP-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-26" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ztdGjRFsdOMcVXPntAQP-25">
+          <mxGeometry x="-0.025" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-1" value="main.c" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="310" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ztdGjRFsdOMcVXPntAQP-2" target="ztdGjRFsdOMcVXPntAQP-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-28" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ztdGjRFsdOMcVXPntAQP-27">
+          <mxGeometry x="-0.3647" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-2" value="AES_FULL.c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="660" y="250" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-4" value="UART_FILE.c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="265" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-5" value="helper_functions.c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="250" y="480" width="377.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-16" value="Read Plaintext&lt;div&gt;Add Padding&lt;/div&gt;&lt;div&gt;Start Encryption&lt;br&gt;Print Results&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="290" y="315" width="113.75" height="113.75" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-17" value="Read Ciphertext&lt;div&gt;Checking Validity&lt;/div&gt;&lt;div&gt;Start Decryption&lt;/div&gt;&lt;div&gt;Remove padding&lt;br&gt;Print Results&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="440" y="315" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-18" value="Encrypt" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="316.88" y="285" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-19" value="Decrypt" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="285" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-20" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;UART_read&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-21" value="UART_init" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="50" y="290" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-22" value="xil_printf" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-29" value="Interrupts_init" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="285" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-30" value="Decrypt" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="840" y="285" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-31" value="Enc_ISR" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="365" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-32" value="Ecnrypt" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="840" y="365" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-33" value="Dec_ISR" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="757" y="315" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-34" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;is_hex_string&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="510" width="62.5" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-35" value="hex_to_bytes" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="403.75" y="510" width="62.5" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ztdGjRFsdOMcVXPntAQP-36" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;print_buffers&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="510" width="62.5" height="62.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
