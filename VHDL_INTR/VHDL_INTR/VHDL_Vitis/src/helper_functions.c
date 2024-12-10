@@ -92,7 +92,7 @@ void print_buffers(const uint8_t*  plain_buffer, const uint8_t* key, const uint8
 		xil_printf("%02x", key[i]);
 
 	xil_printf("\n\rCiphertext: ");
-	for (int i = 0; i < file_size; i++)
+	for (int i = 0; i < file_size; i++){
 		xil_printf("%02x", cipher_buffer[i]);
-	xil_printf("\n\r");
+	}xil_printf("\n\r");
 }

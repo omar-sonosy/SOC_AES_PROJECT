@@ -14,21 +14,21 @@ int main()
 
 	while(1){
 		xil_printf("\n\rPlease type 'E' for Encryption and 'D' for Decryption.\n\r");
-		while(UartRead(plain_buffer)!=1){}
-		if(plain_buffer[0]=='E'){
+		while(UartRead(UART_BUFFER)!=1){}
+		if(UART_BUFFER[0]=='E'){
 
 
-			xil_printf("\n\rPlease Enter your plaintext.\n\r");
+			xil_printf("\n\rPlease Enter your plain text.\n\r");
 			encrypted_bytes=0;
-			File_size=UartRead(plain_buffer);
-			xil_printf("\n\rPlaintext recieved.\n\r");
+			File_size=UartRead(UART_BUFFER);
+			xil_printf("\n\rPlaintext received.\n\r");
 
 			if(File_size>0){
 				padding_num=16-File_size%16;
 				plain_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size+padding_num));
 				cipher_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size+padding_num));
 				for(int i=0;i<File_size;i++){
-					plain_pointer[i]=plain_buffer[i];
+					plain_pointer[i]=UART_BUFFER[i];
 				}
 				for(int i=0;i<padding_num;i++){
 					plain_pointer[i+File_size]=padding_num;
@@ -45,15 +45,15 @@ int main()
 				free(plain_pointer);
 				free(cipher_pointer);
 			}
-		}else if(plain_buffer[0]=='D'){
-			xil_printf("\n\rPlease enter your ciphertext in hexadecimeal without spaces\n\r");
+		}else if(UART_BUFFER[0]=='D'){
+			xil_printf("\n\rPlease enter your cipher text in hexadecimal without spaces\n\r");
 			encrypted_bytes=0;
-			File_size=UartRead(plain_buffer);
-			xil_printf("\n\rCiphertext recieved.\n\r");
+			File_size=UartRead(UART_BUFFER);
+			xil_printf("\n\rCiphertext received.\n\r");
 			plain_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size));
 			cipher_pointer=(uint8_t*) malloc(sizeof(uint8_t)*(File_size));
 			if(File_size>0){
-				if(is_hex_string(plain_buffer)){
+				if(is_hex_string(UART_BUFFER)){
 					Plain_is_hex=1;
 				}else{
 					xil_printf("\n\rInvalid input, please enter cipher text in hexadecimal without spaces\n\r");
@@ -64,7 +64,7 @@ int main()
 					continue;
 				}
 				for(int i=0;i<File_size;i+=(BYTES_TO_ENCRYPT*2)){
-					hexstring_to_bytes(&plain_buffer[i],&cipher_pointer[i/2]);
+					hexstring_to_bytes(&UART_BUFFER[i],&cipher_pointer[i/2]);
 				}
 				File_size=File_size/2;
 				for(int i=0;i<BYTES_TO_ENCRYPT;i++){

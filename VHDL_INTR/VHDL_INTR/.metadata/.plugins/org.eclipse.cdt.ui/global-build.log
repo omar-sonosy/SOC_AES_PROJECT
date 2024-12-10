@@ -1,11 +1,63 @@
 Nothing to build in platform 'AES_F_wrapper'
 
-16:40:58 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
+16:57:01 **** Incremental Build of configuration Debug for project VHDL_Vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+'Building file: ../src/AES_FULL.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AES_FULL.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/AES_FULL.d" -MT"src/AES_FULL.o" -o "src/AES_FULL.o" "../src/AES_FULL.c"
+In file included from ../src/AES_FULL.h:7,
+                 from ../src/AES_FULL.c:14:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+In file included from ../src/AES_FULL.h:10,
+                 from ../src/AES_FULL.c:14:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from ../src/AES_FULL.h:14,
+                 from ../src/AES_FULL.c:14:
+../src/UART_FILE.h:8: warning: "UART_DEVICE_ID" redefined
+ #define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+ 
+In file included from ../src/platform.h:36,
+                 from ../src/AES_FULL.h:6,
+                 from ../src/AES_FULL.c:14:
+../src/platform_config.h:5: note: this is the location of the previous definition
+ #define UART_DEVICE_ID 0
+ 
+../src/AES_FULL.c: In function 'enc_ISR':
+../src/AES_FULL.c:146:17: warning: passing argument 1 of 'XTime_GetTime' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   XTime_GetTime(&enc_elapsed_time);
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../src/AES_FULL.h:10,
+                 from ../src/AES_FULL.c:14:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:93:27: note: expected 'XTime *' {aka 'long long unsigned int *'} but argument is of type 'volatile XTime *' {aka 'volatile long long unsigned int *'}
+ void XTime_GetTime(XTime *Xtime_Global);
+                    ~~~~~~~^~~~~~~~~~~~
+../src/AES_FULL.c: In function 'dec_ISR':
+../src/AES_FULL.c:170:17: warning: passing argument 1 of 'XTime_GetTime' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   XTime_GetTime(&dec_elapsed_time);
+                 ^~~~~~~~~~~~~~~~~
+In file included from ../src/AES_FULL.h:10,
+                 from ../src/AES_FULL.c:14:
+H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include/xtime_l.h:93:27: note: expected 'XTime *' {aka 'long long unsigned int *'} but argument is of type 'volatile XTime *' {aka 'volatile long long unsigned int *'}
+ void XTime_GetTime(XTime *Xtime_Global);
+                    ~~~~~~~^~~~~~~~~~~~
+'Finished building: ../src/AES_FULL.c'
+' '
+'Building file: ../src/UART_FILE.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/UART_FILE.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/UART_FILE.d" -MT"src/UART_FILE.o" -o "src/UART_FILE.o" "../src/UART_FILE.c"
+'Finished building: ../src/UART_FILE.c'
+' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
@@ -35,16 +87,16 @@ In file included from ../src/platform.h:36,
  
 ../src/main.c: In function 'main':
 ../src/main.c:56:22: warning: pointer targets in passing argument 1 of 'is_hex_string' differ in signedness [-Wpointer-sign]
-     if(is_hex_string(plain_buffer)){
-                      ^~~~~~~~~~~~
+     if(is_hex_string(UART_BUFFER)){
+                      ^~~~~~~~~~~
 In file included from ../src/AES_FULL.h:5,
                  from ../src/main.c:2:
 ../src/helper_functions.h:16:5: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
  int is_hex_string(const char *);
      ^~~~~~~~~~~~~
 ../src/main.c:67:25: warning: pointer targets in passing argument 1 of 'hexstring_to_bytes' differ in signedness [-Wpointer-sign]
-      hexstring_to_bytes(&plain_buffer[i],&cipher_pointer[i/2]);
-                         ^~~~~~~~~~~~~~~~
+      hexstring_to_bytes(&UART_BUFFER[i],&cipher_pointer[i/2]);
+                         ^~~~~~~~~~~~~~~
 In file included from ../src/AES_FULL.h:5,
                  from ../src/main.c:2:
 ../src/helper_functions.h:19:6: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}

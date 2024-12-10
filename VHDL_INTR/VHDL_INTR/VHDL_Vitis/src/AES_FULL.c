@@ -40,8 +40,7 @@ volatile XTime enc_elapsed_time;
 volatile XTime dec_elapsed_time;
 
 
-uint8_t plain_buffer[BUFFER_SIZE];
-uint8_t cipher_buffer[BUFFER_SIZE];
+uint8_t UART_BUFFER[BUFFER_SIZE];
 uint8_t* plain_pointer;
 uint8_t* cipher_pointer;
 int File_size = 0;
