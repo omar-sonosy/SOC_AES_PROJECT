@@ -13,6 +13,7 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="plain_buffer"/>
 			<item value="XUartPs_ReadReg"/>
 			<item value="XST_SUCCESS"/>
 			<item value="XUartPs_SetBaudRate"/>

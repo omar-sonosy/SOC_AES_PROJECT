@@ -9497,3 +9497,20 @@ org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.173220087
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
 !SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-10 17:01:09.210
 !MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.core.resources 4 1 2024-12-10 17:04:37.068
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2024-12-10 17:04:37.068
+!MESSAGE Problem finding next change, code: 995
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 17:11:47.124
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-190
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-10 17:11:47.148
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-190
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-10 17:11:47.202
+!MESSAGE Executing command: cmd /C C:\Xilinx\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-10 17:11:47.263
+!MESSAGE Executed Webtalk command
