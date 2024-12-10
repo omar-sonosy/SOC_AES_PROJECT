@@ -1,7 +1,7 @@
 #include "UART_FILE.h"
 
 XUartPs Uart_Ps;
-
+uint8_t UART_BUFFER[BUFFER_SIZE];
 
 void ReceiveFile(XUartPs *UartInstancePtr, uint8_t *Buffer, int *FileSize) {
     int ReceivedBytes = 0;

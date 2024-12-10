@@ -18,7 +18,6 @@ void ascii_to_hex(const char *, char *);
 char *hex_to_ascii(const char *);
 void hexstring_to_bytes(const char *, uint8_t *);
 void print_buffers(const uint8_t* , const uint8_t*, const uint8_t* ,int ,int);
-
 void print_results(uint8_t[], uint8_t[], uint8_t[]);
 
 #endif

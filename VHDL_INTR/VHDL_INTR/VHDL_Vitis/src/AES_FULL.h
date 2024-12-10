@@ -2,7 +2,6 @@
 #define AES_FULL_H
 
 //Includes
-#include "helper_functions.h"
 #include "platform.h"
 #include "xbasic_types.h"
 #include "xparameters.h"
@@ -11,7 +10,7 @@
 #include <arm_neon.h>
 #include <xscugic.h>
 #include <stdbool.h>
-#include "UART_FILE.h"
+#include "helper_functions.h"
 
 
 
@@ -36,7 +35,6 @@ extern uint8_t plaintext[BYTES_TO_ENCRYPT], key[BYTES_TO_ENCRYPT];
 extern uint8_t enc_ciphertext[BYTES_TO_ENCRYPT], dec_plaintext[BYTES_TO_ENCRYPT];
 extern volatile XTime enc_elapsed_time;
 extern volatile XTime dec_elapsed_time;
-extern uint8_t UART_BUFFER[BUFFER_SIZE];
 extern int File_size;
 extern volatile int encrypted_bytes;
 extern 	int Plain_is_hex;

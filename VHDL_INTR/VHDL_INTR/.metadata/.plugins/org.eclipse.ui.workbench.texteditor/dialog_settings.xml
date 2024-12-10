@@ -8,6 +8,11 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="hexstring_to_bytes"/>
+			<item value="hex_to_ascii"/>
+			<item value="ascii_to_hex"/>
+			<item value="is_hex_string"/>
+			<item value="UART_BUFFER"/>
 			<item value="plain_buffer"/>
 			<item value="UART"/>
 			<item value="XST_SUCCESS"/>

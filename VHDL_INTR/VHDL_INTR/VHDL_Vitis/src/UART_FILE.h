@@ -10,7 +10,11 @@
 #define UART_TIMEOUT       1000000
 
 
+extern uint8_t UART_BUFFER[BUFFER_SIZE];
+
+
 int UartRead( uint8_t *inputBuffer);
 int UartInit();
+
 
 #endif
