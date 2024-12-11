@@ -143,3 +143,2605 @@ java.io.IOException: Erreur rÃ©seau inattendue
 	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
 	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SESSION 2024-12-11 08:15:14.182 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-12-11 08:15:17.213
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2024-12-11 08:15:24.930
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2024-12-11 08:15:24.946
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:26.870
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:26.870
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:26.886
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.310
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.325
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.356
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.372
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.388
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.419
+!MESSAGE XSCT Command: [setws H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:15:27.450
+!MESSAGE XSCT command with result: [setws H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR], Result: [null, ]. Thread: Thread-12
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-11 08:15:28.325
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sonosyo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:02.901
+!MESSAGE XSCT Command: [::hsi::utils::openhw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Thread: Worker-4: Build Project
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:05.542
+!MESSAGE Already freed record 1916234
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.internal.core.pdom.db.Database.free(Database.java:485)
+	at org.eclipse.cdt.internal.core.pdom.db.LongString.delete(LongString.java:163)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMMacro.delete(PDOMMacro.java:146)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.clear(PDOMFile.java:564)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.clearFile(WritablePDOM.java:173)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.clearFile(WritableCIndex.java:96)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.removeFilesInIndex(AbstractIndexerTask.java:839)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:05.932
+!MESSAGE XSCT command with result: [::hsi::utils::openhw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:05.948
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:05.963
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:05.979
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:05.995
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:18:06.010
+!MESSAGE Generating MD5 hash for file: H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\AES_F_wrapper\export\AES_F_wrapper\sw\AES_F_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:06.026
+!MESSAGE XSCT Command: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:06.042
+!MESSAGE XSCT command with result: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.916
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.916
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.931
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.931
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.931
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:18:12.931
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:13.791
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:18:13.791
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:18:13.791
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:18:13.791
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.ui 4 4 2024-12-11 08:18:17.665
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@191a8997} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:17.697
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:17.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Result: [null, {"AES_DEC_0": {"hier_name": "AES_DEC_0",
+"type": "AES_DEC",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"AES_ENC_0": {"hier_name": "AES_ENC_0",
+"type": "AES_ENC",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_50M": {"hier_name": "rst_ps7_0_50M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:17.728
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:17.743
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Thu Nov 21 15:43:28 2024",
+"vivado_version": "2019.2",
+"part": "xc7z010clg400-1",
+}]. Thread: main
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-12-11 08:18:19.368
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-12-11 08:18:19.368
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2024-12-11 08:18:19.384
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.478
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.493
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666666",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.509
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.540
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Result: [null, {"AES_DEC_0": {},
+"AES_ENC_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.540
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.571
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Result: [null, {"AES_DEC_0_S00_AXI": {"name": "AES_DEC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"AES_ENC_0_S00_AXI": {"name": "AES_ENC_0",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.571
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.587
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.587
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.603
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.603
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.618
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.649
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.665
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.665
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.681
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.696
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.696
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.712
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.743
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.759
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.774
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1], Result: [null, {"AES_DEC_0": {},
+"AES_ENC_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.806
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.821
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1], Result: [null, {"AES_DEC_0_S00_AXI": {"name": "AES_DEC_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"AES_ENC_0_S00_AXI": {"name": "AES_ENC_0",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.821
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.853
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.853
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.868
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.884
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.884
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.899
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.899
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.915
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.915
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.931
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.946
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.962
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa ps7_cortexa9_0], Result: [null, AES_DEC_0 AES_ENC_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.978
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa bit], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:20.978
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa bit], Result: [null, AES_F_wrapper.bit]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:21.009
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY org.eclipse.tcf 4 0 2024-12-11 08:18:23.651
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:23.698
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:23.714
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.073
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.089
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.104
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.104
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.120
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.136
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.136
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.151
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.167
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.167
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.182
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.182
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.214
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.214
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.229
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.229
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.245
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.261
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.276
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.276
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.292
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.307
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.323
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.323
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.339
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.354
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.370
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.370
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.386
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.401
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.417
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.432
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.432
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:25.448
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:26.198
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:26.214
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:26.307
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:26.307
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.323
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.354
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.370
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.385
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.401
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:29.416
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:30.198
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:30.198
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:31.440
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:31.471
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.221
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.237
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.268
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.284
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.300
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:32.300
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.065
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.081
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.096
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.112
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.284
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.299
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.315
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:33.315
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.049
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.065
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.301
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.316
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.348
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.394
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.410
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.426
+!MESSAGE XSCT Command: [con], Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:18:34.441
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:18:34.473
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:47.670
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-109
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:47.681
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-109
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.713
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.713
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.728
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.744
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.760
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.760
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.775
+!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.791
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.791
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.806
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.822
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.838
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.838
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.853
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.869
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.885
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.885
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.900
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.916
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.931
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.947
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.963
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.963
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.978
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:48.994
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.009
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.009
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.041
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.041
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.056
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.072
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.088
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.103
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.119
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.135
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.150
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.150
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.166
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.181
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.262
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:49.262
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.293
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.324
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.340
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.356
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.356
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.387
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:52.387
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.668
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.730
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.730
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.762
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.762
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.777
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.793
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.809
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.809
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.840
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:53.855
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.027
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.043
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.059
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.074
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.074
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.090
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.324
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.340
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.387
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.465
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.480
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.496
+!MESSAGE XSCT Command: [con], Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:20:54.512
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-7: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:20:54.543
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:51:12.277
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:51:12.277
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.546
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.593
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.593
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.609
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:51:19.624
+!MESSAGE Generating MD5 hash for file: H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\AES_F_wrapper\export\AES_F_wrapper\sw\AES_F_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.624
+!MESSAGE XSCT Command: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:19.640
+!MESSAGE XSCT command with result: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:51:20.984
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:51:20.984
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:51:21.015
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:930)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:51:21.015
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:51:21.093
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:51:21.093
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:24.983
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-188
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:24.994
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-188
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.010
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.025
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.025
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.041
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.057
+!MESSAGE XSCT Command: [version -server], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.057
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.072
+!MESSAGE XSCT Command: [version], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.072
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.088
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.088
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.103
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.119
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.119
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.135
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.135
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.150
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.181
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.181
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.197
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.213
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.213
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.228
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.244
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.244
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.260
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.260
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.291
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.291
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.306
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.322
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.322
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.338
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.353
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.353
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.369
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.385
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.385
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.475
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:26.475
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.491
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.522
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.553
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.553
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.584
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.600
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.631
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:29.647
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.894
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.941
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.941
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.957
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.972
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:30.988
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.004
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.019
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.019
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.050
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.082
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.097
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.285
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.300
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.316
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.332
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.347
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.347
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.613
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.628
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.660
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.722
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.753
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.753
+!MESSAGE XSCT Command: [con], Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:51:31.785
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:51:31.800
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:53:18.869
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:53:18.869
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.901
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.916
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.932
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.932
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:53:18.947
+!MESSAGE Generating MD5 hash for file: H:\SOC_Project\SOC_AES_PROJET\SOC_AES_PROJECT\VHDL_INTR\VHDL_INTR\AES_F_wrapper\export\AES_F_wrapper\sw\AES_F_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.947
+!MESSAGE XSCT Command: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:18.963
+!MESSAGE XSCT command with result: [::hsi::utils::closesw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/sw/AES_F_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-12-11 08:53:20.416
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+!STACK 1
+org.eclipse.core.runtime.CoreException: Corrupted database: VHDL_Vitis.1732200872336.pdom
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:318)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:298)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:350)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:636)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2024-12-11 08:53:20.416
+!MESSAGE Corrupted database: VHDL_Vitis.1732200872336.pdom
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:30.915
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-246
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:30.927
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-246
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.029
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.045
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.045
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.076
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.076
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.092
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.107
+!MESSAGE XSCT Command: [version], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.107
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.123
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.138
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.138
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.170
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.185
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.201
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.201
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.232
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.232
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.248
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.248
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.279
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.279
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.295
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.310
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.326
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.326
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.357
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.357
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.373
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.388
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.404
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.420
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.435
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351AB6DCDA" && level == 0}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.451
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.467
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.482
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.498
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.498
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.593
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:32.593
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.610
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.641
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.656
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351AB6DCDA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.656
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.688
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.703
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.719
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB6DCDA" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:35.719
+!MESSAGE XSCT Command: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:36.981
+!MESSAGE XSCT command with result: [fpga -file H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/bitstream/AES_F_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.013
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.028
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.044
+!MESSAGE XSCT Command: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.059
+!MESSAGE XSCT command with result: [loadhw -hw H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/AES_F_wrapper/export/AES_F_wrapper/hw/AES_F_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, AES_F_wrapper_0]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.075
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.075
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.091
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.091
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.106
+!MESSAGE XSCT Command: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.138
+!MESSAGE XSCT command with result: [source H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.138
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.309
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.325
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.341
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.356
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.372
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.372
+!MESSAGE XSCT Command: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.653
+!MESSAGE XSCT command with result: [dow H:/SOC_Project/SOC_AES_PROJET/SOC_AES_PROJECT/VHDL_INTR/VHDL_INTR/VHDL_Vitis/Debug/VHDL_Vitis.elf], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.669
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.700
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.747
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.763
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.763
+!MESSAGE XSCT Command: [con], Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:53:37.794
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10: Launching Debugger_VHDL_Vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:53:37.809
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:56:52.470
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-296
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-11 08:56:52.486
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-296
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:56:52.642
+!MESSAGE Executing command: cmd /C C:\Xilinx\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-11 08:56:52.720
+!MESSAGE Executed Webtalk command
